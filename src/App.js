@@ -10,7 +10,7 @@ import Pricing from "./pages/Pricing";
 import MainLayout from "./components/layouts/MainLayout";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Privacy from "./pages/Privacy";
-import Delete from "./pages/Delete";
+import Terms from "./pages/Terms";
 
 function App() {
   return (
@@ -30,6 +30,8 @@ function App() {
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:id" element={<BlogDetails />} />
             <Route path="pricing" element={<Pricing />} />
+            <Route path="privacy" element={<Privacy />} />
+            <Route path="terms" element={<Terms />} />
           </Route>
         </Routes>
       </Router>

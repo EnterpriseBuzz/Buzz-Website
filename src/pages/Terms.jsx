@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+
 import SEO from "../components/SEO";
 
-const Privacy = () => {
+const Terms = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -26,16 +25,17 @@ const Privacy = () => {
 
             <p className="text-sm font-normal text-gray-600 my-3">
               At EnterpriceBuzz, accessible from{" "}
-              <Link to="/">www.enterpricebuzz.com</Link>, one of our main priorities
-              is the privacy of our visitors. This Privacy Policy document
-              contains types of information that is collected and recorded by
-              EnterpriceBuzz and how we use it. If you have additional questions or
-              require more information about our Privacy Policy, do not hesitate
-              to contact us. This Privacy Policy applies only to our online
-              activities and is valid for visitors to our website with regards
-              to the information that they shared and/or collect in EnterpriceBuzz.
-              This policy is not applicable to any information collected offline
-              or via channels other than this website.
+              <Link to="/">www.enterpricebuzz.com</Link>, one of our main
+              priorities is the privacy of our visitors. This Privacy Policy
+              document contains types of information that is collected and
+              recorded by EnterpriceBuzz and how we use it. If you have
+              additional questions or require more information about our Privacy
+              Policy, do not hesitate to contact us. This Privacy Policy applies
+              only to our online activities and is valid for visitors to our
+              website with regards to the information that they shared and/or
+              collect in EnterpriceBuzz. This policy is not applicable to any
+              information collected offline or via channels other than this
+              website.
             </p>
 
             <div className="shadow-md">
@@ -131,17 +131,18 @@ const Privacy = () => {
                   </p>
 
                   <p className="px-5 py-3">
-                    EnterpriceBuzz follows a standard procedure of using log files.
-                    These files log visitors when they visit websites. All
-                    hosting companies do this and a part of hosting services'
-                    analytics. The information collected by log files include
-                    internet protocol (IP) addresses, browser type, Internet
-                    Service Provider (ISP), date and time stamp, referring/exit
-                    pages, and possibly the number of clicks. These are not
-                    linked to any information that is personally identifiable.
-                    The purpose of the information is for analyzing trends,
-                    administering the site, tracking users' movement on the
-                    website, and gathering demographic information.
+                    EnterpriceBuzz follows a standard procedure of using log
+                    files. These files log visitors when they visit websites.
+                    All hosting companies do this and a part of hosting
+                    services' analytics. The information collected by log files
+                    include internet protocol (IP) addresses, browser type,
+                    Internet Service Provider (ISP), date and time stamp,
+                    referring/exit pages, and possibly the number of clicks.
+                    These are not linked to any information that is personally
+                    identifiable. The purpose of the information is for
+                    analyzing trends, administering the site, tracking users'
+                    movement on the website, and gathering demographic
+                    information.
                   </p>
                 </div>
               </div>
@@ -229,8 +230,8 @@ const Privacy = () => {
                     advertising content that you see on websites that you visit.
                   </p>
                   <p className="px-5 pb-3">
-                    Note that EnterpriceBuzz has no access to or control over these
-                    cookies that are used by third-party advertisers.
+                    Note that EnterpriceBuzz has no access to or control over
+                    these cookies that are used by third-party advertisers.
                   </p>
                 </div>
               </div>
@@ -451,4 +452,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Terms;
