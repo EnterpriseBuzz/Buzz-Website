@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Services() {
@@ -19,19 +19,19 @@ function Services() {
   // const [more9, setMore9] = useState(false);
   return (
     <div>
-      <div class=" text-gray-600">
+      <div className=" text-gray-600">
         <div
-          class="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
+          className="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
           style={{
             "background-image": "url('./hbg.png')",
           }}
         >
-          <div class="flex items-center justify-center w-full h-full  ">
-            <div class="text-center">
-              <h1 class="text-2xl font-bold text-white py-3 lg:text-7xl">
+          <div className="flex items-center justify-center w-full h-full  ">
+            <div className="text-center">
+              <h1 className="text-2xl font-bold text-white py-3 lg:text-7xl">
                 Our Services
               </h1>
-              <h1 class="text-sm lg:text-base font- text-white w-full md:w-[28rem] ">
+              <h1 className="text-sm lg:text-base font- text-white w-full md:w-[28rem] ">
                 We offer all forms of media services
               </h1>
             </div>

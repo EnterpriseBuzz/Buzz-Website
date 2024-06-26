@@ -39,12 +39,12 @@ function Home() {
           </p>
 
           <div className=" flex gap-x-4 mt-5 items-center">
-            <Link
-              to="login"
+             <a
+              href="https://app.enterprisebuzzai.com/register"
               className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
             >
               Start your free 7-day trial
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -367,12 +367,12 @@ function Home() {
                 </p>
 
                 <div className=" flex gap-x-4 mt-5 items-center">
-                  <Link
-                    to="/login"
+                  <a
+                    href="https://app.enterprisebuzzai.com/register"
                     className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
                   >
                     Start your free 7-day trial
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

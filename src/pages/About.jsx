@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import SEO from "../components/SEO";
 
 function About() {
@@ -17,19 +17,19 @@ function About() {
         name="EnterpriceBuzz"
         type="description"
       />
-      <div class=" text-gray-600">
+      <div className=" text-gray-600">
         <div
-          class="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
+          className="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
           style={{
             "background-image": "url('./hbg.png')",
           }}
         >
-          <div class="flex items-center justify-center w-full h-full  ">
-            <div class="text-center">
-              <h1 class="text-2xl font-bold text-white pb-3 lg:text-7xl">
+          <div className="flex items-center justify-center w-full h-full  ">
+            <div className="text-center">
+              <h1 className="text-2xl font-bold text-white pb-3 lg:text-7xl">
                 About Us
               </h1>
-              <h1 class="text-sm lg:text-base font- text-white w-full md:w-[28rem] ">
+              <h1 className="text-sm lg:text-base font- text-white w-full md:w-[28rem] ">
                 we're more than just a digital media agency - we're your
                 partners in business growth
               </h1>
@@ -68,12 +68,12 @@ function About() {
               tangible results.
             </p>
             <div className=" flex gap-x-4 mt-5 items-center">
-              <Link
-                to="login"
+             <a
+              href="https://app.enterprisebuzzai.com/register"
                 className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
               >
                 Start your free 7-day trial
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -177,12 +177,12 @@ function About() {
           </div>
         </div>
         <div className=" flex gap-x-4  items-center lg:hidden px-2 md:px-8">
-          <Link
-            to="login"
+          <a
+              href="https://app.enterprisebuzzai.com/register"
             className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
           >
             Start your free 7-day trial
-          </Link>
+          </a>
         </div>
       </div>
     </div>

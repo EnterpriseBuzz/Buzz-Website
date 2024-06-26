@@ -533,7 +533,7 @@ function Faqs() {
 
                 <div className=" flex gap-x-4 mt-5 items-center">
                   <Link
-                    to="/login"
+                    to="/contact"
                     className="w-[10rem] bg-[#fff] rounded-lg text-sm  py-3 text-center text-[#DA281C] transition duration-200 hover:bg-[#757E7E] hover:text-white"
                   >
                     Get In Touch

@@ -127,19 +127,19 @@ function Header() {
             </NavLink>
           </div>
           <div className="flex gap-2 items-center">
-            <Link
-              to="/login"
-              class="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-normal transition duration-200 hover:text-[#757E7E] mx-auto "
+            <a
+              href="https://app.enterprisebuzzai.com/login"
+              className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-normal transition duration-200 hover:text-[#757E7E] mx-auto "
             >
               Log in
-            </Link>
+            </a>
 
-            <Link
-              to="/login"
-              class="w-[13rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto hover:text-white"
+            <a
+              href="https://app.enterprisebuzzai.com/register"
+              className="w-[13rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto hover:text-white"
             >
               Start your free 7-day trial
-            </Link>
+            </a>
           </div>
         </motion.nav>
 
@@ -149,7 +149,7 @@ function Header() {
             <img className="h-10 w-auto" src="../logo.png" alt="" />
           </Link>
 
-          <div class="flex lg:hidden">
+          <div className="flex lg:hidden">
             {isOpen ? (
               <button
                 type="button"
@@ -157,12 +157,12 @@ function Header() {
                   e.preventDefault();
                   setIsOpen(false);
                 }}
-                class="text-[#576B74]  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
+                className="text-[#576B74]  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
                 aria-label="toggle menu"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="w-6 h-6 text-white"
+                  className="w-6 h-6 text-white"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="#576B74"
@@ -182,7 +182,7 @@ function Header() {
                   e.preventDefault();
                   setIsOpen(true);
                 }}
-                class="text-[#576B74]  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
+                className="text-[#576B74]  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
                 aria-label="toggle menu"
               >
                 <svg
@@ -245,15 +245,18 @@ function Header() {
             >
               Pricing
             </Link>
-            <Link
-              to="/login"
+            <a
+              href="https://app.enterprisebuzzai.com/login"
               className="w-full px-2.5 py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
             >
               Log in
-            </Link>
-            <button class="w-full md:w-[10rem] bg-[#FFCC00] rounded-lg mt-2 py-4 px-1.5 text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto ">
+            </a>
+            <a
+              href="https://app.enterprisebuzzai.com/register"
+              className="w-full md:w-[10rem] bg-[#FFCC00] rounded-lg mt-2 py-4 px-2.5 text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto "
+            >
               Start your free 7-day trial
-            </button>
+            </a>
           </div>
         </div>
       </header>

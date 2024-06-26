@@ -51,12 +51,12 @@ function Pricing() {
                   <option value="">Yearly</option>
                 </select>
               </div>
-              <Link
-                to="/login"
+              <a
+                href="https://app.enterprisebuzzai.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial
-              </Link>
+              </a>
               <p className="text-[#36474F]  text-sm mt-7">
                 Startups and emerging businesses
               </p>
@@ -123,12 +123,12 @@ function Pricing() {
                   <option value="">Yearly</option>
                 </select>
               </div>
-              <Link
-                to="/login"
+              <a
+                href="https://app.enterprisebuzzai.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial
-              </Link>
+              </a>
               <p className="text-[#36474F]  text-sm mt-7">
                 Established mid-sized companies
               </p>
@@ -207,12 +207,12 @@ function Pricing() {
                   <option value="">Yearly</option>
                 </select>
               </div>
-              <Link
-                to="/login"
+              <a
+                href="https://app.enterprisebuzzai.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial
-              </Link>
+              </a>
               <p className="text-[#36474F]  text-sm mt-7">
                 Large enterprises and market leaders
               </p>
@@ -308,7 +308,7 @@ function Pricing() {
 
                   <div className=" flex gap-x-4 mt-5 items-center">
                     <Link
-                      to="/login"
+                      to="app.enterprisebuzzai.com/login"
                       className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
                     >
                       Start your free 7-day trial
