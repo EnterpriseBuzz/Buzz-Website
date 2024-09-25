@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 function Pricing() {
   return (
     <div>
+      <SEO
+        title="Pricing"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
+        type="description"
+      />
       <div class=" text-gray-600">
         <div
           class="w-full bg-center bg-cover h-[12rem] lg:h-[20rem] "
@@ -52,7 +59,7 @@ function Pricing() {
                 </select>
               </div>
               <a
-                href="https://app.enterprisebuzzai.com/register"
+                href="https://app.enterprisebuzzer.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial
@@ -124,7 +131,7 @@ function Pricing() {
                 </select>
               </div>
               <a
-                href="https://app.enterprisebuzzai.com/register"
+                href="https://app.enterprisebuzzer.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial
@@ -208,7 +215,7 @@ function Pricing() {
                 </select>
               </div>
               <a
-                href="https://app.enterprisebuzzai.com/register"
+                href="https://app.enterprisebuzzer.com/register"
                 className="w-full bg-[#FFCC00] rounded-lg text-sm px-5 py-3 text-center font-semibold text-black  transition duration-200 hover:bg-[#757E7E]"
               >
                 Activate your free 7-day trial

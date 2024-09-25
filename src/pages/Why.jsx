@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 function Why() {
   useEffect(() => {
@@ -20,6 +21,12 @@ function Why() {
   const [more10, setMore10] = useState(false);
   return (
     <div className=" text-gray-600">
+      <SEO
+        title="Why Us"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
+        type="description"
+      />
       <div
         className="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
         style={{
@@ -48,7 +55,7 @@ function Why() {
             Building a Dominant Brand Presence
           </h2>
           <p className="mt-6 font-light text-[#62747d]">
-            At EnterpriseBuzzer, we understand that long-term success is tied to
+            At Enterprise Buzzer, we understand that long-term success is tied to
             your brand’s presence and influence. We create marketing campaigns
             that establish your brand as a leader in your industry, ensuring
             that your business
@@ -684,13 +691,13 @@ function Why() {
               <div className="sm:w-[22rem]">
                 <p className="mt-3 sm:mt-6 font-normal text-[#fff]">
                   If you’re ready to build a brand that doesn’t just survive,
-                  but dominates, Enterprise Buzzer is the partner you
-                  need. Let’s take your business to new heights.
+                  but dominates, Enterprise Buzzer is the partner you need.
+                  Let’s take your business to new heights.
                 </p>
 
                 <div className=" flex gap-x-4 mt-5 items-center">
                   <a
-                    href="https://app.enterprisebuzzer.com/register"
+                    href="http://app.enterprisebuzzer.com/register"
                     className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
                   >
                     Start your free 7-day trial

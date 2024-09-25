@@ -20,8 +20,8 @@ function Home() {
   return (
     <div className="  text-gray-600 ">
       <SEO
-        title="EnterpriseBuzzer | Home"
-        description="EnterpriseBuzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        title="Enterprise Buzzer | Home"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
         name="EnterpriceBuzzer"
         type="description"
       />
@@ -34,13 +34,13 @@ function Home() {
           </h2>
           <p className="mt-6 font-light text-[#62747d]">
             Are you ready to propel your business to the zenith of marketplace
-            dominance? At EnterpriseBuzzer, we're not just another marketing
+            dominance? At Enterprise Buzzer, we're not just another marketing
             technology company – we're your partners in success.
           </p>
 
           <div className=" flex gap-x-4 mt-5 items-center">
              <a
-              href="https://app.enterprisebuzzer.com/register"
+              href="http://app.enterprisebuzzer.com/register"
               className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
             >
               Start your free 7-day trial
@@ -81,10 +81,10 @@ function Home() {
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
-            About enterprisebuzzer
+            About Enterprise buzzer
           </h2>
           <p className="mt-6 font-light text-[#62747d]">
-            EnterpriseBuzzer stands out by actively managing and optimizing
+            Enterprise Buzzer stands out by actively managing and optimizing
             marketing strategies for our clients, ensuring they get value for
             every dollar spent. Unlike other marketing software companies that
             leave users to navigate complex systems on their own, we do the
@@ -126,7 +126,7 @@ function Home() {
       {/* social */}
       <div className=" bg-[#F5F5F5] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-2xl lg:w-[35rem] ">
-          EnterpriseBuzzer is your partner in deploying sophisticated marketing
+          Enterprise Buzzer is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
         <h2 className="text-[10px] text-[#000] text-center font-light md:text-sm md:w-[44rem] lg:w-[50rem]">
@@ -149,7 +149,7 @@ function Home() {
               Generate
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzzer, assumptions are relics of the past. We wield
+              At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
               boundaries. Buzzer isn't just a tool; it's your gateway to
@@ -200,7 +200,7 @@ function Home() {
               Execute
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzzer, execution is not just a part of our strategy;
+              At Enterprise Buzzer, execution is not just a part of our strategy;
               it is the heart of our battle plan. In the relentless arena of
               digital marketing, we deploy an arsenal that covers the entire
               spectrum: search engine mastery, precision-targeted email
@@ -255,7 +255,7 @@ function Home() {
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' EnterpriseBuzzer zealously champions the doctrine that the
+              it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis.
               <span className={more3 ? "block" : "hidden"}>
@@ -368,7 +368,7 @@ function Home() {
 
                 <div className=" flex gap-x-4 mt-5 items-center">
                   <a
-                    href="https://app.enterprisebuzzer.com/register"
+                    href="http://app.enterprisebuzzer.com/register"
                     className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
                   >
                     Start your free 7-day trial

@@ -14,8 +14,8 @@ const Terms = () => {
     <>
       <SEO
         title="Terms of Use"
-        description="EnterpriseBuzz is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzz"
+        description="Enterprise  Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
         type="description"
       />
       <div className="">
@@ -24,16 +24,16 @@ const Terms = () => {
             <h3 className="text-xl font-bold text-gray-800">Terms of Use</h3>
 
             <p className="text-sm font-normal text-gray-600 my-3">
-              At EnterpriceBuzz, accessible from{" "}
-              <Link to="/">www.enterpricebuzz.com</Link>, one of our main
+              At Enterprice Buzzer, accessible from{" "}
+              <Link to="/">www.enterprice buzzer.com</Link>, one of our main
               priorities is the privacy of our visitors. This Privacy Policy
               document contains types of information that is collected and
-              recorded by EnterpriceBuzz and how we use it. If you have
+              recorded by Enterprice Buzzer and how we use it. If you have
               additional questions or require more information about our Privacy
               Policy, do not hesitate to contact us. This Privacy Policy applies
               only to our online activities and is valid for visitors to our
               website with regards to the information that they shared and/or
-              collect in EnterpriceBuzz. This policy is not applicable to any
+              collect in Enterprice Buzzer. This policy is not applicable to any
               information collected offline or via channels other than this
               website.
             </p>
@@ -131,7 +131,7 @@ const Terms = () => {
                   </p>
 
                   <p className="px-5 py-3">
-                    EnterpriceBuzz follows a standard procedure of using log
+                    Enterprice Buzzer follows a standard procedure of using log
                     files. These files log visitors when they visit websites.
                     All hosting companies do this and a part of hosting
                     services' analytics. The information collected by log files
@@ -162,7 +162,7 @@ const Terms = () => {
                 </label>
                 <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-[#4763d1] leading-normal">
                   <p className="px-5 py-3">
-                    Like any other website, EnterpriceBuzz uses "cookies". These
+                    Like any other website, Enterprice Buzzer uses "cookies". These
                     cookies are used to store information including visitors'
                     preferences, and the pages on the website that the visitor
                     accessed or visited. The information is used to optimize the
@@ -190,7 +190,7 @@ const Terms = () => {
                     Google is one of a third-party vendor on our site. It also
                     uses cookies, known as DART cookies, to serve ads to our
                     site visitors based upon their visit to{" "}
-                    <Link href="/">www.enterpricebuzz.com</Link>
+                    <Link href="/">www.enterpricebuzzer.com</Link>
                     and other sites on the internet. However, visitors may
                     choose to decline the use of DART cookies by visiting the
                     Google ad and content network Privacy Policy at the
@@ -217,7 +217,7 @@ const Terms = () => {
                 <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-[#4763d1] leading-normal">
                   <p className="px-5 py-3">
                     You may consult this list to find the Privacy Policy for
-                    each of the advertising partners of EnterpriceBuzz
+                    each of the advertising partners of Enterprice Buzzer
                   </p>
                   <p className="px-5 pb-3">
                     Third-party ad servers or ad networks uses technologies like
@@ -230,7 +230,7 @@ const Terms = () => {
                     advertising content that you see on websites that you visit.
                   </p>
                   <p className="px-5 pb-3">
-                    Note that EnterpriceBuzz has no access to or control over
+                    Note that Enterprice Buzzer has no access to or control over
                     these cookies that are used by third-party advertisers.
                   </p>
                 </div>
@@ -251,7 +251,7 @@ const Terms = () => {
                 </label>
                 <div className="tab-content overflow-hidden border-l-2 bg-gray-100 border-[#4763d1] leading-normal">
                   <p className="p-5">
-                    EnterpriceBuzz's Privacy Policy does not apply to other
+                    Enterprice Buzzer's Privacy Policy does not apply to other
                     advertisers or websites. Thus, we are advising you to
                     consult the respective Privacy Policies of these third-party
                     ad servers for more detailed information. It may include
@@ -388,7 +388,7 @@ const Terms = () => {
                     guide their online activity.
                   </p>
                   <p className="px-5 py-3">
-                    EnterpriceBuzz does not knowingly collect any Personal
+                    Enterprice Buzzer does not knowingly collect any Personal
                     Identifiable Information from children under the age of 13.
                     If you think that your child provided this kind of
                     information on our website, we strongly encourage you to

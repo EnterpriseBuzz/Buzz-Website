@@ -13,8 +13,8 @@ function Contact() {
     <div className="bg-[#F9F9F9]">
       <SEO
         title="Contact"
-        description="EnterpriseBuzz is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzz"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
         type="description"
       />
       <div
@@ -49,25 +49,25 @@ function Contact() {
           </div>
           <div className=" flex gap-x-3 lg:gap-x-5  items-center justify-between">
             <a
-              href="https://www.facebook.com/enterprisebuzz"
+              href="https://www.facebook.com/enterprisebuzzer"
               className="text-lightBlue-400   py-3 px-0.5 text-center items-center justify-center align-center rounded-full h-9 w-9 lg:w-full lg:h-full outline-none focus:outline-none "
             >
               <img src="../insta.svg" alt="i" />
             </a>
             <a
-              href="https://twitter.com/enterprisebuzz"
+              href="https://twitter.com/enterprisebuzzer"
               className="text-lightBlue-600    py-3 items-center justify-center align-center rounded-full h-9 w-9 lg:w-full lg:h-full outline-none focus:outline-none "
             >
               <img src="../X.svg" alt="i" />
             </a>
             <a
-              href="https://www.linkedin.com/enterprisebuzz"
+              href="https://www.linkedin.com/enterprisebuzzer"
               className="  py-3 px-0.5 items-center justify-center align-center rounded-full h-9 w-9 lg:w-full lg:h-full outline-none focus:outline-none "
             >
               <img src="../Whats.svg" alt="i" />
             </a>
             <a
-              href="https://www.instagram.com/enterprisebuzz"
+              href="https://www.instagram.com/enterprisebuzzer"
               className="text-blueGray-800   py-3 px-0.5 items-center justify-center align-center rounded-full h-9 w-9 lg:w-full lg:h-full outline-none focus:outline-none "
             >
               <img src="../Linkedin.svg" alt="i" />
@@ -86,7 +86,7 @@ function Contact() {
             </h1>
           </div>
           <Link
-            to="mailto:business@enterpricebuzz"
+            to="mailto:business@enterpricebuzzer"
             className="w-full bg-[#DA281C] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
           >
             Send A Mail

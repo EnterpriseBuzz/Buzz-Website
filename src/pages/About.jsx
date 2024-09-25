@@ -13,8 +13,8 @@ function About() {
     <div>
       <SEO
         title="About Us"
-        description="EnterpriseBuzz is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzz"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
         type="description"
       />
       <div className=" text-gray-600">
@@ -50,14 +50,14 @@ function About() {
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12 px-2 lg:px-16">
           <div className="md:7/12 lg:w-6/12">
             <p className="mt-6 font-light text-[#62747d]">
-              EnterpriseBuzz is a full-service media and technology company that
+              Enterprise Buzzer is a full-service media and technology company that
               helps businesses deploy sophisticated advertising, branding, CRM,
               and marketing tools using our signature aggressive traditional and
               digital techniques for generating attention, driving engagement,
               customer acquisition, and increasing revenue.
             </p>
             <p className="mt-3 font-light text-[#62747d]">
-              EnterpriseBuzz is a pioneering media and technology company,
+              Enterprise Buzzer is a pioneering media and technology company,
               dedicated to propelling businesses forward through innovative
               advertising, branding, CRM, and marketing tools. Our unique
               approach combines aggressive traditional and digital techniques
@@ -69,7 +69,7 @@ function About() {
             </p>
             <div className=" flex gap-x-4 mt-5 items-center">
              <a
-              href="https://app.enterprisebuzzai.com/register"
+              href="http://app.enterprisebuzzer.com/register"
                 className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
               >
                 Start your free 7-day trial
@@ -101,7 +101,7 @@ function About() {
               our clients, ensuring they stand out in a crowded marketplace.
             </p>
             <p className="mt-1 text-sm font-light text-[#62747d]">
-              At EnterpriseBuzz, we believe in bold moves, daring ideas, and the
+              At Enterprise Buzzer, we believe in bold moves, daring ideas, and the
               power of controversy to captivate and convert.
             </p>
           </div>
@@ -178,7 +178,7 @@ function About() {
         </div>
         <div className=" flex gap-x-4  items-center lg:hidden px-2 md:px-8">
           <a
-              href="https://app.enterprisebuzzai.com/register"
+              href="http://app.enterprisebuzzer.com/register"
             className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
           >
             Start your free 7-day trial

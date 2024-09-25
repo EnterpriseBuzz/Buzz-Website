@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 function Faqs() {
   useEffect(() => {
@@ -11,6 +12,12 @@ function Faqs() {
   const [openTab, setOpenTab] = useState(1);
   return (
     <div>
+      <SEO
+        title="FAQs"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
+        type="description"
+      />
       <div class=" text-gray-600">
         <div
           class="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "

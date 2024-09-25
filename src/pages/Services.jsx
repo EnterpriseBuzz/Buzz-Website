@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 function Services() {
   useEffect(() => {
@@ -19,6 +20,12 @@ function Services() {
   // const [more9, setMore9] = useState(false);
   return (
     <div>
+      <SEO
+        title="Service"
+        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriceBuzzer"
+        type="description"
+      />
       <div className=" text-gray-600">
         <div
           className="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
@@ -47,7 +54,7 @@ function Services() {
               Marketing Design
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzz, assumptions are relics of the past. We wield
+              At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
               boundaries. Buzzer isn't just a tool; it's your gateway to
@@ -84,7 +91,7 @@ function Services() {
               Website Designs & Optimizations
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzz, execution is not just a part of our strategy;
+              At Enterprise Buzzer, execution is not just a part of our strategy;
               it is the heart of our battle plan. In the relentless arena of
               digital marketing, we deploy an arsenal that covers the entire
               spectrum: search engine mastery, precision-targeted email
@@ -119,7 +126,7 @@ function Services() {
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' EnterpriseBuzz zealously champions the doctrine that the
+              it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis. Our fervor for this philosophy eclipses the
               conventional aim of expanding our client roster, directing our
@@ -149,7 +156,7 @@ function Services() {
               Video/Animation Marketing
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzz, assumptions are relics of the past. We wield
+              At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
               boundaries. Buzzer isn't just a tool; it's your gateway to
@@ -182,7 +189,7 @@ function Services() {
               Email Marketing
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At EnterpriseBuzz, execution is not just a part of our strategy;
+              At Enterprise Buzzer, execution is not just a part of our strategy;
               it is the heart of our battle plan. In the relentless arena of
               digital marketing, we deploy an arsenal that covers the entire
               spectrum: search engine mastery, precision-targeted email
@@ -220,7 +227,7 @@ function Services() {
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' EnterpriseBuzz zealously champions the doctrine that the
+              it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis. Our fervor for this philosophy eclipses the
               conventional aim of expanding our client roster, directing our
@@ -248,7 +255,7 @@ function Services() {
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' EnterpriseBuzz zealously champions the doctrine that the
+              it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis. Our fervor for this philosophy eclipses the
               conventional aim of expanding our client roster, directing our
@@ -279,7 +286,7 @@ function Services() {
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' EnterpriseBuzz zealously champions the doctrine that the
+              it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis. Our fervor for this philosophy eclipses the
               conventional aim of expanding our client roster, directing our
