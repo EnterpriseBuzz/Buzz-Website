@@ -11,6 +11,7 @@ import MainLayout from "./components/layouts/MainLayout";
 import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Why from "./pages/Why";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
+            <Route path="why-us" element={<Why />} />
             <Route path="contact" element={<Contact />} />
             <Route path="faqs" element={<Faqs />} />
             <Route path="services" element={<Services />} />

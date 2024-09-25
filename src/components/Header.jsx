@@ -11,7 +11,7 @@ function Header() {
           initial={{ x: -300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="mx-auto hidden lg:flex max-w-7xl items-center justify-between   px-10   "
+          className="mx-auto hidden lg:flex  items-center justify-between   px-24   "
           aria-label="Global"
         >
           <Link to="/" className=" m-5">
@@ -38,6 +38,16 @@ function Header() {
               }
             >
               About Us
+            </NavLink>
+            <NavLink
+              to="/why-us"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
+                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
+              }
+            >
+              Why Us
             </NavLink>
             <NavLink
               to="/services"
@@ -128,14 +138,14 @@ function Header() {
           </div>
           <div className="flex gap-2 items-center">
             <a
-              href="https://app.enterprisebuzzai.com/login"
+              href="https://app.enterprisebuzzer.com/login"
               className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-normal transition duration-200 hover:text-[#757E7E] mx-auto "
             >
               Log in
             </a>
 
             <a
-              href="https://app.enterprisebuzzai.com/register"
+              href="https://app.enterprisebuzzer.com/register"
               className="w-[13rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto hover:text-white"
             >
               Start your free 7-day trial
@@ -246,13 +256,13 @@ function Header() {
               Pricing
             </Link>
             <a
-              href="https://app.enterprisebuzzai.com/login"
+              href="https://app.enterprisebuzzer.com/login"
               className="w-full px-2.5 py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
             >
               Log in
             </a>
             <a
-              href="https://app.enterprisebuzzai.com/register"
+              href="https://app.enterprisebuzzer.com/register"
               className="w-full md:w-[10rem] bg-[#FFCC00] rounded-lg mt-2 py-4 px-2.5 text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto "
             >
               Start your free 7-day trial
