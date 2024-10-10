@@ -48,17 +48,17 @@ function Why() {
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="lg:hidden">
-          <img src="../ser8.png" alt="i" />
+          <img src="../a4.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
             Building a Dominant Brand Presence
           </h2>
           <p className="mt-6 font-light text-[#62747d]">
-            At Enterprise Buzzer, we understand that long-term success is tied to
-            your brand’s presence and influence. We create marketing campaigns
-            that establish your brand as a leader in your industry, ensuring
-            that your business
+            At Enterprise Buzzer, we understand that long-term success is tied
+            to your brand’s presence and influence. We create marketing
+            campaigns that establish your brand as a leader in your industry,
+            ensuring that your business
             {more1
               ? "becomes synonymous with authority, trust, and excellence."
               : "..."}
@@ -104,13 +104,13 @@ function Why() {
         </div>
 
         <div className="hidden lg:block sm:w-[35rem]">
-          <img src="../ser8.png" alt="i" />
+          <img src="../a4.gif" alt="i" />
         </div>
       </div>
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className=" sm:w-[35rem]">
-          <img src="../ser7.png" alt="i" />
+          <img src="../a5.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -171,7 +171,7 @@ function Why() {
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="lg:hidden">
-          <img src="../ser6.png" alt="i" />
+          <img src="../a3.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -230,13 +230,13 @@ function Why() {
           </div>
         </div>
         <div className="hidden lg:block sm:w-[35rem]">
-          <img src="../ser6.png" alt="i" />
+          <img src="../a3.gif" alt="i" />
         </div>
       </div>
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="w-full lg:w-[35rem]">
-          <img src="../ser5.png" alt="i" className="rounded-full w-full" />
+          <img src="../a8.gif" alt="i" className=" w-full" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -298,7 +298,7 @@ function Why() {
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="lg:hidden">
-          <img src="../ser4.png" alt="i" />
+          <img src="../a10.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -358,13 +358,13 @@ function Why() {
           </div>
         </div>
         <div className="hidden lg:block sm:w-[35rem]">
-          <img src="../ser4.png" alt="i" />
+          <img src="../a10.gif" alt="i" />
         </div>
       </div>
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="w-full lg:w-[35rem]">
-          <img src="../ser3.png" alt="i" className="rounded-xl" />
+          <img src="../a7.gif" alt="i" className="rounded-xl" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -426,7 +426,7 @@ function Why() {
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="lg:hidden">
-          <img src="../ser2.png" alt="i" />
+          <img src="../a6.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -485,12 +485,12 @@ function Why() {
           </div>
         </div>
         <div className="hidden lg:block sm:w-[35rem]">
-          <img src="../ser2.png" alt="i" />
+          <img src="../a6.gif" alt="i" />
         </div>
       </div>
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="w-full lg:w-[35rem]">
-          <img src="../ser1.png" alt="i" className="rounded-xl" />
+          <img src="../a2.gif" alt="i" className="rounded-xl" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -551,7 +551,7 @@ function Why() {
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="lg:hidden">
-          <img src="../ser2.png" alt="i" />
+          <img src="../a9.gif" alt="i" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
@@ -610,12 +610,12 @@ function Why() {
           </div>
         </div>
         <div className="hidden lg:block sm:w-[35rem]">
-          <img src="../ser2.png" alt="i" />
+          <img src="../a9.gif" alt="i" />
         </div>
       </div>
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-x-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="w-full lg:w-[35rem]">
-          <img src="../ser1.png" alt="i" className="rounded-xl" />
+          <img src="../a1.gif" alt="i" className="rounded-xl" />
         </div>
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
