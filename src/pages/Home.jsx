@@ -30,7 +30,7 @@ function Home() {
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="md:7/12 lg:w-6/12">
           <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
-            Unlock the Power of massive Digital Growth for your business
+            Leverage AI to unlock the power of massive business growth.
           </h2>
           <p className="mt-6 font-light text-[#62747d]">
             Are you ready to propel your business to the zenith of marketplace
@@ -39,7 +39,7 @@ function Home() {
           </p>
 
           <div className=" flex gap-x-4 mt-5 items-center">
-             <a
+            <a
               href="http://app.enterprisebuzzer.com/register"
               className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
             >
@@ -200,10 +200,10 @@ function Home() {
               Execute
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At Enterprise Buzzer, execution is not just a part of our strategy;
-              it is the heart of our battle plan. In the relentless arena of
-              digital marketing, we deploy an arsenal that covers the entire
-              spectrum: search engine mastery, precision-targeted email
+              At Enterprise Buzzer, execution is not just a part of our
+              strategy; it is the heart of our battle plan. In the relentless
+              arena of digital marketing, we deploy an arsenal that covers the
+              entire spectrum: search engine mastery, precision-targeted email
               marketing, compelling
               {more2
                 ? " video marketing, authoritative influencer engagements, commanding social media campaigns, unmissable digital display ads, explosive viral initiatives, and revolutionary user-generated content strategies."
