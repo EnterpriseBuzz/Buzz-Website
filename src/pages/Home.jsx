@@ -26,6 +26,19 @@ function Home() {
         type="description"
       />
       {/* Hero ++++++++++++++++++++++++++ */}
+      <div className="wrap-video ">
+            <video
+              className="object-cover h-full lg:h-[36rem] w-full bg-black cursor-pointer"
+              autoPlay
+              loop
+              controls
+            >
+              <source
+                src="./HeroVid.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
 
       <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
         <div className="md:7/12 lg:w-6/12">
@@ -54,9 +67,10 @@ function Home() {
       </div>
       {/* CTA +++++++++++++++++++++++++++++ */}
 
-      <section className="mx-auto  justify-center  py-10 bg-[#F5F5F5]">
-        <h2 className="text-xs text-[#36474F] text-center md:text-base mx-auto">
-          Over 10,000+ businesses start every year
+      <section className="mx-auto  justify-center  py-10">
+        <h2 className="text-xs text-[#36474F] text-center md:text-base mx-auto w-full lg:w-[50rem]">
+        Over 100,000,000 businesses start every year in Toronto and many major cities and towns across the world. 
+        The question of standing out is not just crucial—it is the difference between your business dominating or dying.
         </h2>
         <div className="w-full py-7">
           <CompanySlide />
