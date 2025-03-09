@@ -18,7 +18,12 @@ function Home() {
   const [more3, setMore3] = useState(false);
 
   return (
-    <div className="  text-gray-600 ">
+    <div
+      className="  text-gray-600 bg-center"
+      style={{
+        "background-image": "url('./bg/redbg.svg')",
+      }}
+    >
       <SEO
         title="Enterprise Buzzer | Home"
         description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
@@ -27,101 +32,31 @@ function Home() {
       />
       {/* Hero ++++++++++++++++++++++++++ */}
       <div className="wrap-video ">
-            <video
-              className="object-cover h-full lg:h-[36rem] w-full bg-black cursor-pointer"
-              autoPlay
-              loop
-              controls
-            >
-              <source
-                src="./HeroVid.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-
-      <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
-        <div className="md:7/12 lg:w-6/12">
-          <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
-            Leverage AI to unlock the power of massive business growth.
-          </h2>
-          <p className="mt-6 font-light text-[#62747d]">
-            Are you ready to propel your business to the zenith of marketplace
-            dominance? At Enterprise Buzzer, we're not just another marketing
-            technology company – we're your partners in success.
-          </p>
-
-          <div className=" flex gap-x-4 mt-5 items-center">
-            <a
-              href="http://app.enterprisebuzzer.com/register"
-              className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] hover:text-white"
-            >
-              Start your free 7-day trial
-            </a>
-          </div>
-        </div>
-
-        <div className="sm:w-[35rem]">
-          <img src="../PIC4.png" alt="i" />
-        </div>
+        <video
+          className="object-cover h-full lg:h-[36rem] w-full bg-black cursor-pointer"
+          autoPlay
+          loop
+          controls
+        >
+          <source src="./HeroVid.mp4" type="video/mp4" />
+        </video>
       </div>
+
       {/* CTA +++++++++++++++++++++++++++++ */}
 
       <section className="mx-auto  justify-center  py-10">
-        <h2 className="text-xs text-[#36474F] text-center md:text-base mx-auto w-full lg:w-[50rem]">
-        Over 100,000,000 businesses start every year in Toronto and many major cities and towns across the world. 
-        The question of standing out is not just crucial—it is the difference between your business dominating or dying.
+        <h2 className="text-xs text-[#414141] text-center font-semibold md:text-base mx-auto w-full lg:w-[52rem]">
+          Over 100,000,000 businesses start every year in Toronto and many major
+          cities and towns across the world. <br /> The question of standing out is not
+          just crucial—it is the difference between your business dominating or
+          dying.
         </h2>
         <div className="w-full py-7">
           <CompanySlide />
         </div>
       </section>
 
-      <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
-        <div className="sm:w-[35rem]">
-          <div className="wrap-video ">
-            <video
-              className="object-cover h-96 w-full bg-black cursor-pointer rounded-xl"
-              autoPlay
-              loop
-              controls
-            >
-              <source
-                src="https://videos.pexels.com/video-files/7414127/7414127-sd_640_360_24fps.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
-        </div>
-        <div className="md:7/12 lg:w-6/12">
-          <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
-            About Enterprise buzzer
-          </h2>
-          <p className="mt-6 font-light text-[#62747d]">
-            Enterprise Buzzer stands out by actively managing and optimizing
-            marketing strategies for our clients, ensuring they get value for
-            every dollar spent. Unlike other marketing software companies that
-            leave users to navigate complex systems on their own, we do the
-            heavy lifting. Our approach is founded on the principle that to
-            achieve extraordinary results, one must take extraordinary measures.
-          </p>
-          <p className="mt-6 font-light text-[#62747d]">
-            This is why we embrace a marketing philosophy that is Aggressive,
-            Bold, and Controversial (ABC). We're not just a software company;
-            we're pioneers at the digital marketing frontier, utilizing the
-            power of artificial intelligence to revolutionize your business's
-            marketplace dominance
-          </p>
-          <div className=" flex gap-x-4 mt-5 items-center">
-            <Link
-              to="/about"
-              className="w-[6rem] bg-[#DA281C] rounded-lg text-xs py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
-            >
-              Read More
-            </Link>
-          </div>
-        </div>
-      </div>
+ 
       <div className="container px-5 lg:px-16   mx-auto mb-5">
         <div className="container m-auto  bg-[#F5F5F5] py-10 px-5 lg:px-24  flex flex-col  items-center  justify-center  rounded-xl">
           <h2 className="text-xs text-[#000]  italic text-center md:text-4xl ">

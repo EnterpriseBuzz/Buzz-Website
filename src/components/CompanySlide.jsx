@@ -26,15 +26,14 @@ function CompanySlide() {
     },
   };
   return (
-    <>
-      {/* <div className="lg:hidden"> */}
+      <div className="space-y-4 lg:space-y-10">
       <Swiper
         slidesPerView={2.5}
         centeredSlides={true}
         spaceBetween={20}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2300,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
@@ -86,7 +85,7 @@ function CompanySlide() {
         spaceBetween={32}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2400,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
@@ -131,8 +130,68 @@ function CompanySlide() {
           <img className="h-6 w-auto" src="../airtimeflip.png" alt="" />
         </SwiperSlide>
       </Swiper>
-      {/* </div> */}
-    </>
+
+      <Swiper
+        slidesPerView={2.5}
+        centeredSlides={true}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Navigation]}
+        breakpoints={{
+          640: {
+            slidesPerView: 3.2,
+            spaceBetween: 12,
+          },
+          768: {
+            slidesPerView: 4.2,
+            spaceBetween: 12,
+          },
+          1024: {
+            slidesPerView: 6.2,
+            spaceBetween: 12,
+          },
+        }}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo1.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo2.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo3.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo4.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo5.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo6.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo7.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo8.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo9.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo10.png" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img className="h-14 w-auto" src="../brands/Company logo.png" alt="" />
+        </SwiperSlide>
+      </Swiper>
+      </div>
   );
 }
 
