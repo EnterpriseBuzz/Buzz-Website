@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="z-[100] sticky top-0">
-      <header className="bg-white  ">
+      <header
+        className="bg-white w-full bg-center bg-cover "
+        style={{
+          "background-image": "url('./bg//headerbg.svg')",
+        }}
+      >
         <motion.nav
           initial={{ x: -300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -14,64 +19,237 @@ function Header() {
           className="mx-auto hidden lg:flex  items-center justify-between   px-24   "
           aria-label="Global"
         >
-          <Link to="/" className=" m-5">
-            <img className="h-11 w-auto" src="../logo.png" alt="" />
+          <Link to="/" className=" m-3">
+            <img className="h-11 w-auto" src="../logo.svg" alt="" />
           </Link>
 
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 items-center">
             <NavLink
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
+                  ? "text-sm text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
+                  : "text-sm text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
               }
             >
               Home
             </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
-              }
-            >
-              About Us
-            </NavLink>
-            <NavLink
-              to="/why-us"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
-              }
-            >
-              Why Us
-            </NavLink>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                isActive
-                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
-              }
-            >
-              Our services
-            </NavLink>
-            <div className="relative inline-block group">
+
+            <div className="relative  group">
               <button
                 type="button"
-                className="flex items-center gap-x-1 text-sm   text-[#576B74] py-2.5"
+                className="flex items-center gap-x-1 text-sm font-semibold  text-[#576B74] py-2.5"
                 aria-expanded="false"
               >
-                Community
+                Our services
+                <svg
+                  className="h-5 w-5 flex-none text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
+              {/* Mega Dropdown */}
+              <div
+                className="absolute z-[100] left-1/2 transform -translate-x-1/2 w-screen max-w-screen-xl hidden group-hover:block transition-opacity duration-300 bg-white rounded-md shadow-xl bg-center bg-cover"
+                style={{
+                  "background-image": "url('./bg/menubg.svg')",
+                }}
+              >
+                <AnimatePresence>
+                  <motion.div
+                    initial={{ x: 20, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="p-6 w-full grid grid-cols-1 lg:gap-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5"
+                  >
+                    <div className="flex flex-col items-start  space-y-4">
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          AI-Driven Marketing
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon1.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          AI-Driven Video Commercial
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon2.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          AI-Driven Call Agent
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon3.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Website/ Mobile App Design
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon4.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Email Automation
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start  space-y-4">
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon5.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Branding Identity Designs
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon6.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Marketing / Promotional Designs
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon7.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Email Marketing
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon8.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          SEO Marketing
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon9.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Podcast for marketing
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start  space-y-4">
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon10.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Social Media Marketing 
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon11.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Native ADS Marketing
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon12.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Logo Design
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon13.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Lead Generations
+                        </Link>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start  space-y-4">
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon14.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Videography Services
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon15.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          Photography Services
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon16.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          UGC Marketing
+                        </Link>
+                      </div>
+                      <div className="flex items-center gap-x-3">
+                        <img src="./icons/icon17.svg" alt="" />
+                        <Link
+                          to="/about"
+                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        >
+                          AI Chatbot Development
+                        </Link>
+                      </div>
+                    </div>
+
+                    <img src="./droppics.svg" alt="" />
+                  </motion.div>
+                </AnimatePresence>
+              </div>
             </div>
+
             <div className="relative inline-block group">
               <button
                 type="button"
-                className="flex items-center gap-x-1 text-sm   text-[#576B74] py-2.5"
+                className="flex items-center gap-x-1 text-sm font-semibold text-[#576B74] py-2.5"
                 aria-expanded="false"
               >
                 Support
@@ -129,8 +307,8 @@ function Header() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "text-sm text-[#DA281C] transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] transition-colors duration-300  hover:text-[#DA281C] "
+                  ? "text-sm text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
+                  : "text-sm text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
               }
             >
               Contact Us
@@ -138,25 +316,27 @@ function Header() {
           </div>
           <div className="flex gap-2 items-center">
             <a
-              href="http://app.enterprisebuzzer.com/login"
+              href=""
+              // href="http://app.enterprisebuzzer.com/login"
               className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-normal transition duration-200 hover:text-[#757E7E] mx-auto "
             >
               Log in
             </a>
 
-            <a
+            {/* <a
               href="http://app.enterprisebuzzer.com/register"
               className="w-[13rem] bg-[#FFCC00] rounded-lg text-sm  py-4 text-center text-[#000]  transition duration-200 hover:bg-[#757E7E] mx-auto hover:text-white"
             >
               Start your free 7-day trial
-            </a>
+            </a> */}
           </div>
         </motion.nav>
 
+        {/* Mobile View +++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
         <div className="lg:hidden item-center  flex justify-between px-3 py-5 bg-[#fff] ">
           <Link to="/">
             <span className="sr-only">EnterpriceBuzz</span>
-            <img className="h-10 w-auto" src="../logo.png" alt="" />
+            <img className="h-10 w-auto" src="../logo.svg" alt="" />
           </Link>
 
           <div className="flex lg:hidden">
