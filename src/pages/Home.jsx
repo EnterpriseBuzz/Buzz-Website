@@ -5,6 +5,7 @@ import TestimonySlide from "../components/TestimonySlide";
 import MarketingSlide from "../components/MarketingSlide";
 import PortfolioSlide from "../components/PortfolioSlide";
 import CompanySlide from "../components/CompanySlide";
+import MarketingOverview from "../components/MarketingOverview";
 
 function Home() {
   useEffect(() => {
@@ -61,6 +62,9 @@ function Home() {
       <img src="../quote.svg" alt="" className="hidden sm:block w-full" />
         <img src="../Mquote.svg" alt="" className="sm:hidden w-full" />
       </div>
+
+      {/* Free Marketing overview Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <MarketingOverview />
 
       {/* social */}
       <div className=" bg-[#F5F5F5] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
