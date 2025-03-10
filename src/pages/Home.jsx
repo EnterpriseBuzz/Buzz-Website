@@ -20,7 +20,7 @@ function Home() {
 
   return (
     <div
-      className="  text-gray-600 bg-top"
+      className="  text-gray-600 bg-[center_top_20rem] bg-no-repeat"
       style={{
         "background-image": "url('./bg/redbg.svg')",
       }}
@@ -59,12 +59,46 @@ function Home() {
 
       {/* Quote Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="container px-5 lg:px-16   mx-auto mb-5">
-      <img src="../quote.svg" alt="" className="hidden sm:block w-full" />
+        <img src="../quote.svg" alt="" className="hidden sm:block w-full" />
         <img src="../Mquote.svg" alt="" className="sm:hidden w-full" />
       </div>
 
       {/* Free Marketing overview Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <MarketingOverview />
+
+      {/* Ai Marketing  Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div
+        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
+        style={{
+          "background-image": "url('./bg/callbg.png')",
+        }}
+      >
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-12 px-2">
+          <div className="w-10/12 lg:w-5/12">
+            <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+              AI-Driven MARKETING
+            </h2>
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+              AI-Driven MARKETING
+            </h2>
+            <p className="text-[#fff]">
+              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
+              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
+              dominate online engagements worldwide, faster than ever.
+            </p>
+
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setMore2(false);
+              }}
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+            >
+              <img src="./buttons/Get Started.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
 
       {/* social */}
       <div className=" bg-[#F5F5F5] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">

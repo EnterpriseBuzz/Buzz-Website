@@ -320,7 +320,7 @@ function Header() {
             <a
               href=""
               // href="http://app.enterprisebuzzer.com/login"
-              className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-normal transition duration-200 hover:text-[#757E7E] mx-auto "
+              className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-semibold transition duration-200 hover:text-[#757E7E] mx-auto "
             >
               Log in
             </a>
