@@ -54,28 +54,28 @@ function CompanySlide() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-1.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-1.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-2.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-2.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-3.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-3.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-4.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-4.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-5.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-5.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-6.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-6.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo-7.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/Company logo-7.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../Company logo.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/SCompany logo.png" alt="" />
         </SwiperSlide>
       </Swiper>
 
@@ -106,28 +106,28 @@ function CompanySlide() {
         className="mySwiper mt-6 flex items-center"
       >
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../cobai.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/cobai.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../tefzon.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/tefzon.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-11 w-auto" src="../billTop.png" alt="" />
+          <img className="h-11 w-auto" src="../brands/billTop.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-9 w-auto" src="../aku.png" alt="" />
+          <img className="h-9 w-auto" src="../brands/aku.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-9 w-auto" src="../Atoovislogo.png" alt="" />
+          <img className="h-9 w-auto" src="../brands/Atoovislogo.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-6 w-auto" src="../sunswitch.png" alt="" />
+          <img className="h-6 w-auto" src="../brands/sunswitch.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-7 w-auto" src="../CloudClinic.png" alt="" />
+          <img className="h-7 w-auto" src="../brands/CloudClinic.png" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className="h-6 w-auto" src="../airtimeflip.png" alt="" />
+          <img className="h-6 w-auto" src="../brands/airtimeflip.png" alt="" />
         </SwiperSlide>
       </Swiper>
 

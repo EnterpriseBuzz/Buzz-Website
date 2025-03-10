@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <div
-      className="  text-gray-600 bg-center"
+      className="  text-gray-600 bg-top"
       style={{
         "background-image": "url('./bg/redbg.svg')",
       }}
@@ -45,31 +45,21 @@ function Home() {
       {/* CTA +++++++++++++++++++++++++++++ */}
 
       <section className="mx-auto  justify-center  py-10">
-        <h2 className="text-xs text-[#414141] text-center font-semibold md:text-base mx-auto w-full lg:w-[52rem]">
+        <h2 className="text- text-[#414141] px-2 text-center font-semibold md:text-base mx-auto w-full lg:w-[52rem]">
           Over 100,000,000 businesses start every year in Toronto and many major
-          cities and towns across the world. <br /> The question of standing out is not
-          just crucial—it is the difference between your business dominating or
-          dying.
+          cities and towns across the world. <br /> The question of standing out
+          is not just crucial—it is the difference between your business
+          dominating or dying.
         </h2>
         <div className="w-full py-7">
           <CompanySlide />
         </div>
       </section>
 
- 
+      {/* Quote Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="container px-5 lg:px-16   mx-auto mb-5">
-        <div className="container m-auto  bg-[#F5F5F5] py-10 px-5 lg:px-24  flex flex-col  items-center  justify-center  rounded-xl">
-          <h2 className="text-xs text-[#000]  italic text-center md:text-4xl ">
-            “It’s important to remember your competitor is only one mouse click
-            away.”
-          </h2>
-          <h2 className="text-[8px] text-[#000] font-bold md:text-base pt-5">
-            Douglas Warner III{" "}
-            <span className="font-light text-[7px] md:text-sm">
-              Former CEO, J.P. Morgan Chase & Co
-            </span>
-          </h2>
-        </div>
+      <img src="../quote.svg" alt="" className="hidden sm:block w-full" />
+        <img src="../Mquote.svg" alt="" className="sm:hidden w-full" />
       </div>
 
       {/* social */}
