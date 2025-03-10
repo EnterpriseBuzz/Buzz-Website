@@ -6,6 +6,7 @@ import MarketingSlide from "../components/MarketingSlide";
 import PortfolioSlide from "../components/PortfolioSlide";
 import CompanySlide from "../components/CompanySlide";
 import MarketingOverview from "../components/MarketingOverview";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Home() {
   useEffect(() => {
@@ -74,7 +75,7 @@ function Home() {
         }}
       >
         <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-12 px-2">
-          <div className="w-10/12 lg:w-5/12">
+          <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven MARKETING
             </h2>
@@ -82,9 +83,9 @@ function Home() {
               AI-Driven MARKETING
             </h2>
             <p className="text-[#fff]">
-              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
-              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
-              dominate online engagements worldwide, faster than ever.
+              Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
+              video commercial—seamlessly merging advanced visuals and fearless
+              creativity for unmatched market impact.
             </p>
 
             <button
@@ -100,6 +101,140 @@ function Home() {
         </div>
       </div>
 
+      {/*   AI-Driven Video Commercial ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div
+        className="py-10 px-2 lg:px-24  bg-no-repeat bg-center"
+        style={{
+          "background-image": "url('./bg/commercebg.svg')",
+        }}
+      >
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-12 px-2">
+          <div className="hidden lg:block w-full lg:w-6/12">
+            <img src="./CommerceScreen.svg" alt="" />
+          </div>
+          <div className="w-full lg:w-6/12">
+            <h2 className="w-[12rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+              AI-Driven Video Commercial
+            </h2>
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+              AI-Driven Video Commercial
+            </h2>
+            <p className="text-[#fff]">
+              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
+              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
+              dominate online engagements worldwide, faster than ever.
+            </p>
+            <div className="mt-3 lg:hidden w-full lg:w-6/12">
+              <img src="./CommerceScreen.svg" alt="" />
+            </div>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setMore2(false);
+              }}
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+            >
+              <img src="./buttons/Get Started.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* AI-Driven Call Agent ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div
+        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
+        style={{
+          "background-image": "url('./bg/marketingbg.png')",
+        }}
+      >
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-12 px-2">
+          <div className="w-10/12 lg:w-6/12">
+            <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+              AI-Driven Call Agent
+            </h2>
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+              AI-Driven Call Agent
+            </h2>
+            <p className="text-[#fff]">
+              Provide your Customers 24/7 receptionist with EnterpriseBuzz AI’s
+              Virtual Call Agent, powered by advanced data. Serve customers
+              around the clock at a fraction of the cost—ensuring zero missed
+              opportunities and 100% conversion retention.
+            </p>
+
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setMore2(false);
+              }}
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+            >
+              <img src="./buttons/Get Started.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Services +++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div
+        className="py-10 px-2 lg:px-24 bg-no-repeat bg-center"
+        style={{
+          "background-image": "url('./bg/Servicesbg.svg')",
+        }}
+      >
+        <AnimatePresence>
+          <motion.div
+            initial={{ x: 20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+          >
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="../services/service.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service1.svg" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service2.png" alt="pics" />
+            </button>
+          </motion.div>
+        </AnimatePresence>
+        <AnimatePresence>
+          <motion.div
+            initial={{ x: 20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4"
+          >
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service3.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service4.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service5.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service6.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service7.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service8.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service9.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service10.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service11.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service12.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service13.svg" alt="pics" />
+            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./services/service14.svg" alt="pics" />
+            </button>
+          </motion.div>
+        </AnimatePresence>
+      </div>
       {/* social */}
       <div className=" bg-[#F5F5F5] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-2xl lg:w-[35rem] ">
