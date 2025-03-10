@@ -235,13 +235,27 @@ function Home() {
           </motion.div>
         </AnimatePresence>
       </div>
-      {/* social */}
-      <div className=" bg-[#F5F5F5] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
-        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-2xl lg:w-[35rem] ">
+
+      {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center  ">
+      <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] capitalize">
+      latest updates
+        </h2>
+        <h2 className="text-[10px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem]">
+        In the fast-changing, technology-disrupting marketing industry, you need an ally like EnterpriseBuzz AI's blog to stay on top of your market.
+        </h2>
+      </div>
+
+      {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center"
+        style={{
+          "background-image": "url('./bg/bobbg.svg')",
+        }}>
+        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] ">
           Enterprise Buzzer is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
-        <h2 className="text-[10px] text-[#000] text-center font-light md:text-sm md:w-[44rem] lg:w-[50rem]">
+        <h2 className="text-[10px] text-[#0C212C] text-center md:text-sm md:w-[44rem]">
           Our mission is to empower businesses with the most innovative and
           aggressive marketing by leveraging artificial intelligence & our
           signature fine-tuned A/B/C techniques that drive engagement and boost
@@ -257,10 +271,10 @@ function Home() {
             />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
               Generate
             </h2>
-            <p className="mt-6 font-light text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d]">
               At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
@@ -286,7 +300,7 @@ function Home() {
                   }}
                   className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
                 >
-                  Read less
+                  Read Less
                 </button>
               ) : (
                 <button
@@ -294,9 +308,9 @@ function Home() {
                     e.preventDefault();
                     setMore1(true);
                   }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-[#DA281C] hover:bg-[#757E7E]"
+                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
                 >
-                  Read more
+                  Read More
                 </button>
               )}
             </div>
@@ -308,10 +322,10 @@ function Home() {
             <img src="../Hero image.png" alt="i" />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
               Execute
             </h2>
-            <p className="mt-6 font-light text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d]">
               At Enterprise Buzzer, execution is not just a part of our
               strategy; it is the heart of our battle plan. In the relentless
               arena of digital marketing, we deploy an arsenal that covers the
@@ -337,7 +351,7 @@ function Home() {
                   }}
                   className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
                 >
-                  Read less
+                  Read Less
                 </button>
               ) : (
                 <button
@@ -345,9 +359,9 @@ function Home() {
                     e.preventDefault();
                     setMore2(true);
                   }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-[#DA281C] hover:bg-[#757E7E]"
-                >
-                  Read more
+                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
+                  >
+                    Read More
                 </button>
               )}
             </div>
@@ -362,10 +376,10 @@ function Home() {
             <img src="../Measure.png" alt="i" className="rounded-xl" />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-medium md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
               Measure
             </h2>
-            <p className="mt-6 font-light text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d]">
               Embracing the maxim 'If you can't measure it, you can't improve
               it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
@@ -387,7 +401,7 @@ function Home() {
                   }}
                   className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
                 >
-                  Read less
+                  Read Less
                 </button>
               ) : (
                 <button
@@ -395,9 +409,9 @@ function Home() {
                     e.preventDefault();
                     setMore3(true);
                   }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-[#DA281C] hover:bg-[#757E7E]"
-                >
-                  Read more
+                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
+                  >
+                    Read More
                 </button>
               )}
             </div>
