@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import TestimonySlide from "../components/TestimonySlide";
 import MarketingSlide from "../components/MarketingSlide";
-import PortfolioSlide from "../components/PortfolioSlide";
+import Portfolio from "../components/Portfolio";
 import CompanySlide from "../components/CompanySlide";
 import MarketingOverview from "../components/MarketingOverview";
 import { motion, AnimatePresence } from "framer-motion";
+import LogoGrid from "../components/LogoGrid";
+import Technology from "../components/Technology";
+import LatestUpdates from "../components/Lastest";
 
 function Home() {
   useEffect(() => {
@@ -38,7 +41,7 @@ function Home() {
           className="object-cover h-full lg:h-[36rem] w-full bg-black cursor-pointer"
           autoPlay
           loop
-          controls
+          // controls
         >
           <source src="./HeroVid.mp4" type="video/mp4" />
         </video>
@@ -248,16 +251,7 @@ function Home() {
       </div>
 
       {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center  ">
-        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] capitalize">
-          latest updates
-        </h2>
-        <h2 className="text-[10px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem]">
-          In the fast-changing, technology-disrupting marketing industry, you
-          need an ally like EnterpriseBuzz AI's blog to stay on top of your
-          market.
-        </h2>
-      </div>
+      <LatestUpdates />
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
@@ -434,24 +428,15 @@ function Home() {
         </div>
       </div>
 
-      <section className="mx-auto  justify-center  py-10 bg-[#F5F5F5]">
-        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl mb-8 mx-auto">
-          Our Digital Marketing Verticals
-        </h2>
-        <div className="w-full ">
-          <MarketingSlide />
-        </div>
-      </section>
-      <section className="mx-auto  justify-center  py-10 bg-[#F5F5F5]">
-        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl mb-8 mx-auto">
-          Our portfolio
-        </h2>
-        <div className="w-full ">
-          <PortfolioSlide />
-        </div>
-      </section>
+      {/* Portfolio Section +++++++++++++++++++++++++++++++++++++++++++ */}
+      <Technology />
 
-       {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* Portfolio Section +++++++++++++++++++++++++++++++++++++++++++ */}
+      <Portfolio />
+
+      {/* Logo Grid Section +++++++++++++++++++++++++++++++++++++++++++ */}
+      <LogoGrid />
+      {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className=" bg-[#fff] py-10 px-2  ">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl lg:w-[35rem] mx-auto">
           What our clients say about us
@@ -461,7 +446,7 @@ function Home() {
             className="object-cover object-center w-auto h-5 md:w-auto md:h-9 "
             src="../Frame 41.png"
             alt=""
-          />{" "}
+          />
           over 10,000+ clients trust us
         </h2>
         <section className="mx-auto  justify-center md:space-x-2 my-5 lg:mt-10 ">

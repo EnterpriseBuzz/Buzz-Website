@@ -11,12 +11,12 @@ const Footer = () => {
             "linear-gradient(to bottom right, #FF690A 10%, #BE1E01 40%, #420004 90%)",
         }}
       >
-        <div className="container  pt-6 lg:py-20 mx-auto px-4  text-white  ">
+        <div className="container  py-6 lg:py-20 mx-auto px-4  text-white  ">
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 lg:gap-12 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.5fr]"
+            className="grid grid-cols-1 gap-8 lg:gap-12 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.5fr]"
           >
             <div className="items-start space-y-6 ">
               <Link to="/">
@@ -28,7 +28,7 @@ const Footer = () => {
               </Link>
               <div className="items-start  mb-2 ">
                 <p className=" text-lg font-bold mb-3">Newsletter</p>
-                <p className=" text-sm  w-[16rem] lg:w-[21rem]">
+                <p className=" text-sm  w-full lg:w-[21rem]">
                   Sign up to our newsletter and get informed on the latest news
                   and gist in the marketing world
                 </p>
@@ -192,40 +192,40 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="space-y-7">
+            <div className="space-y-7 ">
               <div className="flex justify-between">
                 <div className="items-start">
                   <p className=" text-xl font-bold mb-3">Information</p>
                   <div className="flex flex-col items-start  space-y-2">
                     <Link
                       to="/faqs"
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       FAQs
                     </Link>
 
                     <Link
                       to=""
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Community
                     </Link>
 
                     <Link
                       to="/contact"
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Support
                     </Link>
                     <Link
                       to=""
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Privacy
                     </Link>
                     <Link
                       to=""
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Terms & Condition
                     </Link>
@@ -237,33 +237,33 @@ const Footer = () => {
                   <div className="flex flex-col items-start  space-y-2">
                     <Link
                       to="/about"
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       About us
                     </Link>
 
                     <Link
                       to="/pricing"
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Pricing
                     </Link>
 
                     <Link
                       to="/services"
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Our Services
                     </Link>
                     <Link
                       to=""
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Careers
                     </Link>
                     <Link
                       to=""
-                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Team
                     </Link>
@@ -285,59 +285,59 @@ const Footer = () => {
                 <div className="flex flex-col items-start  space-y-2">
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven MARKETING
                   </Link>
 
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven Video Commercial
                   </Link>
 
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven Call Agent
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Website/ Mobile App Design
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     email automation
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Branding Identity Designs
                   </Link>
 
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Logo Design
                   </Link>
 
                   <Link
                     to="/contact"
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Videography Services
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Photography Services
                   </Link>
@@ -348,57 +348,57 @@ const Footer = () => {
                 <div className="flex flex-col items-start mt-10 space-y-2">
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Marketing/Promotional Designs
                   </Link>
 
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Email Marketing
                   </Link>
 
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     SEO Marketing
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Podcast for marketing
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Social Media marketing
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI Chatbot Development
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     UGC marketing
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Native ADS marketing
                   </Link>
                   <Link
                     to=""
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Lead Generations
                   </Link>
