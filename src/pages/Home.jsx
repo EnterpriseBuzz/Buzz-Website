@@ -450,8 +450,9 @@ function Home() {
           <PortfolioSlide />
         </div>
       </section>
-      <div className=" bg-[#fff] pt-10 px-2  ">
-        {/* Testimonies */}
+
+       {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div className=" bg-[#fff] py-10 px-2  ">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl lg:w-[35rem] mx-auto">
           What our clients say about us
         </h2>
@@ -470,7 +471,7 @@ function Home() {
         </section>
       </div>
 
-{/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="p-2 lg:p-28 bg-[#F4F4F4]  mx-auto">
         <div className=" m-auto  bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16 ">
           <h2 className="text-xs text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">

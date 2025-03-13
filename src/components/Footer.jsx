@@ -5,24 +5,82 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className=" bg-[#DA281C]">
-        <div className="container  pt-6 pb-16 lg:py-12 mx-auto px-4  md:px- text-white  md:mb-0   ">
+      <div
+        style={{
+          background:
+            "linear-gradient(to bottom right, #FF690A 10%, #BE1E01 40%, #420004 90%)",
+        }}
+      >
+        <div className="container  pt-6 lg:py-20 mx-auto px-4  text-white  ">
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 lg:gap-8 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6"
+            className="grid grid-cols-1 lg:gap-12 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_1.5fr]"
           >
-            <div className="items-start col-span-2 mb-5 ">
+            <div className="items-start space-y-6 ">
               <Link to="/">
                 <img
-                  src="../logowhite.png"
+                  src="../logowhite.svg"
                   alt="buzzlogo"
                   className=" w-[10rem]"
                 />
               </Link>
-              <div className="mt-3 w-[15rem]">
-                <p>Follow us on our social media</p>
+              <div className="items-start  mb-2 ">
+                <p className=" text-lg font-bold mb-3">Newsletter</p>
+                <p className=" text-sm  w-[16rem] lg:w-[21rem]">
+                  Sign up to our newsletter and get informed on the latest news
+                  and gist in the marketing world
+                </p>
+                <div className="my-2 flex items-center bg-white rounded-lg  w-full max-w-md overflow-hidden">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="flex-1 px-4 py-3 text-gray-900 focus:outline-none"
+                  />
+                  <button className="bg-[#BE1E01] text-white  rounded-r-lg flex items-center justify-center hover:bg-red-700 transition-all">
+                    <svg
+                      width="60"
+                      height="54"
+                      viewBox="0 0 60 54"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.5 0.5H52C56.1421 0.5 59.5 3.85786 59.5 8V46C59.5 50.1421 56.1421 53.5 52 53.5H0.5V0.5Z"
+                        stroke="white"
+                      />
+                      <mask
+                        id="mask0_2409_316"
+                        maskUnits="userSpaceOnUse"
+                        x="18"
+                        y="12"
+                        width="24"
+                        height="24"
+                      >
+                        <rect
+                          x="18"
+                          y="12"
+                          width="24"
+                          height="24"
+                          fill="currentColor"
+                        />
+                      </mask>
+                      <g mask="url(#mask0_2409_316)">
+                        <path
+                          d="M34.175 28.125H22V25.875H34.175L28.575 19.575L30 18L38 27L30 36L28.575 34.425L34.175 28.125Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="">
+                <p className="text-sm">
+                  Stay updated on the latest marketing technology happenings on
+                  our social media.
+                </p>
                 <div className="mt-2 flex  gap-x-3 items-center ">
                   <a
                     href="https://www.facebook.com/enterprisebuzz"
@@ -34,7 +92,7 @@ const Footer = () => {
                       viewBox="0 0 10 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                   
+                      className="w-6 h-6"
                     >
                       <path
                         d="M6.37296 18V9.78936H9.26765L9.70104 6.5895H6.37288V4.54653C6.37288 3.6201 6.64305 2.98879 8.0385 2.98879L9.81819 2.98799V0.126072C9.51038 0.0871459 8.45386 0 7.22488 0C4.65886 0 2.90212 1.49118 2.90212 4.22972V6.5895H0V9.78936H2.90212V17.9999H6.37296V18Z"
@@ -52,7 +110,7 @@ const Footer = () => {
                       viewBox="0 0 57 51"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-9"
+                      className="w-6 h-6"
                     >
                       <g clip-path="url(#clip0_2441_6014)">
                         <path
@@ -82,7 +140,7 @@ const Footer = () => {
                       viewBox="0 0 56 48"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-9"
+                      className="w-6 h-6"
                     >
                       <g clip-path="url(#clip0_2441_6017)">
                         <path
@@ -115,7 +173,7 @@ const Footer = () => {
                       viewBox="0 0 56 56"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-9"
+                      className="w-6 h-6"
                     >
                       <g clip-path="url(#clip0_2441_6012)">
                         <path
@@ -134,125 +192,217 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="items-start">
-              <p className=" text-base font-bold mb-3">Information</p>
-              <div className="flex flex-col items-start  space-y-2">
-                <Link
-                  to="/faqs"
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  FAQs
-                </Link>
-
-                <Link
-                  to=""
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Community
-                </Link>
-
-                <Link
-                  to="/contact"
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Support
-                </Link>
-              </div>
-            </div>
-
-            <div className="">
-              <p className=" text-base font-bold mb-3">Company</p>
-              <div className="flex flex-col items-start  space-y-2">
-                <Link
-                  to="/about"
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  About us
-                </Link>
-
-                <Link
-                  to="/pricing"
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Pricing
-                </Link>
-
-                <Link
-                  to="/services"
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Our Services
-                </Link>
-                <Link
-                  to=""
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Careers
-                </Link>
-                <Link
-                  to=""
-                  className="text-gray-100 transition-colors duration-300  hover:text-gray-300"
-                >
-                  Team
-                </Link>
-              </div>
-            </div>
-
-            <div className="items-start  mb-2 ">
-              <p className=" text-base font-bold mb-3">Newsletter</p>
-              <p className=" text-sm  w-[16rem] ">
-                Subscribe to our waiting list to be the first to know when we
-                launch.
-              </p>
-              <div className="flex w-[17rem]  lg:w-[21rem] my-2">
-                <input
-                  // value={email}
-                  type="email"
-                  placeholder="Email Address"
-                  // onChange={(e) => {
-                  //   setEmail(e.target.value);
-                  // }}
-                  className="block w-full  placeholder-gray-500 sm:placeholder-gray-700/70 rounded-xl border border-gray-200 bg-white px-2.5 text-gray-700 text-xs  focus:outline-none required"
-                />
-                <button
-                  className="bg-[#DA281C] py-auto -ml-9 rounded-r-2xl "
-                  // onClick={waitingListHandler}
-                >
-                  <svg
-                    width="60"
-                    height="54"
-                    viewBox="0 0 60 54"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0.5 0.5H52C56.1421 0.5 59.5 3.85786 59.5 8V46C59.5 50.1421 56.1421 53.5 52 53.5H0.5V0.5Z"
-                      stroke="white"
-                    />
-                    <mask
-                      id="mask0_2409_316"
-                      maskUnits="userSpaceOnUse"
-                      x="18"
-                      y="12"
-                      width="24"
-                      height="24"
+            <div className="space-y-7">
+              <div className="flex justify-between">
+                <div className="items-start">
+                  <p className=" text-xl font-bold mb-3">Information</p>
+                  <div className="flex flex-col items-start  space-y-2">
+                    <Link
+                      to="/faqs"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
                     >
-                      <rect
-                        x="18"
-                        y="12"
-                        width="24"
-                        height="24"
-                        fill="#D9D9D9"
-                      />
-                    </mask>
-                    <g mask="url(#mask0_2409_316)">
-                      <path
-                        d="M34.175 28.125H22V25.875H34.175L28.575 19.575L30 18L38 27L30 36L28.575 34.425L34.175 28.125Z"
-                        fill="white"
-                      />
-                    </g>
-                  </svg>
-                </button>
+                      FAQs
+                    </Link>
+
+                    <Link
+                      to=""
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Community
+                    </Link>
+
+                    <Link
+                      to="/contact"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Support
+                    </Link>
+                    <Link
+                      to=""
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Privacy
+                    </Link>
+                    <Link
+                      to=""
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Terms & Condition
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="">
+                  <p className=" text-xl font-bold mb-3">Company</p>
+                  <div className="flex flex-col items-start  space-y-2">
+                    <Link
+                      to="/about"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      About us
+                    </Link>
+
+                    <Link
+                      to="/pricing"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Pricing
+                    </Link>
+
+                    <Link
+                      to="/services"
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Our Services
+                    </Link>
+                    <Link
+                      to=""
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Careers
+                    </Link>
+                    <Link
+                      to=""
+                      className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                    >
+                      Team
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="py-3">
+                <p className=" text-xl font-bold mb-3">Contact</p>
+                <p className=" font-semibold ">
+                  100 King St W #5700, Toronto, ON M5X 1C7
+                </p>
+                <p className=" font-semibold ">+1 (647) 370-8700</p>
+              </div>
+            </div>
+
+            <div className="flex justify-between col-span-1.5">
+              <div className="items-start">
+                <p className=" text-xl font-bold mb-3">Our Services</p>
+                <div className="flex flex-col items-start  space-y-2">
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    AI-Driven MARKETING
+                  </Link>
+
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    AI-Driven Video Commercial
+                  </Link>
+
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    AI-Driven Call Agent
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Website/ Mobile App Design
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    email automation
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Branding Identity Designs
+                  </Link>
+
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Logo Design
+                  </Link>
+
+                  <Link
+                    to="/contact"
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Videography Services
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Photography Services
+                  </Link>
+                </div>
+              </div>
+
+              <div className="">
+                <div className="flex flex-col items-start mt-10 space-y-2">
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Marketing/Promotional Designs
+                  </Link>
+
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Email Marketing
+                  </Link>
+
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    SEO Marketing
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Podcast for marketing
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Social Media marketing
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    AI Chatbot Development
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    UGC marketing
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Native ADS marketing
+                  </Link>
+                  <Link
+                    to=""
+                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300"
+                  >
+                    Lead Generations
+                  </Link>
+                </div>
               </div>
             </div>
           </motion.div>
