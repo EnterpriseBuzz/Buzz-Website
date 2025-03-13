@@ -74,7 +74,7 @@ function Home() {
           "background-image": "url('./bg/callbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-12 px-2">
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-20 lg:py-24 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven MARKETING
@@ -108,7 +108,7 @@ function Home() {
           "background-image": "url('./bg/commercebg.svg')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-12 px-2">
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-24 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
             <img src="./CommerceScreen.svg" alt="" />
           </div>
@@ -147,7 +147,7 @@ function Home() {
           "background-image": "url('./bg/marketingbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-12 px-2">
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-20 lg:py-24 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Call Agent
@@ -209,27 +209,38 @@ function Home() {
           >
             <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service3.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service4.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service5.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service6.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service7.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service8.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service9.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service10.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service11.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service12.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service13.svg" alt="pics" />
-            </button><button className="w-full cursor-pointer transition transform hover:scale-105">
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service14.svg" alt="pics" />
             </button>
           </motion.div>
@@ -238,19 +249,23 @@ function Home() {
 
       {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center  ">
-      <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] capitalize">
-      latest updates
+        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] capitalize">
+          latest updates
         </h2>
         <h2 className="text-[10px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem]">
-        In the fast-changing, technology-disrupting marketing industry, you need an ally like EnterpriseBuzz AI's blog to stay on top of your market.
+          In the fast-changing, technology-disrupting marketing industry, you
+          need an ally like EnterpriseBuzz AI's blog to stay on top of your
+          market.
         </h2>
       </div>
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center"
+      <div
+        className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center"
         style={{
           "background-image": "url('./bg/bobbg.svg')",
-        }}>
+        }}
+      >
         <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] ">
           Enterprise Buzzer is your partner in deploying sophisticated marketing
           strategies & tools
@@ -360,8 +375,8 @@ function Home() {
                     setMore2(true);
                   }}
                   className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
-                  >
-                    Read More
+                >
+                  Read More
                 </button>
               )}
             </div>
@@ -410,34 +425,15 @@ function Home() {
                     setMore3(true);
                   }}
                   className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
-                  >
-                    Read More
+                >
+                  Read More
                 </button>
               )}
             </div>
           </div>
         </div>
-
-        <div className="container px-2 lg:px-16   mx-auto mb-5">
-          <div className="container m-auto  bg-[#fff] py-10 px-5 lg:px-16    rounded-xl">
-            <h2 className="text-xs text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">
-              To conquer today's fiercely competitive marketplace, we adopt the
-              unwavering resolve of Winston Churchill's strategic vision. We do
-              not merely engage, but relentlessly attack from every conceivable
-              channel, leaving no stone unturned in our pursuit of your
-              marketplace victory. Like Churchill's rallying cry, we fight on
-              every front: on the beaches of social media, the landing grounds
-              of digital advertising, the fields of content creation, and the
-              streets of viral marketing. We ascend the hills of SEO and conquer
-              the peaks of email campaigns. In this relentless pursuit,
-              surrender is not an option. We harness the power of all social
-              media platforms and marketing channels to drive your message
-              forward, ensuring that your presence is felt and your impact is
-              undeniable.
-            </h2>
-          </div>
-        </div>
       </div>
+
       <section className="mx-auto  justify-center  py-10 bg-[#F5F5F5]">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl mb-8 mx-auto">
           Our Digital Marketing Verticals
@@ -473,31 +469,58 @@ function Home() {
           </div>
         </section>
       </div>
-      <div className=" bg-[#fff] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
-        <div className="container lg:px-16 mx-auto my-20">
+
+{/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div className="p-2 lg:p-28 bg-[#F4F4F4]  mx-auto">
+        <div className=" m-auto  bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16 ">
+          <h2 className="text-xs text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">
+            To conquer today's fiercely competitive marketplace, we adopt the
+            unwavering resolve of Winston Churchill's strategic vision. We do
+            not merely engage, but relentlessly attack from every conceivable
+            channel, leaving no stone unturned in our pursuit of your
+            marketplace victory. Like Churchill's rallying cry, we fight on
+            every front: on the beaches of social media, the landing grounds of
+            digital advertising, the fields of content creation, and the streets
+            of viral marketing. We ascend the hills of SEO and conquer the peaks
+            of email campaigns. In this relentless pursuit, surrender is not an
+            option. We harness the power of all social media platforms and
+            marketing channels to drive your message forward, ensuring that your
+            presence is felt and your impact is undeniable.
+          </h2>
+        </div>
+      </div>
+
+      {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div
+        className=" bg-[#fff] py-10 px-2 lg:px-16  flex flex-col  items-center  justify-center gap-x-1 "
+        style={{
+          "background-image": "url('./bg/CTAbg.svg')",
+        }}
+      >
+        <div className="container lg:px-16 mx-auto ">
           <div
-            className="w-full bg-center bg-cover h-[15rem] sm:h-[15rem] lg:h-[20rem] rounded-2xl p-5 lg:p-20"
+            className="w-full bg-center bg-cover h-[15rem] sm:h-[15rem] lg:h-[21rem] rounded-2xl p-5 lg:p-20"
             style={{
-              "background-image": "url('./CTA Banner.png')",
+              "background-image": "url('./bg/CTABanner.svg')",
             }}
           >
             <div className="sm:flex items-center justify-between w-full h-full  ">
-              <h1 className="text-lg sm:text-2xl font-bold text-white md:py-3 sm:w-[34rem] lg:text-5xl">
+              <h1 className="text-lg sm:text-2xl font-semibold text-white md:py-3 sm:w-[26rem] lg:text-5xl">
                 Turbocharge your brand's potential right now!
               </h1>
 
-              <div className="sm:w-[22rem]">
-                <p className="mt-3 sm:mt-6 font-normal text-[#fff]">
+              <div className="sm:w-[22rem] space-y-10">
+                <p className="mt-3  font-semibold text-[#fff]">
                   Ready to ignite your marketplace dominance? Let's conjure up
                   some marketing wizardry together.
                 </p>
 
-                <div className=" flex gap-x-4 mt-5 items-center">
+                <div className=" flex gap-x-4  items-center">
                   <a
                     href="http://app.enterprisebuzzer.com/register"
-                    className="w-[14rem] bg-[#FFCC00] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 hover:bg-[#757E7E]"
+                    className="px-6 lg:px-12 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
                   >
-                    Start your free 7-day trial
+                    Get started
                   </a>
                 </div>
               </div>
