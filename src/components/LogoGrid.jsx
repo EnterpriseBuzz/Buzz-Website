@@ -5,10 +5,10 @@ function LogoGrid() {
   return (
     <div>
       <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center  ">
-        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] capitalize">
-          still not convinced? well they were
+      <h2 className="text-xl text-[#000] font-semibold  text-center md:text-3xl lg:w-[35rem] capitalize">
+      still not convinced? well they were
         </h2>
-        <h2 className="text-[10px] text-[#000] text-center md:text-sm">
+        <h2 className="text-[12px] text-[#000] text-center md:text-sm">
           Beyond Toronto’s borders, EnterpriseBuzz AI has not only built
           believers in our AI-driven marketing and advertising prowess but also
           raving lifelong evangelists.
@@ -23,88 +23,89 @@ function LogoGrid() {
             className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-7"
           >
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image 1.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image1.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image2.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image3.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image4.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image5.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image6.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image7.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image8.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image9.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image10.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image11.png" alt="pics" />
+            </button>
+            
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image13.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image14.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image15.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image16.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./logogrid/Hero image17.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service4.svg" alt="pics" />
+              <img src="./logogrid/Hero image18.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service5.svg" alt="pics" />
+              <img src="./logogrid/Hero image19.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service6.svg" alt="pics" />
+              <img src="./logogrid/Hero image20.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service7.svg" alt="pics" />
+              <img src="./logogrid/Hero image21.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service8.svg" alt="pics" />
+              <img src="./logogrid/Hero image22.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service9.svg" alt="pics" />
+              <img src="./logogrid/Hero image23.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service10.svg" alt="pics" />
+              <img src="./logogrid/Hero image24.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service11.svg" alt="pics" />
+              <img src="./logogrid/Hero image25.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service12.svg" alt="pics" />
+              <img src="./logogrid/Hero image26.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service13.svg" alt="pics" />
-            </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./services/service14.svg" alt="pics" />
+              <img src="./logogrid/Hero image27.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
