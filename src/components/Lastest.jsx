@@ -7,16 +7,16 @@ const LatestUpdates = () => {
       id: i + 1,
       title: "Lorem ipsum dolor sit amet consectetur.",
       description: "Lorem ipsum dolor sit amet consectetur. pharetra",
-      image: "https://via.placeholder.com/300",
+      image: "./bg/blog.png",
     }))
   );
 
   return (
     <section className="py-10 px-2 lg:p-24  flex flex-col  items-center  justify-center ">
-      <h2 className="text-lg text-[#000] font-bold  text-center md:text-3xl lg:w-[35rem] capitalize">
+      <h2 className="text-lg text-[#000] font-bold  text-center md:text-3xl lg:w-[35rem] capitalize ">
         latest updates
       </h2>
-      <h2 className="text-[12px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem]">
+      <h2 className="text-[12px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem] py-2">
         In the fast-changing, technology-disrupting marketing industry, you need
         an ally like EnterpriseBuzz AI's blog to stay on top of your market.
       </h2>
@@ -31,14 +31,17 @@ const LatestUpdates = () => {
           {posts.slice(0, 6).map((post, index) => (
             <div
               key={post.id}
-              className={`relative overflow-hidden rounded-xl shadow-lg ${
+              className={`relative overflow-hidden rounded-xl shadow-lg cursor-pointer transition transform hover:scale-105 ${
                 index === 0 ? "md:col-span-2 row-span-2" : ""
               }`}
             >
               <img
                 src={post.image}
                 alt="Blog Thumbnail"
-                className="w-full h-60 object-cover"
+                className={`w-full object-cover ${
+                    index === 0 ? "md:h-[31.5rem]" : "h-60"
+                  }`}
+                
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 text-white">
                 <h3 className="font-bold text-lg">{post.title}</h3>
