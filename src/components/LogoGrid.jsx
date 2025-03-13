@@ -20,7 +20,7 @@ function LogoGrid() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-7"
+            className="grid grid-cols-3  sm:grid-cols-5 md:grid-cols-7"
           >
             <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./logogrid/Hero image.png" alt="pics" />

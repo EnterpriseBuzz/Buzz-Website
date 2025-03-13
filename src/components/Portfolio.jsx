@@ -5,229 +5,183 @@ const portfolioItems = [
   {
     id: 1,
     category: "Fashion",
-    img: "./port1.png",
+    img: "./portfolio/port.png",
   },
   {
     id: 2,
     category: "Beauty",
-    img: "./port2.png",
+    img: "./portfolio/port1.png",
   },
   {
     id: 3,
     category: "Finance",
-    img: "./port3.png",
+    img: "./portfolio/port2.png",
   },
   {
     id: 4,
     category: "Fashion",
-    img: "./port4.png",
+    img: "./portfolio/port3.png",
   },
   {
     id: 5,
     category: "Beauty",
-    img: "./port5.png",
+    img: "./portfolio/port4.png",
   },
   {
     id: 6,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?investment",
+    img: "./portfolio/port5.png",
   },
   {
     id: 7,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?style",
+    img: "./portfolio/port6.png",
   },
   {
     id: 8,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?cosmetics",
+    img: "./portfolio/port7.png",
   },
   {
     id: 9,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?money",
+    img: "./portfolio/port8.png",
   },
   {
     id: 10,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?trendy",
+    img: "./portfolio/port9.png",
   },
   {
     id: 11,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?haircare",
+    img: "./portfolio/port10.png",
   },
   {
     id: 12,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?banking",
+    img: "./portfolio/port11.png",
   },
   {
     id: 13,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?outfits",
+    img: "./portfolio/port12.png",
   },
   {
     id: 14,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?skincare",
+    img: "./portfolio/port13.png",
   },
   {
     id: 15,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?currency",
+    img: "./portfolio/port14.png",
   },
   {
     id: 16,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?runway",
+    img: "./portfolio/port15.png",
   },
   {
     id: 17,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?spa",
+    img: "./portfolio/port16.png",
   },
   {
     id: 18,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?stocks",
+    img: "./portfolio/port17.png",
   },
   {
     id: 19,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?luxury",
+    img: "./portfolio/port18.png",
   },
   {
     id: 20,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?wellness",
+    img: "./portfolio/port19.png",
   },
   {
     id: 21,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?wealth",
+    img: "./portfolio/port20.png",
   },
   {
     id: 22,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?shoes",
+    img: "./portfolio/port35.png",
   },
   {
     id: 23,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?perfume",
+    img: "./portfolio/port22.png",
   },
   {
     id: 24,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?trading",
+    img: "./portfolio/port23.png",
   },
   {
     id: 25,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?denim",
+    img: "./portfolio/port24.png",
   },
   {
     id: 26,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?nails",
+    img: "./portfolio/port25.png",
   },
   {
     id: 27,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?crypto",
+    img: "./portfolio/port26.png",
   },
   {
     id: 28,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?jackets",
+    img: "./portfolio/port27.png",
   },
   {
     id: 29,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?lashes",
+    img: "./portfolio/port28.png",
   },
   {
     id: 30,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?budget",
+    img: "./portfolio/port29.png",
   },
   {
     id: 31,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?sneakers",
+    img: "./portfolio/port30.png",
   },
   {
     id: 32,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?lipstick",
+    img: "./portfolio/port31.png",
   },
   {
     id: 33,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?savings",
+    img: "./portfolio/port32.png",
   },
   {
     id: 34,
     category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?hats",
+    img: "./portfolio/port33.png",
   },
   {
     id: 35,
     category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?serum",
+    img: "./portfolio/port34.png",
   },
   {
     id: 36,
     category: "Finance",
-    img: "https://source.unsplash.com/400x300/?funds",
+    img: "./portfolio/port36.png",
   },
-  {
-    id: 37,
-    category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?glamour",
-  },
-  {
-    id: 38,
-    category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?powder",
-  },
-  {
-    id: 39,
-    category: "Finance",
-    img: "https://source.unsplash.com/400x300/?portfolio",
-  },
-  {
-    id: 40,
-    category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?accessories",
-  },
-  {
-    id: 41,
-    category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?moisturizer",
-  },
-  {
-    id: 42,
-    category: "Finance",
-    img: "https://source.unsplash.com/400x300/?financial",
-  },
-  {
-    id: 43,
-    category: "Fashion",
-    img: "https://source.unsplash.com/400x300/?fashionable",
-  },
-  {
-    id: 44,
-    category: "Beauty",
-    img: "https://source.unsplash.com/400x300/?cosmetic",
-  },
-  {
-    id: 45,
-    category: "Finance",
-    img: "https://source.unsplash.com/400x300/?entrepreneurship",
-  },
-
 ];
 
 export default function Portfolio() {
@@ -243,7 +197,8 @@ export default function Portfolio() {
       <div className="pt-16 pb-5 px-2 lg:px-24  flex flex-col  items-center  justify-center space-y-2 ">
         <h2 className="text-3xl font-bold text-[#000]">Portfolio</h2>
         <h2 className="text-[10px] text-[#000] text-center md:text-sm">
-        Arming businesses for marketplace dominance with high-level AI marketing and advertising assets from our Toronto fort.
+          Arming businesses for marketplace dominance with high-level AI
+          marketing and advertising assets from our Toronto fort.
         </h2>
       </div>
 
@@ -268,7 +223,7 @@ export default function Portfolio() {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8"
+          className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-6 mb-8"
         >
           {filteredItems.map((item) => (
             <div
@@ -278,7 +233,7 @@ export default function Portfolio() {
               <img
                 src={item.img}
                 alt={item.category}
-                className="w-full h-[19rem] object-cover"
+                className="w-full  object-cover"
               />
             </div>
           ))}

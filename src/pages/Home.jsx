@@ -485,7 +485,7 @@ function Home() {
       >
         <div className="container lg:px-16 mx-auto ">
           <div
-            className="w-full bg-center bg-cover h-[15rem] sm:h-[15rem] lg:h-[21rem] rounded-2xl p-5 lg:p-20"
+            className="w-full bg-center bg-cover hidden lg:block h-[21rem] rounded-2xl p-5 lg:p-20"
             style={{
               "background-image": "url('./bg/CTABanner.svg')",
             }}
@@ -497,6 +497,36 @@ function Home() {
 
               <div className="sm:w-[22rem] space-y-10">
                 <p className="mt-3  font-semibold text-[#fff]">
+                  Ready to ignite your marketplace dominance? Let's conjure up
+                  some marketing wizardry together.
+                </p>
+
+                <div className=" flex gap-x-4  items-center">
+                  <a
+                    href="http://app.enterprisebuzzer.com/register"
+                    className="px-6 lg:px-12 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
+                  >
+                    Get started
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile View ++++++++++++++++++++++++++++++++++++++++ */}
+          <div
+            className="w-full bg-center bg-cover lg:hidden h-full rounded-2xl p-5 "
+            style={{
+              "background-image": "url('./bg/mCTA Banner.svg')",
+            }}
+          >
+            <div className="sm:flex items-center justify-between w-full px-2  py-12">
+              <h1 className=" font-bold text-white py-3  text-5xl leading-[3rem]">
+                Turbocharge your brand's potential right now!
+              </h1>
+
+              <div className="sm:w-[22rem] space-y-10">
+                <p className="mt-3 text-2xl  font-semibold text-[#fff] leading-[3rem]">
                   Ready to ignite your marketplace dominance? Let's conjure up
                   some marketing wizardry together.
                 </p>
