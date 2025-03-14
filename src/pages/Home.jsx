@@ -288,7 +288,7 @@ function Home() {
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Generate
             </h2>
-            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
+            <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
               At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
@@ -339,7 +339,7 @@ function Home() {
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Execute
             </h2>
-            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
+            <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
               At Enterprise Buzzer, execution is not just a part of our
               strategy; it is the heart of our battle plan. In the relentless
               arena of digital marketing, we deploy an arsenal that covers the
@@ -393,7 +393,7 @@ function Home() {
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Measure
             </h2>
-            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
+            <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
               Embracing the maxim 'If you can't measure it, you can't improve
               it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of

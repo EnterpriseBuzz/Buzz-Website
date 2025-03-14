@@ -30,8 +30,8 @@ function Header() {
               to="/"
               className={({ isActive }) =>
                 isActive
-                  ? "text-sm text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
+                  ? "text-sm lg:text-base text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
+                  : "text-sm lg:text-base text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
               }
             >
               Home
@@ -40,7 +40,7 @@ function Header() {
             <div className="relative  group">
               <button
                 type="button"
-                className="flex items-center gap-x-1 text-sm font-semibold  text-[#576B74] py-2.5"
+                className="flex items-center gap-x-1 text-sm lg:text-base font-semibold  text-[#576B74] py-2.5"
                 aria-expanded="false"
               >
                 Our services
@@ -76,7 +76,7 @@ function Header() {
                         <img src="./icons/icon.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Marketing
                         </Link>
@@ -85,7 +85,7 @@ function Header() {
                         <img src="./icons/icon1.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Video Commercial
                         </Link>
@@ -94,7 +94,7 @@ function Header() {
                         <img src="./icons/icon2.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Call Agent
                         </Link>
@@ -103,7 +103,7 @@ function Header() {
                         <img src="./icons/icon3.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Website/ Mobile App Design
                         </Link>
@@ -112,7 +112,7 @@ function Header() {
                         <img src="./icons/icon4.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Automation
                         </Link>
@@ -123,7 +123,7 @@ function Header() {
                         <img src="./icons/icon5.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Branding Identity Designs
                         </Link>
@@ -132,7 +132,7 @@ function Header() {
                         <img src="./icons/icon6.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Marketing / Promotional Designs
                         </Link>
@@ -141,7 +141,7 @@ function Header() {
                         <img src="./icons/icon7.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Marketing
                         </Link>
@@ -150,7 +150,7 @@ function Header() {
                         <img src="./icons/icon8.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           SEO Marketing
                         </Link>
@@ -159,7 +159,7 @@ function Header() {
                         <img src="./icons/icon9.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Podcast for marketing
                         </Link>
@@ -170,7 +170,7 @@ function Header() {
                         <img src="./icons/icon10.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Social Media Marketing 
                         </Link>
@@ -179,7 +179,7 @@ function Header() {
                         <img src="./icons/icon11.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Native ADS Marketing
                         </Link>
@@ -188,7 +188,7 @@ function Header() {
                         <img src="./icons/icon12.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Logo Design
                         </Link>
@@ -197,7 +197,7 @@ function Header() {
                         <img src="./icons/icon13.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Lead Generations
                         </Link>
@@ -208,7 +208,7 @@ function Header() {
                         <img src="./icons/icon14.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Videography Services
                         </Link>
@@ -217,7 +217,7 @@ function Header() {
                         <img src="./icons/icon15.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Photography Services
                         </Link>
@@ -226,7 +226,7 @@ function Header() {
                         <img src="./icons/icon16.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           UGC Marketing
                         </Link>
@@ -235,7 +235,7 @@ function Header() {
                         <img src="./icons/icon17.svg" alt="" />
                         <Link
                           to="/about"
-                          className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI Chatbot Development
                         </Link>
@@ -251,7 +251,7 @@ function Header() {
             <div className="relative inline-block group">
               <button
                 type="button"
-                className="flex items-center gap-x-1 text-sm font-semibold text-[#576B74] py-2.5"
+                className="flex items-center gap-x-1 text-sm lg:text-base font-semibold text-[#576B74] py-2.5"
                 aria-expanded="false"
               >
                 Support
@@ -272,14 +272,14 @@ function Header() {
               <div className="absolute -right-8 z-[100] w-44 p-2 hidden group-hover:block origin-top-right bg-white rounded-md shadow-xl ">
                 <Link
                   to="/faqs"
-                  className="block px-4 py-2 text-sm text-gray-800 capitalize transition-colors duration-300 transform  hover:bg-gray-100   rounded"
+                  className="block px-4 py-2 text-sm lg:text-base text-gray-800 capitalize transition-colors duration-300 transform  hover:bg-gray-100   rounded"
                 >
                   FAQs
                 </Link>
 
                 <Link
                   to="#"
-                  className="flex items-center justify-center p-2 text-sm text-white capitalize transition-colors duration-300 transform bg-[#DA281C]  hover:bg-gray-500   rounded"
+                  className="flex items-center justify-center p-2 text-sm lg:text-base text-white capitalize transition-colors duration-300 transform bg-[#DA281C]  hover:bg-gray-500   rounded"
                 >
                   <svg
                     className="w-8 h-8  -mb-2"
@@ -309,8 +309,8 @@ function Header() {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "text-sm text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
-                  : "text-sm text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
+                  ? "text-sm lg:text-base text-[#DA281C] font-semibold transition-colors duration-300  p-1 hover:text-[#DA281C] "
+                  : "text-sm lg:text-base text-[#576B74] font-semibold transition-colors duration-300  hover:text-[#DA281C] "
               }
             >
               Contact Us
@@ -320,7 +320,7 @@ function Header() {
             <a
               href=""
               // href="http://app.enterprisebuzzer.com/login"
-              className="w-[4rem]  p-1.5 text-[#DA281C] text-sm font-semibold transition duration-200 hover:text-[#757E7E] mx-auto "
+              className="w-[4rem]  p-1.5 text-[#DA281C] text-sm lg:text-base font-semibold transition duration-200 hover:text-[#757E7E] mx-auto "
             >
               Log in
             </a>
@@ -434,7 +434,7 @@ function Header() {
                       <img src="./icons/icon.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Marketing
                       </Link>
@@ -443,7 +443,7 @@ function Header() {
                       <img src="./icons/icon1.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Video Commercial
                       </Link>
@@ -452,7 +452,7 @@ function Header() {
                       <img src="./icons/icon2.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Call Agent
                       </Link>
@@ -461,7 +461,7 @@ function Header() {
                       <img src="./icons/icon3.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Website/ Mobile App Design
                       </Link>
@@ -470,7 +470,7 @@ function Header() {
                       <img src="./icons/icon4.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Email Automation
                       </Link>
@@ -481,7 +481,7 @@ function Header() {
                       <img src="./icons/icon5.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Branding Identity Designs
                       </Link>
@@ -490,7 +490,7 @@ function Header() {
                       <img src="./icons/icon6.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Marketing / Promotional Designs
                       </Link>
@@ -499,7 +499,7 @@ function Header() {
                       <img src="./icons/icon7.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Email Marketing
                       </Link>
@@ -508,7 +508,7 @@ function Header() {
                       <img src="./icons/icon8.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         SEO Marketing
                       </Link>
@@ -517,7 +517,7 @@ function Header() {
                       <img src="./icons/icon9.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Podcast for marketing
                       </Link>
@@ -528,7 +528,7 @@ function Header() {
                       <img src="./icons/icon10.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Social Media Marketing 
                       </Link>
@@ -537,7 +537,7 @@ function Header() {
                       <img src="./icons/icon11.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Native ADS Marketing
                       </Link>
@@ -546,7 +546,7 @@ function Header() {
                       <img src="./icons/icon12.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Logo Design
                       </Link>
@@ -555,7 +555,7 @@ function Header() {
                       <img src="./icons/icon13.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Lead Generations
                       </Link>
@@ -566,7 +566,7 @@ function Header() {
                       <img src="./icons/icon14.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Videography Services
                       </Link>
@@ -575,7 +575,7 @@ function Header() {
                       <img src="./icons/icon15.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Photography Services
                       </Link>
@@ -584,7 +584,7 @@ function Header() {
                       <img src="./icons/icon16.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         UGC Marketing
                       </Link>
@@ -593,7 +593,7 @@ function Header() {
                       <img src="./icons/icon17.svg" alt="" />
                       <Link
                         to="/about"
-                        className="text-black text-sm transition-colors duration-300  hover:text-gray-500"
+                        className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI Chatbot Development
                       </Link>
@@ -638,7 +638,7 @@ function Header() {
 
                   <Link
                     to="#"
-                    className="flex items-center justify-center p-2 text-sm text-white capitalize transition-colors duration-300 transform bg-[#DA281C]  hover:bg-gray-500   rounded"
+                    className="flex items-center justify-center p-2 text-sm lg:text-base text-white capitalize transition-colors duration-300 transform bg-[#DA281C]  hover:bg-gray-500   rounded"
                   >
                     <svg
                       className="w-8 h-8  -mb-2"
