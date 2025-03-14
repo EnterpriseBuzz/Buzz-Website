@@ -24,7 +24,7 @@ function Home() {
 
   return (
     <div
-      className="  text-gray-600 bg-[center_top_20rem] bg-no-repeat"
+      className="w-full  text-gray-600 bg-[center_top_20rem] bg-no-repeat"
       style={{
         "background-image": "url('./bg/redbg.svg')",
       }}
@@ -38,10 +38,11 @@ function Home() {
       {/* Hero ++++++++++++++++++++++++++ */}
       <div className="wrap-video ">
         <video
-          className="object-cover h-full lg:h-[36rem] w-full bg-black cursor-pointer"
+          className="object-cover h-full lg:h-[36rem] xl:h-full w-full bg-black cursor-pointer"
           autoPlay
           loop
-          // controls
+          muted
+          playsInline
         >
           <source src="./HeroVid.mp4" type="video/mp4" />
         </video>
@@ -62,8 +63,12 @@ function Home() {
       </section>
 
       {/* Quote Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className="container px-5 lg:px-16   mx-auto mb-5">
-        <img src="../quote.svg" alt="" className="hidden sm:block w-full" />
+      <div className=" px-5 lg:px-24   mx-auto mb-5">
+        <img
+          src="../quote.svg"
+          alt=""
+          className="hidden sm:block w-full h-full"
+        />
         <img src="../Mquote.svg" alt="" className="sm:hidden w-full" />
       </div>
 
@@ -72,20 +77,20 @@ function Home() {
 
       {/* Ai Marketing  Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
+        className="w-full py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
         style={{
           "background-image": "url('./bg/callbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven MARKETING
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
               AI-Driven MARKETING
             </h2>
-            <p className="text-[#fff]">
+            <p className="text-[#fff] xl:text-xl">
               Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
               video commercial—seamlessly merging advanced visuals and fearless
               creativity for unmatched market impact.
@@ -96,7 +101,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -111,7 +116,7 @@ function Home() {
           "background-image": "url('../bg/commercebg.svg')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-24 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-24 xl:py-32 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
             <img src="./CommerceScreen.svg" alt="" />
           </div>
@@ -119,10 +124,10 @@ function Home() {
             <h2 className="w-[12rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Video Commercial
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
               AI-Driven Video Commercial
             </h2>
-            <p className="text-[#fff]">
+            <p className="text-[#fff] xl:text-xl">
               Amplify brand impact with EnterpriseBuzz AI’s unstoppable
               AI-Driven Digital Marketing—boost ROI, outrank rivals, and
               dominate online engagements worldwide, faster than ever.
@@ -135,7 +140,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -150,15 +155,15 @@ function Home() {
           "background-image": "url('./bg/marketingbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Call Agent
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
               AI-Driven Call Agent
             </h2>
-            <p className="text-[#fff]">
+            <p className="text-[#fff] xl:text-xl">
               Provide your Customers 24/7 receptionist with EnterpriseBuzz AI’s
               Virtual Call Agent, powered by advanced data. Serve customers
               around the clock at a fraction of the cost—ensuring zero missed
@@ -170,7 +175,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -260,18 +265,18 @@ function Home() {
           "background-image": "url('./bg/bobbg.svg')",
         }}
       >
-        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl lg:w-[35rem] ">
+        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[45rem]  ">
           Enterprise Buzzer is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
-        <h2 className="text-[10px] text-[#0C212C] text-center md:text-sm md:w-[44rem]">
+        <h2 className="text-[10px] text-[#0C212C] text-center md:text-sm xl:text-lg md:w-[44rem] xl:w-[54rem]">
           Our mission is to empower businesses with the most innovative and
           aggressive marketing by leveraging artificial intelligence & our
           signature fine-tuned A/B/C techniques that drive engagement and boost
           revenue.
         </h2>
 
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="w-full lg:w-[35rem]">
             <img
               src="../Generate-1.png"
@@ -326,7 +331,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="lg:hidden">
             <img src="../Hero image.png" alt="i" />
           </div>
@@ -380,7 +385,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="w-full lg:w-[35rem]">
             <img src="../Measure.png" alt="i" className="rounded-xl" />
           </div>
@@ -483,7 +488,7 @@ function Home() {
           "background-image": "url('./bg/CTAbg.svg')",
         }}
       >
-        <div className="container lg:px-16 mx-auto ">
+        <div className=" lg:px-16 mx-auto ">
           <div
             className="w-full bg-center bg-cover hidden lg:block h-[21rem] rounded-2xl p-5 lg:p-20"
             style={{
