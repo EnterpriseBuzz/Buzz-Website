@@ -10,17 +10,17 @@ export default function MarketingOverview() {
           <input
             type="text"
             placeholder="Enter Your Business Name"
-            className="p-4 sm:p-6 xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
+            className="p-4 sm:p-6 2xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
           />
           <input
             type="text"
             placeholder="Enter Your Domain Name"
-            className="p-4 sm:p-6 xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
+            className="p-4 sm:p-6 2xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
           />
           <input
             type="text"
             placeholder="Enter The Competitor's Domain Name."
-            className="p-4 sm:p-6 xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
+            className="p-4 sm:p-6 2xl:p-10 w-full bg-white bg-opacity-30 rounded-lg text-white placeholder-white outline-none"
           />
           <button className="w-full transition-all lg:-mb-4">
            <img src="../buttons/Button 05 lg.svg" alt="" className="hidden sm:block w-full" />

@@ -5,10 +5,10 @@ function Technology() {
   return (
     <div className="bg-[#0C0C1B] py-10 px-2 lg:p-24">
       <div className=" flex flex-col  items-center  justify-center  ">
-        <h2 className="text-xl text-[#fff] font-semibold  text-center md:text-3xl lg:w-[35rem] ">
+        <h2 className="text-xl text-[#fff] font-semibold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] ">
           THE TECHNOLOGY
         </h2>
-        <h2 className="text-[12px] text-[#fff] text-center md:text-sm lg:w-[75%] py-2 capitalize">
+        <h2 className="text-[12px] text-[#fff] text-center md:text-sm xl:text-base lg:w-[75%] py-2 capitalize">
           Unlike other marketing software companies that leave their users to
           navigate complex systems on their own, EnterpriseBuzz AI Toronto does
           the heavy lifting by helping businesses deploy sophisticated

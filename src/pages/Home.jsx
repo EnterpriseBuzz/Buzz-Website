@@ -82,15 +82,15 @@ function Home() {
           "background-image": "url('./bg/callbg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven MARKETING
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven MARKETING
             </h2>
-            <p className="text-[#fff] xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
               Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
               video commercial—seamlessly merging advanced visuals and fearless
               creativity for unmatched market impact.
@@ -113,10 +113,10 @@ function Home() {
       <div
         className="py-10 px-2 lg:px-24  bg-no-repeat bg-center"
         style={{
-          "background-image": "url('../bg/commercebg.svg')",
+          "background-image": "url('../bg/commercebg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-24 xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
             <img src="./CommerceScreen.svg" alt="" />
           </div>
@@ -124,10 +124,10 @@ function Home() {
             <h2 className="w-[12rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Video Commercial
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven Video Commercial
             </h2>
-            <p className="text-[#fff] xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
               Amplify brand impact with EnterpriseBuzz AI’s unstoppable
               AI-Driven Digital Marketing—boost ROI, outrank rivals, and
               dominate online engagements worldwide, faster than ever.
@@ -155,15 +155,15 @@ function Home() {
           "background-image": "url('./bg/marketingbg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Call Agent
             </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl xl:text-6xl">
+            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven Call Agent
             </h2>
-            <p className="text-[#fff] xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
               Provide your Customers 24/7 receptionist with EnterpriseBuzz AI’s
               Virtual Call Agent, powered by advanced data. Serve customers
               around the clock at a fraction of the cost—ensuring zero missed
@@ -265,7 +265,7 @@ function Home() {
           "background-image": "url('./bg/bobbg.svg')",
         }}
       >
-        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[45rem]  ">
+        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[55rem]  ">
           Enterprise Buzzer is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
@@ -285,10 +285,10 @@ function Home() {
             />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Generate
             </h2>
-            <p className="mt-6 font-normal text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
               At Enterprise Buzzer, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
@@ -336,10 +336,10 @@ function Home() {
             <img src="../Hero image.png" alt="i" />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Execute
             </h2>
-            <p className="mt-6 font-normal text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
               At Enterprise Buzzer, execution is not just a part of our
               strategy; it is the heart of our battle plan. In the relentless
               arena of digital marketing, we deploy an arsenal that covers the
@@ -390,10 +390,10 @@ function Home() {
             <img src="../Measure.png" alt="i" className="rounded-xl" />
           </div>
           <div className="md:7/12 lg:w-6/12">
-            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl">
+            <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
               Measure
             </h2>
-            <p className="mt-6 font-normal text-[#62747d]">
+            <p className="mt-6 font-normal text-[#62747d] xl:text-xl">
               Embracing the maxim 'If you can't measure it, you can't improve
               it,' Enterprise Buzzer zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
@@ -443,12 +443,12 @@ function Home() {
       <LogoGrid />
       {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className=" bg-[#fff] py-10 px-2  ">
-        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl lg:w-[35rem] mx-auto">
+        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
           What our clients say about us
         </h2>
-        <h2 className="mx-auto text-[10px] text-[#36474F] text-center font-semibold md:text-sm md:w-[44rem] lg:w-[44rem] flex items-center justify-center gap-x-2">
+        <h2 className="mx-auto text-[10px] text-[#36474F] text-center font-semibold md:text-sm xl:text-xl md:w-[44rem] xl:w-[48rem] flex items-center justify-center gap-x-2">
           <img
-            className="object-cover object-center w-auto h-5 md:w-auto md:h-9 "
+            className="object-cover object-center w-auto h-5 md:w-auto md:h-9 xl:h-10"
             src="../Frame 41.png"
             alt=""
           />

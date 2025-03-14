@@ -13,10 +13,10 @@ const LatestUpdates = () => {
 
   return (
     <section className="py-10 px-2 lg:p-24  flex flex-col  items-center  justify-center ">
-      <h2 className="text-lg text-[#000] font-bold  text-center md:text-3xl xl:text-5xl lg:w-[35rem] capitalize ">
+      <h2 className="text-lg text-[#000] font-bold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] capitalize ">
         latest updates
       </h2>
-      <h2 className="text-[12px] text-[#000] text-center md:text-sm md:w-[44rem] lg:w-[50rem] py-2">
+      <h2 className="text-[12px] text-[#000] text-center md:text-sm xl:text-base md:w-[44rem] lg:w-[50rem] py-2">
         In the fast-changing, technology-disrupting marketing industry, you need
         an ally like EnterpriseBuzz AI's blog to stay on top of your market.
       </h2>

@@ -5,10 +5,10 @@ function LogoGrid() {
   return (
     <div>
       <div className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center  ">
-      <h2 className="text-xl text-[#000] font-semibold  text-center md:text-3xl lg:w-[35rem] capitalize">
+      <h2 className="text-xl text-[#000] font-semibold  text-center md:text-3xl lg:text-4xl 2xl:text-5xl  capitalize">
       still not convinced? well they were
         </h2>
-        <h2 className="text-[12px] text-[#000] text-center md:text-sm">
+        <h2 className="text-[12px] text-[#000] text-center md:text-sm lg:text-lg 2xl:text-xl  py-1">
           Beyond Toronto’s borders, EnterpriseBuzz AI has not only built
           believers in our AI-driven marketing and advertising prowess but also
           raving lifelong evangelists.
