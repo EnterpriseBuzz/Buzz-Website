@@ -77,7 +77,7 @@ function Home() {
           "background-image": "url('./bg/callbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-20 lg:py-24 px-2">
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven MARKETING
@@ -108,7 +108,7 @@ function Home() {
       <div
         className="py-10 px-2 lg:px-24  bg-no-repeat bg-center"
         style={{
-          "background-image": "url('./bg/commercebg.svg')",
+          "background-image": "url('../bg/commercebg.svg')",
         }}
       >
         <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-24 px-2">
@@ -150,7 +150,7 @@ function Home() {
           "background-image": "url('./bg/marketingbg.png')",
         }}
       >
-        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-20 lg:py-24 px-2">
+        <div className="container m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-24 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
               AI-Driven Call Agent
@@ -459,7 +459,7 @@ function Home() {
       {/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="p-2 lg:p-28 bg-[#F4F4F4]  mx-auto">
         <div className=" m-auto  bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16 ">
-          <h2 className="text-xs text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">
+          <h2 className="text-sm text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">
             To conquer today's fiercely competitive marketplace, we adopt the
             unwavering resolve of Winston Churchill's strategic vision. We do
             not merely engage, but relentlessly attack from every conceivable

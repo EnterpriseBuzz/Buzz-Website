@@ -228,12 +228,22 @@ export default function Portfolio() {
           {filteredItems.map((item) => (
             <div
               key={item.id}
-              className="bg-white cursor-pointer transition transform hover:scale-105 rounded-lg shadow-lg overflow-hidden"
+              className="bg-white cursor-pointer transform scale-95 animate-zoom-in transition-transform duration-1000 ease-in-out hover:scale-105 rounded-lg shadow-lg overflow-hidden"
             >
-              <img
+              <motion.img
                 src={item.img}
                 alt={item.category}
-                className="w-full  object-cover"
+                animate={{
+                  scale: [1, 1.1, 1], // Zoom in and out
+                  x: [-10, 10, -10], // Slight side-to-side movement
+                  y: [-5, 5, -5], // Slight up-down movement
+                }}
+                transition={{
+                  duration: 10, // Slow movement
+                  repeat: Infinity, // Loop forever
+                  ease: "easeInOut",
+                }}
+                className="w-full h-auto rounded-lg"
               />
             </div>
           ))}
