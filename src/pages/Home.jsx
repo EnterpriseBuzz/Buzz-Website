@@ -77,20 +77,20 @@ function Home() {
 
       {/* Ai Marketing  Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="w-full py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
+        className="w-full py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover "
         style={{
           "background-image": "url('./bg/callbg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
-            <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+            <h2 className="w-[10rem] 2xl:w-[14rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
               AI-Driven MARKETING
             </h2>
             <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven MARKETING
             </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
               Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
               video commercial—seamlessly merging advanced visuals and fearless
               creativity for unmatched market impact.
@@ -101,7 +101,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -111,23 +111,23 @@ function Home() {
 
       {/*   AI-Driven Video Commercial ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24  bg-no-repeat bg-center"
+        className="w-full py-10 px-2 lg:px-24  bg-no-repeat bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('../bg/commercebg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-5 md:py-20 lg:py-28 2xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
             <img src="./CommerceScreen.svg" alt="" />
           </div>
           <div className="w-full lg:w-6/12">
-            <h2 className="w-[12rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+            <h2 className="w-[12rem] 2xl:w-[17rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
               AI-Driven Video Commercial
             </h2>
             <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven Video Commercial
             </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
               Amplify brand impact with EnterpriseBuzz AI’s unstoppable
               AI-Driven Digital Marketing—boost ROI, outrank rivals, and
               dominate online engagements worldwide, faster than ever.
@@ -140,7 +140,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -150,20 +150,20 @@ function Home() {
 
       {/* AI-Driven Call Agent ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center"
+        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('./bg/marketingbg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
+        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
-            <h2 className="w-[10rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full md:text-xs">
+            <h2 className="w-[10rem] 2xl:w-[13rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
               AI-Driven Call Agent
             </h2>
             <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
               AI-Driven Call Agent
             </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-xl">
+            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
               Provide your Customers 24/7 receptionist with EnterpriseBuzz AI’s
               Virtual Call Agent, powered by advanced data. Serve customers
               around the clock at a fraction of the cost—ensuring zero missed
@@ -175,7 +175,7 @@ function Home() {
                 e.preventDefault();
                 setMore2(false);
               }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem]"
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
               <img src="./buttons/Get Started.svg" alt="" />
             </button>
@@ -185,7 +185,7 @@ function Home() {
 
       {/* Services +++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24 bg-no-repeat bg-center"
+        className="py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('./bg/Servicesbg.svg')",
         }}
@@ -260,7 +260,7 @@ function Home() {
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center"
+        className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('./bg/bobbg.svg')",
         }}
@@ -464,7 +464,7 @@ function Home() {
       {/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div className="p-2 lg:p-28 bg-[#F4F4F4]  mx-auto">
         <div className=" m-auto  bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16 ">
-          <h2 className="text-sm text-[#000]  text-center md:text-xl leading-[1.5rem] lg:leading-[3rem] ">
+          <h2 className="text-sm text-[#000]  text-center md:text-xl xl:text-2xl 2xl:text-3xl leading-[1.5rem] lg:leading-[3rem] 2xl:leading-[4.5rem]">
             To conquer today's fiercely competitive marketplace, we adopt the
             unwavering resolve of Winston Churchill's strategic vision. We do
             not merely engage, but relentlessly attack from every conceivable
@@ -483,25 +483,25 @@ function Home() {
 
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className=" bg-[#fff] py-10 px-2 lg:px-16  flex flex-col  items-center  justify-center gap-x-1 "
+        className=" bg-[#fff] py-10 2xl:py-20 px-2 lg:px-16  flex flex-col  items-center  justify-center gap-x-1 bg-no-repeat  2xl:bg-cover"
         style={{
           "background-image": "url('./bg/CTAbg.svg')",
         }}
       >
-        <div className=" lg:px-16 mx-auto ">
+        <div className=" lg:px-16 2xl:px-24 mx-auto 2xl:w-full">
           <div
-            className="w-full bg-center bg-cover hidden lg:block h-[21rem] rounded-2xl p-5 lg:p-20"
+            className="w-full bg-center bg-cover hidden lg:block h-[21rem] 2xl:h-[33rem] rounded-2xl p-5 lg:p-20"
             style={{
               "background-image": "url('./bg/CTABanner.svg')",
             }}
           >
             <div className="sm:flex items-center justify-between w-full h-full  ">
-              <h1 className="text-lg sm:text-2xl font-semibold text-white md:py-3 sm:w-[26rem] lg:text-5xl">
+              <h1 className="text-lg sm:text-2xl font-semibold 2xl:font-bold text-white md:py-3 sm:w-[26rem] 2xl:w-[50rem] lg:text-5xl 2xl:text-7xl">
                 Turbocharge your brand's potential right now!
               </h1>
 
-              <div className="sm:w-[22rem] space-y-10">
-                <p className="mt-3  font-semibold text-[#fff]">
+              <div className="sm:w-[22rem] 2xl:w-[38rem]  space-y-10">
+                <p className="mt-3  font-semibold text-[#fff] 2xl:text-2xl">
                   Ready to ignite your marketplace dominance? Let's conjure up
                   some marketing wizardry together.
                 </p>
@@ -509,7 +509,7 @@ function Home() {
                 <div className=" flex gap-x-4  items-center">
                   <a
                     href="http://app.enterprisebuzzer.com/register"
-                    className="px-6 lg:px-12 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
+                    className="2xl:text-3xl px-6 lg:px-12 2xl:px-16 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
                   >
                     Get started
                   </a>

@@ -6,7 +6,7 @@ export default function MarketingOverview() {
         <h2 className="text-white text-3xl font-bold mb-6">
           Free Marketing Overview
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-5 lg:pb-2">
           <input
             type="text"
             placeholder="Enter Your Business Name"
