@@ -28,11 +28,11 @@ function TestimonySlide() {
         modules={[Autoplay, Navigation]}
         breakpoints={{
           640: {
-            slidesPerView: 2,
+            slidesPerView: 1.3,
             spaceBetween: 12,
           },
           768: {
-            slidesPerView: 3.2,
+            slidesPerView: 3.3,
             spaceBetween: 12,
           },
           1024: {
@@ -258,7 +258,7 @@ function TestimonySlide() {
         spaceBetween={12}
         loop={true}
         autoplay={{
-          delay: 2500,
+          delay: 2900,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
@@ -268,11 +268,11 @@ function TestimonySlide() {
             spaceBetween: 12,
           },
           768: {
-            slidesPerView: 3.2,
+            slidesPerView: 2.2,
             spaceBetween: 12,
           },
           1024: {
-            slidesPerView: 3.2,
+            slidesPerView: 2.9,
             spaceBetween: 12,
           },
         }}

@@ -51,11 +51,10 @@ function Home() {
       {/* CTA +++++++++++++++++++++++++++++ */}
 
       <section className="mx-auto  justify-center  py-10">
-        <h2 className="text- text-[#414141] px-2 text-center font-semibold md:text-base mx-auto w-full lg:w-[52rem]">
-          Over 100,000,000 businesses start every year in Toronto and many major
-          cities and towns across the world. <br /> The question of standing out
-          is not just crucial—it is the difference between your business
-          dominating or dying.
+        <h2 className="md:text-base lg:text-lg text-[#414141] px-2 text-center font-semibold  mx-auto w-full  leading-[4.5rem]">
+          Over 100,000,000 businesses start every year. <br /> The question of
+          standing out is not just crucial—it is the difference between your
+          business dominating or dying.
         </h2>
         <div className="w-full py-7">
           <CompanySlide />
@@ -91,9 +90,9 @@ function Home() {
               AI-Driven MARKETING
             </h2>
             <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
-              video commercial—seamlessly merging advanced visuals and fearless
-              creativity for unmatched market impact.
+              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
+              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
+              dominate online engagements worldwide, faster than ever.
             </p>
 
             <button
@@ -128,9 +127,9 @@ function Home() {
               AI-Driven Video Commercial
             </h2>
             <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
-              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
-              dominate online engagements worldwide, faster than ever.
+              Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
+              video commercial—seamlessly merging advanced visuals and fearless
+              creativity for unmatched market impact.
             </p>
             <div className="mt-3 lg:hidden w-full lg:w-6/12">
               <img src="./CommerceScreen.svg" alt="" />
@@ -255,8 +254,6 @@ function Home() {
         </AnimatePresence>
       </div>
 
-      {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
-      <LatestUpdates />
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
@@ -442,7 +439,7 @@ function Home() {
       {/* Logo Grid Section +++++++++++++++++++++++++++++++++++++++++++ */}
       <LogoGrid />
       {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className=" bg-[#fff] py-10 px-2  ">
+      <div className=" bg-[#fff] py-10  ">
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
           What our clients say about us
         </h2>
@@ -454,7 +451,7 @@ function Home() {
           />
           over 10,000+ clients trust us
         </h2>
-        <section className="mx-auto  justify-center md:space-x-2 my-5 lg:mt-10 ">
+        <section className="mx-auto  justify-center  my-5 lg:mt-10 ">
           <div className="w-full ">
             <TestimonySlide />
           </div>
@@ -480,6 +477,11 @@ function Home() {
           </h2>
         </div>
       </div>
+
+
+      {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
+      <LatestUpdates />
+
 
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div

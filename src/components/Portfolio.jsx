@@ -195,7 +195,9 @@ export default function Portfolio() {
   return (
     <div className="w-full px-2 lg:px-24">
       <div className="pt-16 pb-5 px-2 lg:px-24  flex flex-col  items-center  justify-center space-y-2 ">
-        <h2 className="text-3xl xl:text-5xl font-bold text-[#000]">Portfolio</h2>
+        <h2 className="text-3xl xl:text-5xl font-bold text-[#000]">
+          Portfolio
+        </h2>
         <h2 className="text-[10px] text-[#000] text-center md:text-sm lg:text-lg 2xl:text-xl">
           Arming businesses for marketplace dominance with high-level AI
           marketing and advertising assets from our Toronto fort.
@@ -223,7 +225,7 @@ export default function Portfolio() {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-2 lg:gap-6 mb-8"
+          className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-8"
         >
           {filteredItems.map((item) => (
             <div
