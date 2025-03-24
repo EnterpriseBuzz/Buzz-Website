@@ -52,7 +52,7 @@ function Home() {
       {/* CTA +++++++++++++++++++++++++++++ */}
 
       <section className="mx-auto  justify-center  py-10">
-        <h2 className="md:text-base lg:text-lg text-[#414141] px-2 text-center font-semibold  mx-auto w-full  leading-[4.5rem]">
+        <h2 className="md:text-base lg:text-lg text-[#414141] px-2 text-center font-semibold  mx-auto w-full  md:leading-[4.5rem]">
           Over 100,000,000 businesses start every year. <br /> The question of
           standing out is not just crucial—it is the difference between your
           business dominating or dying.
@@ -446,7 +446,7 @@ function Home() {
         <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
           What our clients say about us
         </h2>
-        <h2 className="mx-auto text-[10px] text-[#36474F] text-center font-semibold md:text-sm xl:text-xl md:w-[44rem] xl:w-[48rem] flex items-center justify-center gap-x-2">
+        <h2 className="mx-auto text-[#36474F] text-center font-semibold text-sm xl:text-xl md:w-[44rem] xl:w-[48rem] flex items-center justify-center gap-x-2">
           <img
             className="object-cover object-center w-auto h-5 md:w-auto md:h-9 xl:h-10"
             src="../Frame 41.png"
@@ -528,8 +528,8 @@ function Home() {
               "background-image": "url('./bg/mCTA Banner.svg')",
             }}
           >
-            <div className="sm:flex items-center justify-between w-full px-2  py-12">
-              <h1 className=" font-bold text-white py-3  text-5xl leading-[3rem]">
+            <div className="sm:flex items-center justify-between w-full px-2  py-9 sm:py-12">
+              <h1 className=" font-semibold text-white py-3  text-5xl leading-[3rem]">
                 Turbocharge your brand's potential right now!
               </h1>
 

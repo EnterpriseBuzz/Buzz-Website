@@ -198,7 +198,7 @@ export default function Portfolio() {
         <h2 className="text-3xl xl:text-5xl font-bold text-[#000]">
           Portfolio
         </h2>
-        <h2 className="text-[10px] text-[#000] text-center md:text-sm lg:text-lg 2xl:text-xl">
+        <h2 className="text-xs text-[#000] text-center md:text-sm lg:text-lg 2xl:text-xl">
           Arming businesses for marketplace dominance with high-level AI
           marketing and advertising assets from our Toronto fort.
         </h2>
