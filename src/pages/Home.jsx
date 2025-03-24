@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import LogoGrid from "../components/LogoGrid";
 import Technology from "../components/Technology";
 import LatestUpdates from "../components/Lastest";
+import HowWeWork from "../components/HowWeWork";
 
 function Home() {
   useEffect(() => {
@@ -254,6 +255,8 @@ function Home() {
         </AnimatePresence>
       </div>
 
+      {/* How Does EnterpriseBuzz AI Work? Section +++++++++++++++++++++++++++++++++++++++++++ */}
+      <HowWeWork />
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
@@ -478,10 +481,8 @@ function Home() {
         </div>
       </div>
 
-
       {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
       <LatestUpdates />
-
 
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
