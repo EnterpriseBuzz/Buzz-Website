@@ -260,7 +260,7 @@ function Home() {
 
       {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
-        className="py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center 2xl:bg-cover"
+        className="py-10 lg:py-20 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('./bg/bobbg.svg')",
         }}
