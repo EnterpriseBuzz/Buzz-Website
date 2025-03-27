@@ -5,7 +5,9 @@ const portfolioItems = [
   {
     id: 1,
     category: "Fashion",
-    img: "./portfolio/port.png",
+    // img: "./portfolio/port.png",
+    img: "./vport.mp4",
+
   },
   {
     id: 2,
@@ -232,21 +234,21 @@ export default function Portfolio() {
               key={item.id}
               className="bg-white cursor-pointer transform scale-95 animate-zoom-in transition-transform duration-1000 ease-in-out hover:scale-105 rounded-lg shadow-lg overflow-hidden"
             >
-              <motion.img
-                src={item.img}
-                alt={item.category}
-                animate={{
-                  scale: [1, 1.1, 1], // Zoom in and out
-                  x: [-10, 10, -10], // Slight side-to-side movement
-                  y: [-5, 5, -5], // Slight up-down movement
-                }}
-                transition={{
-                  duration: 10, // Slow movement
-                  repeat: Infinity, // Loop forever
-                  ease: "easeInOut",
-                }}
-                className="w-full h-auto rounded-lg"
-              />
+              {item.img.endsWith(".mp4") ? (
+                <video
+                  src={item.img}
+                  className="w-full h-auto rounded-lg"
+                  autoPlay
+                  loop
+                  muted
+                />
+              ) : (
+                <img
+                  src={item.img}
+                  alt={item.category}
+                  className="w-full h-auto rounded-lg"
+                />
+              )}
             </div>
           ))}
         </motion.div>
