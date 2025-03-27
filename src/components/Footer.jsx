@@ -21,9 +21,9 @@ const Footer = () => {
             <div className="items-start space-y-6 ">
               <Link to="/">
                 <img
-                  src="../logowhite.svg"
+                  src="../flogo.png"
                   alt="buzzlogo"
-                  className=" w-[10rem]"
+                  className=" w-[10rem] lg:w-[12rem]"
                 />
               </Link>
               <div className="items-start  mb-2 ">

@@ -18,7 +18,7 @@ function HowWeWork() {
           with the Buzztamins (well-tested marketing & advertising services) it
           needs to grow healthily.
         </h2>
-      </div>
+     
 
       <AnimatePresence>
         <motion.div
@@ -81,6 +81,7 @@ function HowWeWork() {
           </motion.button>
         </div>
       </AnimatePresence>
+      </div>
     </div>
   );
 }
