@@ -31,8 +31,8 @@ function Home() {
       }}
     >
       <SEO
-        title="Enterprise Buzzer | Home"
-        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        title="EnterpriseBuzz AI | Home"
+        description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
         name="EnterpriceBuzzer"
         type="description"
       />
@@ -266,7 +266,7 @@ function Home() {
         }}
       >
         <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[55rem]  ">
-          Enterprise Buzzer is your partner in deploying sophisticated marketing
+          EnterpriseBuzz AI is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
         <h2 className="text-[10px] text-[#0C212C] text-center md:text-sm xl:text-lg md:w-[44rem] xl:w-[54rem]">
@@ -289,10 +289,10 @@ function Home() {
               Generate
             </h2>
             <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
-              At Enterprise Buzzer, assumptions are relics of the past. We wield
+              At EnterpriseBuzz AI, assumptions are relics of the past. We wield
               the transformative power of our proprietary AI suite, including
               the unparalleled Buzzer, to transcend traditional marketing
-              boundaries. Buzzer isn't just a tool; it's your gateway to
+              boundaries. Buzz AI isn't just a tool; it's your gateway to
               precision. By analyzing and syn
               {more1
                 ? "thesizing custom data on your business's audience—spanning demographic, psychographic, geographic, and behavioural dimensions—we craft hyper-targeted marketing strategies."
@@ -340,7 +340,7 @@ function Home() {
               Execute
             </h2>
             <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
-              At Enterprise Buzzer, execution is not just a part of our
+              At EnterpriseBuzz AI, execution is not just a part of our
               strategy; it is the heart of our battle plan. In the relentless
               arena of digital marketing, we deploy an arsenal that covers the
               entire spectrum: search engine mastery, precision-targeted email
@@ -395,7 +395,7 @@ function Home() {
             </h2>
             <p className="mt-6 font-normal text-[#62747d] lg:text-lg 2xl:text-xl">
               Embracing the maxim 'If you can't measure it, you can't improve
-              it,' Enterprise Buzzer zealously champions the doctrine that the
+              it,' EnterpriseBuzz AI zealously champions the doctrine that the
               essence of marketing dominance is forged in the crucible of
               rigorous analysis.
               <span className={more3 ? "block" : "hidden"}>
