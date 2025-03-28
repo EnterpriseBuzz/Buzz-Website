@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [toggle1, setToggle1] = useState(false);
   const [toggle2, setToggle2] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className="z-[100] sticky top-0">
       <header
@@ -75,8 +76,14 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                          }}
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Marketing
                         </Link>
@@ -84,8 +91,14 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon1.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
+                          }}
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Video Commercial
                         </Link>
@@ -93,8 +106,14 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon2.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                          }}
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI-Driven Call Agent
                         </Link>
@@ -102,8 +121,14 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon3.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
+                          }}
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Website/ Mobile App Design
                         </Link>
@@ -111,8 +136,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon4.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Automation
                         </Link>
@@ -122,8 +147,14 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon5.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
+                          }}
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Branding Identity Designs
                         </Link>
@@ -131,8 +162,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon6.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Marketing / Promotional Designs
                         </Link>
@@ -140,8 +171,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon7.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Marketing
                         </Link>
@@ -149,8 +180,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon8.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           SEO Marketing
                         </Link>
@@ -158,8 +189,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon9.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Podcast for marketing
                         </Link>
@@ -169,8 +200,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon10.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Social Media Marketing 
                         </Link>
@@ -178,8 +209,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon11.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Native ADS Marketing
                         </Link>
@@ -187,8 +218,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon12.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Logo Design
                         </Link>
@@ -196,8 +227,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon13.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Lead Generations
                         </Link>
@@ -207,8 +238,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon14.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Videography Services
                         </Link>
@@ -216,8 +247,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon15.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Photography Services
                         </Link>
@@ -225,8 +256,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon16.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           UGC Marketing
                         </Link>
@@ -234,8 +265,8 @@ function Header() {
                       <div className="flex items-center gap-x-3">
                         <img src="./icons/icon17.svg" alt="" />
                         <Link
-                          to="/about"
-                          className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
+                          to="/"
+                          className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI Chatbot Development
                         </Link>
@@ -394,6 +425,11 @@ function Header() {
           <div className="flex flex-col px-2 -mx-4 space-y-2 h-screen inset-y-0 overflow-y-auto scrollbar-hide">
             <Link
               to="/#"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+                navigate("/");
+              }}
               className="px-2.5 py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
             >
               Home
@@ -433,7 +469,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          // navigate("/");
+                          document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Marketing
@@ -442,7 +484,14 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon1.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          // navigate("/");
+                          document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
+                          
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Video Commercial
@@ -451,7 +500,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon2.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          // navigate("/");
+                          document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI-Driven Call Agent
@@ -460,7 +515,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon3.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          // navigate("/");
+                          document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Website/ Mobile App Design
@@ -469,7 +530,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon4.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Email Automation
@@ -480,7 +546,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon5.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          // navigate("/");
+                          document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Branding Identity Designs
@@ -489,7 +561,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon6.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Marketing / Promotional Designs
@@ -498,7 +575,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon7.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Email Marketing
@@ -507,7 +589,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon8.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         SEO Marketing
@@ -516,7 +603,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon9.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Podcast for marketing
@@ -527,7 +619,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon10.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Social Media Marketing 
@@ -536,7 +633,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon11.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Native ADS Marketing
@@ -545,7 +647,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon12.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Logo Design
@@ -554,7 +661,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon13.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Lead Generations
@@ -565,7 +677,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon14.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Videography Services
@@ -574,7 +691,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon15.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         Photography Services
@@ -583,7 +705,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon16.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         UGC Marketing
@@ -592,7 +719,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon17.svg" alt="" />
                       <Link
-                        to="/about"
+                        
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsOpen(false);
+                          navigate("/");
+                        }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
                         AI Chatbot Development
@@ -631,7 +763,12 @@ function Header() {
                 <div className="space-y-3 p-2">
                   <Link
                     to="/faqs"
-                    className=" py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsOpen(false);
+                      navigate("/faqs");
+                    }}
+                    className="w-full py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
                   >
                     FAQs
                   </Link>
@@ -667,6 +804,11 @@ function Header() {
             </div>
             <Link
               to="/contact"
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+                navigate("/contact");
+              }}
               className="px-2.5 py-2 text-[#576B74] font-bold transition-colors duration-300 transform rounded-lg  hover:bg-gray-100  md:mx-2"
             >
               Contact Us

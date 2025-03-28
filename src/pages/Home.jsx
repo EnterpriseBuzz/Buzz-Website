@@ -77,6 +77,7 @@ function Home() {
 
       {/* Ai Marketing  Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
+        id="marketing"
         className="w-full py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover "
         style={{
           "background-image": "url('./bg/callbg.png')",
@@ -111,6 +112,7 @@ function Home() {
 
       {/*   AI-Driven Video Commercial ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
+        id="comVideo"
         className="w-full py-10 px-2 lg:px-24  bg-no-repeat bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('../bg/commercebg.png')",
@@ -150,6 +152,7 @@ function Home() {
 
       {/* AI-Driven Call Agent ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
+        id="callAgent"
         className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover"
         style={{
           "background-image": "url('./bg/marketingbg.png')",
@@ -197,13 +200,13 @@ function Home() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           >
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="web" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="../services/service.png" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="branding" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service1.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="web" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service2.png" alt="pics" />
             </button>
           </motion.div>

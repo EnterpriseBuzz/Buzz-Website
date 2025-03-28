@@ -16,10 +16,10 @@ import Why from "./pages/Why";
 function App() {
   return (
     <div className="font-inter">
-      <TawkMessengerReact
+      {/* <TawkMessengerReact
         propertyId="653384a2f2439e1631e6acd6"
         widgetId="1hd8js7fu"
-      />
+      /> */}
       <Router>
         <Routes>
           <Route path="/" element={<MainLayout />}>
