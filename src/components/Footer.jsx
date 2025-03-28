@@ -285,6 +285,11 @@ const Footer = () => {
                 <div className="flex flex-col items-start  space-y-2">
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven MARKETING
@@ -292,6 +297,11 @@ const Footer = () => {
 
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven Video Commercial
@@ -299,24 +309,47 @@ const Footer = () => {
 
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                  
+                      // navigate("/");
+                      document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven Call Agent
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Website/ Mobile App Design
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                     
+                      // navigate("/");
+                      document.getElementById("emailAutomation")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     email automation
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                    
+                      // navigate("/");
+                      document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Branding Identity Designs
@@ -324,19 +357,34 @@ const Footer = () => {
 
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("logoDesign")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Logo Design
                   </Link>
 
                   <Link
-                    to="/contact"
+                    to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("videography")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Videography Services
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("photography")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Photography Services
@@ -348,6 +396,12 @@ const Footer = () => {
                 <div className="flex flex-col items-start mt-10 space-y-2">
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                     
+                      // navigate("/");
+                      document.getElementById("promoDesign")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Marketing/Promotional Designs
@@ -355,6 +409,11 @@ const Footer = () => {
 
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("emailMarketing")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Email Marketing
@@ -362,42 +421,79 @@ const Footer = () => {
 
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      
+                      // navigate("/");
+                      document.getElementById("seoMarketing")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     SEO Marketing
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("podcast")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Podcast for marketing
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      
+                      // navigate("/");
+                      document.getElementById("socialMarketing")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Social Media marketing
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("chatbot")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI Chatbot Development
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("UGC")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     UGC marketing
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("nativeAds")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Native ADS marketing
                   </Link>
                   <Link
                     to=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      // navigate("/");
+                      document.getElementById("leadGen")?.scrollIntoView({ behavior: "smooth" });
+                    }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Lead Generations

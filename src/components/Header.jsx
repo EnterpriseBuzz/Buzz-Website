@@ -137,6 +137,12 @@ function Header() {
                         <img src="./icons/icon4.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("emailAutomation")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Automation
@@ -163,6 +169,12 @@ function Header() {
                         <img src="./icons/icon6.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("promoDesign")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Marketing / Promotional Designs
@@ -172,6 +184,12 @@ function Header() {
                         <img src="./icons/icon7.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("emailMarketing")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Email Marketing
@@ -181,6 +199,12 @@ function Header() {
                         <img src="./icons/icon8.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("seoMarketing")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           SEO Marketing
@@ -190,6 +214,12 @@ function Header() {
                         <img src="./icons/icon9.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("podcast")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Podcast for marketing
@@ -201,6 +231,12 @@ function Header() {
                         <img src="./icons/icon10.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("socialMarketing")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Social Media Marketing 
@@ -210,6 +246,12 @@ function Header() {
                         <img src="./icons/icon11.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("nativeAds")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Native ADS Marketing
@@ -219,6 +261,12 @@ function Header() {
                         <img src="./icons/icon12.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("logoDesign")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Logo Design
@@ -228,6 +276,12 @@ function Header() {
                         <img src="./icons/icon13.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("leadGen")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Lead Generations
@@ -239,6 +293,12 @@ function Header() {
                         <img src="./icons/icon14.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("videography")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Videography Services
@@ -248,6 +308,12 @@ function Header() {
                         <img src="./icons/icon15.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("photography")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           Photography Services
@@ -257,6 +323,12 @@ function Header() {
                         <img src="./icons/icon16.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("UGC")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           UGC Marketing
@@ -266,6 +338,12 @@ function Header() {
                         <img src="./icons/icon17.svg" alt="" />
                         <Link
                           to="/"
+                           onClick={(e) => {
+                            e.preventDefault();
+                            setIsOpen(false);
+                            // navigate("/");
+                            document.getElementById("chatbot")?.scrollIntoView({ behavior: "smooth" });
+                          }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
                           AI Chatbot Development

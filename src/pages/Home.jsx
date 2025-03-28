@@ -206,7 +206,7 @@ function Home() {
             <button id="branding" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service1.svg" alt="pics" />
             </button>
-            <button id="web" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="promoDesign" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service2.png" alt="pics" />
             </button>
           </motion.div>
@@ -218,40 +218,40 @@ function Home() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4"
           >
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="emailMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service3.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="seoMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service4.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="socialMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service5.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="nativeAds" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service6.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="logoDesign" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service7.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="leadGen" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service8.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="videography" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service9.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="photography" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service10.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="UGC" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service11.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="chatbot" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service12.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="emailAutomation" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service13.svg" alt="pics" />
             </button>
-            <button className="w-full cursor-pointer transition transform hover:scale-105">
+            <button id="podcast" className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./services/service14.svg" alt="pics" />
             </button>
           </motion.div>
