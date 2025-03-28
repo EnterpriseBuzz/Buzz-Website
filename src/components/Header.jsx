@@ -81,7 +81,9 @@ function Header() {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("marketing")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -96,7 +98,9 @@ function Header() {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("comVideo")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -111,7 +115,9 @@ function Header() {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("callAgent")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -126,7 +132,9 @@ function Header() {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("web")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -137,11 +145,13 @@ function Header() {
                         <img src="./icons/icon4.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("emailAutomation")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("emailAutomation")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -158,7 +168,9 @@ function Header() {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("branding")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -169,11 +181,13 @@ function Header() {
                         <img src="./icons/icon6.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("promoDesign")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("promoDesign")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -184,11 +198,13 @@ function Header() {
                         <img src="./icons/icon7.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("emailMarketing")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("emailMarketing")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -199,11 +215,13 @@ function Header() {
                         <img src="./icons/icon8.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("seoMarketing")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("seoMarketing")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -214,11 +232,13 @@ function Header() {
                         <img src="./icons/icon9.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("podcast")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("podcast")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -231,11 +251,13 @@ function Header() {
                         <img src="./icons/icon10.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("socialMarketing")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("socialMarketing")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -246,11 +268,13 @@ function Header() {
                         <img src="./icons/icon11.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("nativeAds")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("nativeAds")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -261,11 +285,13 @@ function Header() {
                         <img src="./icons/icon12.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("logoDesign")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("logoDesign")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -276,11 +302,13 @@ function Header() {
                         <img src="./icons/icon13.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("leadGen")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("leadGen")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -293,11 +321,13 @@ function Header() {
                         <img src="./icons/icon14.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("videography")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("videography")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -308,11 +338,13 @@ function Header() {
                         <img src="./icons/icon15.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("photography")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("photography")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -323,11 +355,13 @@ function Header() {
                         <img src="./icons/icon16.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("UGC")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("UGC")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -338,11 +372,13 @@ function Header() {
                         <img src="./icons/icon17.svg" alt="" />
                         <Link
                           to="/"
-                           onClick={(e) => {
+                          onClick={(e) => {
                             e.preventDefault();
                             setIsOpen(false);
                             // navigate("/");
-                            document.getElementById("chatbot")?.scrollIntoView({ behavior: "smooth" });
+                            document
+                              .getElementById("chatbot")
+                              ?.scrollIntoView({ behavior: "smooth" });
                           }}
                           className="text-black text-sm 2xl:text-base transition-colors duration-300  hover:text-gray-500"
                         >
@@ -547,12 +583,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
                           // navigate("/");
-                          document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                          document
+                            .getElementById("marketing")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -562,13 +599,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon1.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
                           // navigate("/");
-                          document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
-                          
+                          document
+                            .getElementById("comVideo")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -578,12 +615,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon2.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
                           // navigate("/");
-                          document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                          document
+                            .getElementById("callAgent")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -593,12 +631,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon3.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
                           // navigate("/");
-                          document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
+                          document
+                            .getElementById("web")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -608,11 +647,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon4.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          document
+                            .getElementById("emailAutomation")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -624,12 +664,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon5.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
                           // navigate("/");
-                          document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
+                          document
+                            .getElementById("branding")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -639,11 +680,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon6.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          document
+                            .getElementById("promoDesign")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -653,11 +695,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon7.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          document
+                            .getElementById("emailMarketing")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -667,11 +710,12 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon8.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          document
+                            .getElementById("seoMarketing")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -681,11 +725,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon9.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("podcast")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -697,11 +743,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon10.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("socialMarketing")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -711,11 +759,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon11.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("nativeAds")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -725,11 +775,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon12.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("logoDesign")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -739,11 +791,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon13.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("leadGen")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -755,11 +809,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon14.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("videography")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -769,11 +825,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon15.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("photography")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -783,11 +841,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon16.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("UGC")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
@@ -797,11 +857,13 @@ function Header() {
                     <div className="flex items-center gap-x-3">
                       <img src="./icons/icon17.svg" alt="" />
                       <Link
-                        
                         onClick={(e) => {
                           e.preventDefault();
                           setIsOpen(false);
-                          navigate("/");
+                          // navigate("/");
+                          document
+                            .getElementById("chatbot")
+                            ?.scrollIntoView({ behavior: "smooth" });
                         }}
                         className="text-black text-sm lg:text-base transition-colors duration-300  hover:text-gray-500"
                       >
