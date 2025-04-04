@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import TestimonySlide from "../components/TestimonySlide";
-import MarketingSlide from "../components/MarketingSlide";
 import Portfolio from "../components/Portfolio";
 import CompanySlide from "../components/CompanySlide";
 import MarketingOverview from "../components/MarketingOverview";
@@ -22,6 +20,10 @@ function Home() {
   const [more1, setMore1] = useState(false);
   const [more2, setMore2] = useState(false);
   const [more3, setMore3] = useState(false);
+
+  const openCalendly = () => {
+    window.open("https://calendly.com/enterprisebuzzai", "_blank");
+  };
 
   return (
     <div
@@ -100,7 +102,7 @@ function Home() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setMore2(false);
+                openCalendly();
               }}
               className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
@@ -140,7 +142,7 @@ function Home() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setMore2(false);
+               openCalendly();
               }}
               className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
@@ -176,7 +178,7 @@ function Home() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setMore2(false);
+                openCalendly();
               }}
               className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
             >
@@ -200,13 +202,25 @@ function Home() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           >
-            <button id="web" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="web"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="../services/service.png" alt="pics" />
             </button>
-            <button id="branding" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="branding"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service1.svg" alt="pics" />
             </button>
-            <button id="promoDesign" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="promoDesign"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service2.png" alt="pics" />
             </button>
           </motion.div>
@@ -218,40 +232,88 @@ function Home() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4"
           >
-            <button id="emailMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="emailMarketing"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service3.svg" alt="pics" />
             </button>
-            <button id="seoMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="seoMarketing"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service4.svg" alt="pics" />
             </button>
-            <button id="socialMarketing" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="socialMarketing"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service5.svg" alt="pics" />
             </button>
-            <button id="nativeAds" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="nativeAds"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service6.svg" alt="pics" />
             </button>
-            <button id="logoDesign" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="logoDesign"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service7.svg" alt="pics" />
             </button>
-            <button id="leadGen" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="leadGen"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service8.svg" alt="pics" />
             </button>
-            <button id="videography" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="videography"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service9.svg" alt="pics" />
             </button>
-            <button id="photography" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="photography"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service10.svg" alt="pics" />
             </button>
-            <button id="UGC" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="UGC"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service11.svg" alt="pics" />
             </button>
-            <button id="chatbot" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="chatbot"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service12.svg" alt="pics" />
             </button>
-            <button id="emailAutomation" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="emailAutomation"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service13.svg" alt="pics" />
             </button>
-            <button id="podcast" className="w-full cursor-pointer transition transform hover:scale-105">
+            <button
+              id="podcast"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
               <img src="./services/service14.svg" alt="pics" />
             </button>
           </motion.div>
@@ -514,12 +576,12 @@ function Home() {
                 </p>
 
                 <div className=" flex gap-x-4  items-center">
-                  <a
-                    href="http://app.enterprisebuzzer.com/register"
+                  <button
+                    onClick={openCalendly}
                     className="2xl:text-3xl px-6 lg:px-12 2xl:px-16 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
                   >
                     Get started
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -544,12 +606,12 @@ function Home() {
                 </p>
 
                 <div className=" flex gap-x-4  items-center">
-                  <a
-                    href="http://app.enterprisebuzzer.com/register"
+                  <button
+                   onClick={openCalendly}
                     className="px-6 lg:px-12 py-2.5 text-white font-semibold rounded-lg bg-gradient-to-r from-orange-500 to-yellow-400 shadow-md hover:shadow-lg transition-all"
                   >
                     Get started
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
