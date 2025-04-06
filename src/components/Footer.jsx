@@ -127,7 +127,7 @@ const Footer = () => {
                     href="https://www.youtube.com/@enterprisebuzzai"
                     className="font-normal  items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    <img src="./icons/youtube.svg" alt="" />
+                    <img src="../icons/youtube.svg" alt="" />
                        </a>
                   <a
                     href="https://twitter.com/enterprisebuzz"
@@ -163,14 +163,14 @@ const Footer = () => {
                     href="https://www.tiktok.com/@enterprisebuzzai"
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    <img src="./icons/tick.svg" alt="" />
+                    <img src="../icons/tick.svg" alt="" />
                   </a>
 
                   <a
                     href="https://www.snapchat.com/add/enterprisebuzz"
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    <img src="./icons/snap.svg" alt="" />
+                    <img src="../icons/snap.svg" alt="" />
                   </a>
                   <a
                     href="https://www.linkedin.com/enterprisebuzz"
@@ -213,13 +213,13 @@ const Footer = () => {
                     href="https://dribbble.com/Enterprisebuzzai "
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    <img src="./icons/dribble.svg" alt="" />
+                    <img src="../icons/dribble.svg" alt="" />
                   </a>
                   <a
                     href="https://www.behance.net/enterprisebuzzai"
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    <img src="./icons/be.svg" alt="" />
+                    <img src="../icons/be.svg" alt="" />
                   </a>
                 </div>
               </div>
