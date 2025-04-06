@@ -296,10 +296,10 @@ function Pricing() {
             <div
               className="w-full bg-center bg-cover h-[35rem] md:h-[38rem]  lg:h-[20rem] rounded-2xl p-5 lg:p-20"
               style={{
-                "background-image": "url('./CTA Banner.png')",
+                "background-image": "url('./bg/CTABanner.svg')",
               }}
             >
-              <div className="lg:flex items-center justify-between w-full h-full py-5 ">
+              <div className="lg:flex items-center justify-between w-full h-full py-5 gap-x-10">
                 <div className="lg:w-[28rem]">
                   <img src="../dashboardframe.png" className="w-full" alt="i" />
                 </div>
@@ -359,6 +359,7 @@ function Pricing() {
                 <p className="text-sm ">CTA</p>
               </div>
             </div>
+
             {/* Plan 1 ************************************ */}
             <div className="border-l-2 border-[#D9D9D9]">
               <div className="px-8 py-1 text-center">
@@ -600,6 +601,7 @@ function Pricing() {
                 </div>
               </div>
             </div>
+
             {/* Plan 3 ************************************ */}
             <div className="border-l-2 border-[#D9D9D9]">
               <div className="px-8 py-1 text-center">
@@ -724,6 +726,8 @@ function Pricing() {
             </div>
           </div>
         </div>
+
+        {/*  Pricing FAQs */}
         <div className="bg-[#F3F4F5]  ">
           <div className="container lg:px-16 mx-auto py-20">
             <h2 className="text-gray-900 mt-3 mb-5 lg:mb-10 text-base md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
