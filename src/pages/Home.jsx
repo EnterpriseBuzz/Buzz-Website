@@ -518,7 +518,7 @@ function Home() {
             src="../Frame 41.png"
             alt=""
           />
-          over 10,000+ clients trust us
+          over 1,000+ clients trust us
         </h2>
         <section className="mx-auto  justify-center  my-5 lg:mt-10 ">
           <div className="w-full ">

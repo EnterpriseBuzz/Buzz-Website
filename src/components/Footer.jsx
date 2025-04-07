@@ -76,12 +76,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="">
-                <p className="text-sm">
+                <p>
                 Stay updated on the latest marketing technology happenings on our social media platforms.
                 </p>
                 <div className="mt-2 flex  gap-x-3 items-center ">
                   <a
-                    href="https://www.facebook.com/enterprisebuzz"
+                    href="h ttps://www.facebook.com/enterprisebuzz"
                     className=" rounded-full outline-none focus:outline-none "
                   >
                     <svg
