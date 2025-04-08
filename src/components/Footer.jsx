@@ -81,7 +81,7 @@ const Footer = () => {
                 </p>
                 <div className="mt-2 flex  gap-x-3 items-center ">
                   <a
-                    href="h ttps://www.facebook.com/enterprisebuzz"
+                    href="h ttps://www.facebook.com/enterprisebuzzai"
                     className=" rounded-full outline-none focus:outline-none "
                   >
                     <svg
@@ -99,7 +99,7 @@ const Footer = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://www.instagram.com/enterprisebuzz"
+                    href="https://www.instagram.com/enterprisebuzzai"
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
                     <svg
@@ -130,7 +130,7 @@ const Footer = () => {
                     <img src="../icons/youtube.svg" alt="" />
                        </a>
                   <a
-                    href="https://twitter.com/enterprisebuzz"
+                    href="https://twitter.com/enterprisebuzzai"
                     className="font-normal  items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
                     <svg
