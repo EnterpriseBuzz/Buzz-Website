@@ -9,15 +9,16 @@ export default function SEO({ title, description, name, type }) {
       <title>{title}</title>
       <meta name="google-site-verification" content={googleVerificationCode} />
       <meta name="description" content={description} />
+      <meta name="robots" content="index, follow" />
       {/* End standard metadata tags */}
       {/* Facebook tags */}
-      <meta property="og:type" content={type} />
+      <meta property="og:type" content={'website'} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       {/* End Facebook tags */}
       {/* Twitter tags */}
       <meta name="twitter:creator" content={name} />
-      <meta name="twitter:card" content={type} />
+      <meta name="twitter:card" content={'website'} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       {/* End Twitter tags */}
