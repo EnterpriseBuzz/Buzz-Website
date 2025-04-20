@@ -35,7 +35,7 @@ function Home() {
       <SEO
         title="EnterpriseBuzz AI | Home"
         description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzzer"
+        name="EnterpriseBuzz AI"
         type="description"
       />
       {/* Hero ++++++++++++++++++++++++++ */}
