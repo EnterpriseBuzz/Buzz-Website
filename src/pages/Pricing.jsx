@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import TrustedBy from "../components/TrustedBy";
+import PaymentOptions from "../components/PaymentOptions";
+import AIGrowthSection from "../components/AIGrowthSection";
 
 function Pricing() {
   return (
@@ -1245,10 +1247,9 @@ function Pricing() {
                     </details>
                   </div>
                 </li>
-               
               </ul>{" "}
               <ul className="flex flex-col w-full">
-              <li className="my- px-3 border-t">
+                <li className="my- px-3 border-t">
                   <div className="py-3">
                     <details className="group">
                       <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
@@ -1420,6 +1421,11 @@ function Pricing() {
             </div>
           </div>
         </div>
+
+        {/* Unlock Section */}
+        <AIGrowthSection />
+        {/* Payment Options */}
+        <PaymentOptions />
       </div>
     </div>
   );

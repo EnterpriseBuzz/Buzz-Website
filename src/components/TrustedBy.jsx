@@ -140,7 +140,6 @@ function TrustedBy() {
               <button className="w-full cursor-pointer transition transform hover:scale-105">
                 <img src="./brands/trust4.png" alt="pics" />
               </button>
-              
             </motion.div>
           </AnimatePresence>
         </div>
