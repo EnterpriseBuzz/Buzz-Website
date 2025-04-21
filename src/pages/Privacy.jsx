@@ -89,7 +89,7 @@ const Privacy = () => {
         <div className="pr-6 mb-8 md:mb-0">
           <h2 className="text-xl font-bold mb-6">Information</h2>
 
-          <nav className="flex flex-row items-center lg:flex-col rtl:flex-row-reverse gap-x-2 space-y-3 w-[95vw] lg:w-full  overflow-x-auto scrollbar-hide inset-x-0">
+          <nav className="flex flex-row lg:flex-col rtl:flex-row-reverse gap-x-2 space-y-3 w-[95vw] lg:w-full  overflow-x-auto scrollbar-hide inset-x-0">
             <button
               onClick={() => scrollToSection("introduction")}
               className={`flex-shrink-0 text-left py-2 w-[7rem] px-4 rounded-full text-sm ${
