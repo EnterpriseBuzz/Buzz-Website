@@ -251,13 +251,13 @@ const Footer = () => {
                       Support
                     </Link>
                     <Link
-                      to=""
+                      to="/privacy"
                       className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Privacy
                     </Link>
                     <Link
-                      to=""
+                      to="/terms"
                       className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                     >
                       Terms & Condition
