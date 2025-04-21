@@ -29,9 +29,9 @@ function Pricing() {
       <img src="../bg/cover.svg" alt="check" />
 
       <div className=" text-gray-600">
-        <div className="w-full py-20 bg-gradient-to-r from-[#FF8C00] via-[#8B008B] to-[#191853] flex justify-center items-center">
+        <div className="w-full py-10 sm:py-20 bg-gradient-to-r from-[#FF8C00] via-[#8B008B] to-[#191853] flex justify-center items-center">
           <div className="text-center text-white">
-            <h1 className="text-sm lg:text-lg font- text-white w-full md:w-[48rem] ">
+            <h1 className="text-sm lg:text-lg font- text-white w-full px-4 md:w-[48rem] ">
               At EnterpriseBuzz AI, we combine our signature A/B/C (Aggressive,
               Bold, Controversial) marketing framework with advanced AI-driven
               strategies to rapidly establish your brand’s digital presence
@@ -360,27 +360,27 @@ function Pricing() {
 
         {/* CTA ************************* */}
         <div className=" bg-[#fff] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
-          <div className="container  mx-auto my-16">
+          <div className="container  mx-auto my-6 lg:my-16">
             <div
-              className="w-full bg-center bg-cover h-[35rem] md:h-[40rem]  lg:h-[22rem] rounded-2xl p-5 lg:p-20"
+              className="w-full bg-center bg-cover sm:h-[35rem] md:h-[40rem]  lg:h-[22rem] rounded-2xl p-5 lg:p-20"
               style={{
                 "background-image": "url('./bg/pCTABanner.svg')",
               }}
             >
-              <div className="lg:flex items-center justify-between w-full h-full py-5 gap-x-10">
-                <div className="lg:w-[37rem]">
-                  <h1 className=" font-semibold text-white py-3 min-[350px]:text-[58px] max-[350px]:text-[58px]  leading-[3.5rem]">
+              <div className="flex items-center justify-between w-full h-full lg:py-5 lg:gap-x-10">
+                <div className=" w-[37rem]">
+                  <h1 className=" font-semibold text-white py-3 text-3xl lg:min-[350px]:text-[58px] lg:max-[350px]:text-[58px]  lg:leading-[3.5rem]">
                     Need a custom plan? Get in touch.
                   </h1>
-                  <p className=" font-normal  text-[#fff]">
+                  <p className="hidden lg:block font-normal  text-[#fff]">
                     At EnterpriseBuzz AI, we understand that every enterprise
                     has unique goals. Our expert team is ready to craft a
                     tailored, aggressive strategy to fuel your growth—contact us
                     today!
                   </p>
                 </div>
-                <div className=" pt-5 md:pt-0">
-                  <div className=" flex gap-x-4 mt-5 items-center">
+                <div className=" pt-0">
+                  <div className=" flex gap-x-4 lg:mt-5 items-center">
                     <button className="">
                       <img src="../buttons/button.png" alt="i" />
                     </button>
@@ -393,28 +393,28 @@ function Pricing() {
 
         {/* Compared Features ************************* */}
         <div className="px-2 lg:px-20 mx-auto pb-20">
-          <h2 className="text-gray-900 mt-3 mb-5 lg:mb-10 text-base md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
+          <h2 className="text-gray-900 mt-3 mb-5 lg:mb-10 text-xl md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
             Compared Features
           </h2>
-          <div className="w-screen lg:w-full mx-auto overflow-x-auto scrollbar-hide inset-x-0 flex lg:grid grid-cols-4  mt-12 px-2 lg:px-0">
+          <div className=" lg:w-full mx-auto overflow-x-auto scrollbar-hide inset-x-0 lg:grid grid-cols-4  lg:mt-12 px-2 lg:px-0">
             {/* Bar ************************************ */}
             <div className="">
-              <p className="font-bold text-black text-xl mt-16 py-2 ">
+              <p className="font-bold text-black text-xl lg:mt-16 py-2 ">
                 Top features
               </p>
-              <div className="py-3  space-y-12 w-[15.5rem] lg:w-full">
+              <div className="py-3 space-y-5 lg:space-y-12  lg:w-full">
                 <p className="text-sm ">AI-Driven Campaigns</p>
                 <p className="text-sm ">Aggressive Marketing Techniques</p>
                 <p className="text-sm ">Creative and Bold Content</p>
                 <p className="text-sm ">Landing Page & CRO</p>
-                <div className="py-[0.0px]"></div>
+                <div className="lg:py-[0.0px]"></div>
                 <p className="text-sm font-bold">SEO and SEM Services</p>
                 <p className="text-sm ">1. SEO Setup & On-Page Optimization</p>
                 <p className="text-sm ">2. Target Keyword Research</p>
                 <p className="text-sm ">3. Link Building</p>
                 <p className="text-sm ">Video Marketing</p>
                 <p className="text-sm ">Social Media Mgt. and Marketing</p>
-                <div className="py-0.5"></div>
+                <div className="lg:py-0.5"></div>
                 <p className="text-sm font-bold">
                   Channel Optimizations Services
                 </p>
@@ -426,7 +426,7 @@ function Pricing() {
                   Digital Display and Native Advertising
                 </p>
                 <p className="text-sm ">Influencer Outreach</p>
-                <div className="py-1"></div>
+                <div className="lg:py-1"></div>
                 <p className="text-sm font-bold">Email Marketing Services</p>
                 <p className="text-sm ">1. Email Marketing Campaigns</p>
                 <p className="text-sm ">2. Email Automation (Drip Series)</p>
@@ -447,20 +447,23 @@ function Pricing() {
             </div>
 
             {/* Plan 1 ************************************ */}
-            <div className="relative overflow-hidden">
-              <div className="absolute inset-y-0 left-0 w-0.5 bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
+            <div className="relative overflow-hidden mt-5 lg:mt-0">
+              <div className="absolute inset-y-0 left-0 w-0.5 lg:bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
 
               <div>
                 <div className="px-8 py-1 text-center">
-                  <h1 className="text-xs sm:text-base md:text-xl font-bold text-gray-800 pb-2">
+                  <h1 className="text-xl font-bold text-gray-800 pb-2">
                     Spark Buzz Plan
                   </h1>
-                  <h1 className="text-xs sm:text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
+                  <h1 className="text-xl font-semibold text-[#DA281C]  mb-5">
                     $1,399/ <span className="text-black text-sm">mo</span>
                   </h1>
+                  <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
+                    Buy Now
+                  </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-11  w-[19.5rem] lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-11   lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -483,7 +486,7 @@ function Pricing() {
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">Not included.</p>
                   </div>
-                  <div className="py-0.5"></div>
+                  <div className="lg:py-0.5"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -517,7 +520,7 @@ function Pricing() {
                       8 posts/month on 1 platform (Facebook or Instagram).
                     </p>
                   </div>
-                  <div className="py-0.5"></div>
+                  <div className="lg:py-0.5"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -547,7 +550,7 @@ function Pricing() {
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">Not included.</p>
                   </div>
-                  <div className="py-9"></div>
+                  <div className="lg:py-9"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -616,19 +619,22 @@ function Pricing() {
             </div>
             {/* Plan 2 ************************************ */}
             <div className="relative overflow-hidden">
-              <div className="absolute inset-y-0 left-0 w-0.5 bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
+              <div className="absolute inset-y-0 left-0 w-0.5 lg:bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
 
               <div>
                 <div className="px-8 py-1 text-center">
-                  <h1 className="text-xs sm:text-base md:text-xl font-bold text-gray-800 pb-2">
+                  <h1 className="text-xl font-bold text-gray-800 pb-2">
                     Boaster Buzz Plan
                   </h1>
-                  <h1 className="text-xs sm:text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
+                  <h1 className="text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
                     $3,599/ <span className="text-black text-sm">mo</span>
                   </h1>
+                  <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
+                    Buy Now
+                  </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-6  w-[19rem] lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-6 lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -656,7 +662,7 @@ function Pricing() {
                       A/B testing.
                     </p>
                   </div>
-                  <div className="py-2"></div>
+                  <div className="lg:py-2"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -692,7 +698,7 @@ function Pricing() {
                       with strategic scheduling and brand consistency.
                     </p>
                   </div>
-                  <div className="py-4"></div>
+                  <div className="lg:py-4"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -735,7 +741,7 @@ function Pricing() {
                       with one micro-influencer per quarter.
                     </p>
                   </div>
-                  <div className="py-8"></div>
+                  <div className="lg:py-8"></div>
 
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
@@ -823,19 +829,22 @@ function Pricing() {
 
             {/* Plan 3 ************************************ */}
             <div className="relative overflow-hidden">
-              <div className="absolute inset-y-0 left-0 w-0.5 bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
+              <div className="absolute inset-y-0 left-0 w-0.5 lg:bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
 
               <div>
                 <div className="px-8 py-1 text-center">
-                  <h1 className="text-xs sm:text-base md:text-xl font-bold text-gray-800 pb-2">
+                  <h1 className="text-xl font-bold text-gray-800 pb-2">
                     Inferno Buzz Plan
                   </h1>
-                  <h1 className="text-xs sm:text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
+                  <h1 className="text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
                     $7,999/ <span className="text-black text-sm">mo</span>
                   </h1>
+                  <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
+                    Buy Now
+                  </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-2 w-[19rem] lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-2 lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -866,7 +875,7 @@ function Pricing() {
                       strategies.
                     </p>
                   </div>
-                  <div className="py-3"></div>
+                  <div className="lg:py-3"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -906,7 +915,7 @@ function Pricing() {
                       leadership) and advanced scheduling/engagement.
                     </p>
                   </div>
-                  <div className="py-3"></div>
+                  <div className="lg:py-3"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -954,7 +963,7 @@ function Pricing() {
                       basis—all with comprehensive management.
                     </p>
                   </div>
-                  <div className="py-3"></div>
+                  <div className="lg:py-3"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -1039,7 +1048,7 @@ function Pricing() {
                       analytics, adjustment rationales, and strategic forecasts.
                     </p>
                   </div>
-                  <button className="mb-4">
+                  <button className="my-4">
                     <img
                       src="../buttons/butt3.png"
                       alt="check"
@@ -1064,7 +1073,7 @@ function Pricing() {
           }}
         >
           <div className="container lg:px-16 mx-auto py-20">
-            <h2 className="text-gray-900 mt-3 mb-5 lg:mb-10 text-base md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
+            <h2 className="text-gray-900 px-2 lg:mt-3 mb-5 lg:mb-10 text-xl md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
               Pricing FAQs
             </h2>
             <div className="md:flex gap-x-12 ">

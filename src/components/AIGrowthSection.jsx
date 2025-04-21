@@ -25,11 +25,11 @@ function AIGrowthSection() {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 gap-4  mt-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-4  mt-6"
         >
           {/* Left */}
           <div
-            className="bg-[#FAFAFA] p-10 h-[42rem] bg-no-repeat space-y-3 bg-cover"
+            className="bg-[#FAFAFA] p-5 lg:p-10 h-[35rem] sm:h-[42rem] bg-no-repeat space-y-3 bg-cover"
             style={{
               "background-image": "url('./bg/left.svg')",
             }}
@@ -42,7 +42,7 @@ function AIGrowthSection() {
             <h2 className="text-base text-[#fff] font-semibold  md:text-xl  ">
               Take a look at our premium web design portfolio
             </h2>
-            <h2 className="text-[12px] font-thin text-[#fff] md:text-sm py-2 capitalize">
+            <h2 className="text-[12px] font-thin text-[#fff] md:text-sm capitalize">
               a showcase of game-changing, aggressive design strategies that
               obliterate mediocrity and set a new benchmark for digital
               excellence.
@@ -54,7 +54,7 @@ function AIGrowthSection() {
 
           {/* Right */}
           <div
-            className="bg-[#FAFAFA] p-10 h-[42rem] bg-no-repeat space-y-3 bg-cover"
+            className="bg-[#FAFAFA] p-5 lg:p-10 h-[35rem] sm:h-[42rem] bg-no-repeat space-y-3 bg-cover"
             style={{
               "background-image": "url('./bg/right.svg')",
             }}
@@ -89,7 +89,7 @@ function AIGrowthSection() {
           EnterpriseBuzz AI Amplification Giveaway.
         </p>
         <div className="flex justify-center">
-          <div className="w-full sm:w-auto flex flex-col sm:flex-row gap-4 shadow-md p-2 rounded-full  bg-white">
+          <div className="w-full sm:w-auto flex flex-col sm:flex-row gap-4 shadow-md p-2 rounded-xl sm:rounded-full  bg-white">
             <input
               type="text"
               placeholder="First Name"

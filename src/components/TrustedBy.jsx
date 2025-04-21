@@ -85,16 +85,21 @@ const TestimonialCard = ({ testimonialData }) => {
 function TrustedBy() {
   return (
     <>
-      <div className="w-full bg-gradient-to-br from-[#F0FFF0] via-[#E0FFFF] to-[#FAEBD7]">
-        <div className="lg:px-28 mx-auto py-20">
+      <div className="w-full bg-[#FAFAFA] lg:bg-gradient-to-br from-[#F0FFF0] via-[#E0FFFF] to-[#FAEBD7]">
+        <div className="lg:px-28 mx-auto py-7 lg:py-20">
           <img
             src="../charlie.svg"
             alt="quote"
-            className="lg:w-[56rem] mx-auto"
+            className="hidden lg:block lg:w-[56rem] mx-auto"
+          />
+          <img
+            src="../mcharlie.svg"
+            alt="quote"
+            className="lg:hidden lg:w-[56rem] mx-auto"
           />
 
           <div className=" flex flex-col  items-center  justify-center  mt-9">
-            <h2 className="text-xl text-[#000] capitalize italic font-semibold  text-center md:text-3xl xl:text-4xl lg:w-[45rem] ">
+            <h2 className="text-xl text-[#000] capitalize italic font-semibold  text-center md:text-3xl xl:text-4xl w-[15rem] lg:w-[45rem] ">
               trusted by over 1K+ forward-thinking enterprises worldwide.
             </h2>
           </div>
@@ -103,7 +108,7 @@ function TrustedBy() {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 gap-4  sm:grid-cols-2 md:grid-cols-3 mt-6"
+              className="grid grid-cols-1 gap-4 px-2   sm:grid-cols-2 md:grid-cols-3 mt-6"
             >
               {testimonialData.map((testimonial, index) => (
                 <TestimonialCard key={index} testimonialData={testimonial} />
@@ -126,7 +131,7 @@ function TrustedBy() {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-2 gap-16  md:grid-cols-4"
+              className="grid grid-cols-2 gap-6 lg:gap-16  md:grid-cols-4"
             >
               <button className="w-full cursor-pointer transition transform hover:scale-105">
                 <img src="./brands/trust1.png" alt="pics" />
