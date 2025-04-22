@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import PaymentOptions from "../components/PaymentOptions";
+import LatestUpdates from "../components/Lastest";
+import { Plus, Minus } from "lucide-react";
+import AIChatInterface from "../components/AIChatInterface";
 
 function Faqs() {
   useEffect(() => {
@@ -9,7 +13,108 @@ function Faqs() {
       behavior: "smooth",
     });
   }, []);
-  const [openTab, setOpenTab] = useState(1);
+  const [openItem, setOpenItem] = useState(0);
+
+  const faqItems = [
+    {
+      id: 1,
+      number: "Q.1",
+      question: "What exactly is EnterpriseBuzz AI?",
+      answer:
+        "EnterpriseBuzz AI is the premier AI‑Driven Enterprise Amplification platform, weaponizing advanced algorithms and our trademark Aggressive, Bold, and Controversial (A/B/C) tactics to detonate brand visibility and revenue growth.",
+    },
+    {
+      id: 2,
+      number: "Q.2",
+      question: "How does your A/B/C approach outperform traditional agencies?",
+      answer:
+        "EnterpriseBuzz AI is the premier AI‑Driven Enterprise Amplification platform, weaponizing advanced algorithms and our trademark Aggressive, Bold, and Controversial (A/B/C) tactics to detonate brand visibility and revenue growth.",
+    },
+    {
+      id: 3,
+      number: "Q.3",
+      question: "What onboarding timeline should we expect?",
+      answer:
+        "48‑hour kickoff call, brand intake, and tech integration; first campaigns live in 7 days; optimization sprint begins day 8.",
+    },
+    {
+      id: 4,
+      number: "Q.4",
+      question: "How do you integrate with existing systems?",
+      answer:
+        "Native connectors and open APIs plug into HubSpot, Salesforce, Shopify, GA4, and any custom stack—delivering full data continuity.",
+    },
+    {
+      id: 5,
+      number: "Q.5",
+      question:
+        "Can we approve, edit, or reject drafts directly within the dashboard?",
+      answer:
+        "Yes—you can approve, edit, or reject drafts directly inside the EnterpriseBuzz AI dashboard. It’s a friction‑free, role‑aware system designed to obliterate bottlenecks, slash turnaround by days, and keep a tamper‑proof record of every decision—so your aggressive, bold, and controversial content hits the market before competitors even finish their first round of edits.",
+    },
+    {
+      id: 6,
+      number: "Q.6",
+      question: "What testing methodologies drive ongoing optimization?",
+      answer:
+        "Multivariate and A/B tests continuously pit headlines, CTAs, and visuals against each other for conversion supremacy—using top‑ranked optimization platforms.",
+    },
+    {
+      id: 7,
+      number: "Q.7",
+      question: "How is content created and managed?",
+      answer:
+        "We research your audience, craft a data‑driven content blueprint, generate high‑impact assets, and run continuous multivariate tests—iterating until every piece converts.",
+    },
+    {
+      id: 8,
+      number: "Q.8",
+      question: "Who owns our creative assets and data?",
+      answer:
+        "You do. Upon contract completion, all ads, copy, designs, and analytics datasets transfer to your custody—because victors keep the spoils.",
+    },
+    {
+      id: 9,
+      number: "Q.9",
+      question: "Can EnterpriseBuzz AI scale as we grow?",
+      answer:
+        "Yes—our infrastructure auto‑scales across traffic, campaigns, and geographies, ensuring performance under any load.",
+    },
+    {
+      id: 10,
+      number: "Q.10",
+      question:
+        "Can you tailor strategies for our niche industry and unique buyer personas?",
+      answer:
+        "Absolutely. EnterpriseBuzz AI combines deep‑dive human research with algorithmic pattern‑matching to build hyper‑specific strategies for any niche market and micro‑segmented buyer persona. Our process fuses AI‑generated personas, industry‑specific benchmarks, and multichannel playbooks that are continually re‑optimized by real‑time data—so every campaign speaks the exact language of your most profitable audience.",
+    },
+    {
+      id: 11,
+      number: "Q.11",
+      question: "Which AI and mar‑tech stack powers EnterpriseBuzz AI?",
+      answer:
+        "We layer GPT‑grade LLMs, computer‑vision creative tests, reinforcement‑learning bid automations, and a proprietary analytics core for algorithmic edge competitors can’t replicate.",
+    },
+    {
+      id: 12,
+      number: "Q.12",
+      question: "How do you ensure GDPR, CCPA, and global privacy compliance?",
+      answer:
+        "Privacy by design” is baked into every funnel: consent capture, data‑minimization, regional data tenancy, and audit trails that satisfy regulators and buyers alike.",
+    },
+    {
+      id: 13,
+      number: "Q.13",
+      question: "How do you detect and mitigate AI bias?",
+      answer:
+        "We audit training data, run bias‑detection checkpoints, and enable client‑side exclusion rules—best‑practice safeguards highlighted by recent industry research.",
+    },
+  ];
+
+  // Toggle FAQ item
+  const toggleItem = (id) => {
+    setOpenItem(openItem === id ? null : id);
+  };
   return (
     <div>
       <SEO
@@ -18,539 +123,88 @@ function Faqs() {
         name="EnterpriseBuzz AI"
         type="description"
       />
-      <div class=" text-gray-600">
-        <div
-          class="w-full bg-center bg-cover h-[15rem] lg:h-[25rem] "
-          style={{
-            "background-image": "url('./hbg.png')",
-          }}
-        >
-          <div class="flex items-center justify-center w-full h-full  ">
-            <div class="text-center ">
-              <h1 class="text-2xl font-semibold text-white py-3 lg:text-7xl md:w-[38rem]">
-                Frequently Asked Questions
-              </h1>
-              <h1 class="text-sm lg:text-base  text-center text-white w-full md:w-[28rem] mx-auto ">
-                Have any question, we’re here to assist you
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Hero ++++++++++++++++++++++++++ */}
-      <section className="py-3 lg:my-4 max-w-6xl mx-auto md:px-2  rounded-2xl">
-        <div className="lg:flex items-center justify-between">
-          {" "}
-          <div class="flex  rounded-3xl lg:rounded-lgrtl:flex-row-reverse  w-screen sm:w-min overflow-x-auto scrollbar-hide inset-x-0 mt-2">
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setOpenTab(1);
-              }}
-              className={` w-[9rem] px-5 rounded-3xl py-2.5 lg:py-3 text-xs font-medium ${
-                openTab === 1
-                  ? "shadow-md   bg-[#DA281C] text-white"
-                  : "text-gray-600"
-              } transition-colors duration-200 sm:text-sm  hover:bg-[#DA281C] hover:text-white`}
-            >
-              <span className=" text-center">General</span>
-            </button>
-
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setOpenTab(2);
-              }}
-              className={`w-[9rem] rounded-3xl px-5 lg:px-8 py-2.5 lg:py-3 text-xs font-medium ${
-                openTab === 2
-                  ? "shadow-md   bg-[#DA281C] text-white"
-                  : "text-gray-600"
-              } transition-colors duration-200 sm:text-sm  hover:bg-[#DA281C] hover:text-white`}
-            >
-              <span className=" text-center">Services</span>
-            </button>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setOpenTab(3);
-              }}
-              className={`w-[9rem] rounded-3xl px-5 py-2.5 lg:py-3 text-xs font-medium ${
-                openTab === 3
-                  ? "shadow-md   bg-[#DA281C] text-white"
-                  : "text-gray-600"
-              } transition-colors duration-200 sm:text-sm  hover:bg-[#DA281C] hover:text-white`}
-            >
-              <span className=" text-center">Pricing</span>
-            </button>
-          </div>
-          <div class="relative flex items-center mt-4 md:mt-0 px-2">
-            <span class="absolute">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                />
-              </svg>
-            </span>
-
-            <input
-              type="text"
-              placeholder="Search"
-              class="block w-full py-2.5 pr-5 text-gray-700 bg-[#F5F5F5] border border-gray-200 rounded-lg md:w-80 placeholder-gray-800/70 text-sm pl-11 rtl:pr-11 rtl:pl-5 focus:border-blue-400  focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+      <div className="bg-[#F9F7F4] px-1 sm:px-4 py-12 md:py-16 lg:py-20">
+        <div className="px-2 lg:px-24 mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 lg:mb-12">
+            <span className="text-[#1F1F1F]">FREQUENTLY</span>
+            <br />
+            <span className="text-[#1F1F1F]">ASK </span>
+            <span className="text-[#C1372E]">QUESTIONS</span>
+          </h2>
+          <div className="flex flex-col md:flex-row gap-5 lg:gap-12">
+            <img
+              src="../bg/heroPics.svg"
+              alt="AI Robot answering FAQ questions"
+              className="lg:hidden w-full h-full object-cover rounded-lg"
             />
-          </div>
-        </div>
+            {/* Left column FAQ items */}
+            <div className="md:w-3/5">
+              <div className="space-y-4">
+                {faqItems.map((item) => (
+                  <div key={item.id} className="rounded-lg overflow-hidden">
+                    <div
+                      className={`flex items-center justify-between p-4 cursor-pointer ${
+                        openItem === item.id
+                          ? "bg-[#C1372E] text-white"
+                          : item.id === 1
+                          ? "bg-[#F5C050]"
+                          : "bg-[#C1372E] text-white"
+                      }`}
+                      onClick={() => toggleItem(item.id)}
+                    >
+                      <div className="flex items-center">
+                        {item.number && (
+                          <span className="mr-4 text-lg font-medium">
+                            {item.number}
+                          </span>
+                        )}
+                        <h3 className="font-medium text-lg">{item.question}</h3>
+                      </div>
+                      <div className="ml-2">
+                        {openItem === item.id ? (
+                          <Minus className="w-6 h-6" />
+                        ) : (
+                          <Plus className="w-6 h-6" />
+                        )}
+                      </div>
+                    </div>
 
-        <div className={openTab === 1 ? "block px-2" : "hidden"}>
-          <div className="mx-auto container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12">
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                1. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                2. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                3. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                4. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                5. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                6. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                7. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                8. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                9. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                10. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                11. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                12. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className={openTab === 2 ? "block px-2" : "hidden"}>
-          <div className="mx-auto container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12">
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                1. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                2. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                3. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                4. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                5. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                6. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                7. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                8. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                9. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                10. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                11. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                12. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className={openTab === 3 ? "block px-2" : "hidden"}>
-          <div className="mx-auto container grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-12">
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                1. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                2. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                3. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                4. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                5. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                6. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                7. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                8. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                9. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                10. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                11. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-            <div className="bg-[#F4F4F4] p-5 rounded-xl ">
-              <h1 className="text-xs sm:text-base font-semibold text-gray-800 pb-3">
-                12. User friendly
-              </h1>
-              <p className="text-[#36474F] font-light text-xs">
-                dand strategic campaigns to captivate users on Instagram.
-                Whether it's through eye-catching posts, Stories, or IGTV
-                videos, we'll help you showcase your brand in its best light and
-                stand out in the crowded feed.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div className=" bg-[#fff] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
-        <div className="container lg:px-16 mx-auto ">
-          <div
-            className="w-full bg-center bg-cover h-[15rem] sm:h-[15rem] lg:h-[20rem] rounded-2xl p-5 lg:p-20"
-            style={{
-              "background-image": "url('./CTA Banner.png')",
-            }}
-          >
-            <div className="sm:flex items-center justify-between w-full h-full  ">
-              <h1 className="text-lg sm:text-2xl font-bold text-white md:py-3 sm:w-[24rem] lg:text-5xl">
-                Still Have Questions?
-              </h1>
-
-              <div className="sm:w-[22rem]">
-                <p className="mt-3 sm:mt-6 font-normal text-[#fff]">
-                  Can’t find the answers you’re looking for, please send a
-                  message to our team and we’ll get back to you in no time
-                </p>
-
-                <div className=" flex gap-x-4 mt-5 items-center">
-                  <Link
-                    to="/contact"
-                    className="w-[10rem] bg-[#fff] rounded-lg text-sm  py-3 text-center text-[#DA281C] transition duration-200 hover:bg-[#757E7E] hover:text-white"
-                  >
-                    Get In Touch
-                  </Link>
-                </div>
+                    {openItem === item.id && (
+                      <div className={`p-4 bg-[#F5C050] text-[#1F1F1F]`}>
+                        <p className="whitespace-pre-line">{item.answer}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
               </div>
             </div>
+
+            {/* Right column with image */}
+            <div className="md:w-2/5 hidden lg:block">
+              <img
+                src="../bg/heroPics.svg"
+                alt="AI Robot answering FAQ questions"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
+
+      {/* Ask Our AI ++++++++++++++++++++++++++ */}
+      <AIChatInterface />
+
+      {/* Graphics ++++++++++++++++++++++++++ */}
+      <section className="py-3 lg:my-4 max-w-3xl mx-auto md:px-2  rounded-2xl">
+        <button>
+          <img src="../graphics.svg" alt="" />
+        </button>
+      </section>
+      {/* Latest Updates */}
+      <LatestUpdates />
+
+      {/* Payment Options */}
+      <PaymentOptions />
     </div>
   );
 }

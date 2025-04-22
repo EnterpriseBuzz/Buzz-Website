@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function PaymentOptions() {
   return (
-    <div className="bg-[#fff] py-10 px-2 lg:px-24">
+    <div className="bg-[#fff] py-10 px-4 lg:px-24">
       <div className=" flex flex-col  items-center  justify-center  ">
         <h2 className="text-xl text-[#000] font-normal text-center md:text-2xl xl:text-3xl lg:w-[35rem] ">
           Payment Options
@@ -14,7 +14,7 @@ function PaymentOptions() {
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 gap-4  sm:grid-cols-3 md:grid-cols-10 mt-6"
+          className="grid grid-cols-3 gap-4  sm:grid-cols-3 md:grid-cols-10 mt-6"
         >
           <button className="w-full cursor-pointer transition transform hover:scale-105">
             <img src="./payment/Container.png" alt="pics" />
@@ -49,9 +49,8 @@ function PaymentOptions() {
           </button>
         </motion.div>
       </AnimatePresence>
-   
-        <img src="./payment/ssl.svg" alt="pics" className="mx-auto pt-10" />
 
+      <img src="./payment/ssl.svg" alt="pics" className="mx-auto pt-10" />
     </div>
   );
 }
