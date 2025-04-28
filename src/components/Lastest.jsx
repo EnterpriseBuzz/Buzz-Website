@@ -56,7 +56,7 @@ const LatestUpdates = () => {
   ];
 
   return (
-    <section className="py-10 px-2 lg:p-24  flex flex-col  items-center  justify-center ">
+    <section className="py-10 px-2 lg:p-24 bg-white flex flex-col  items-center  justify-center ">
       <h2 className="text-2xl text-[#000] font-bold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] capitalize ">
         latest updates
       </h2>

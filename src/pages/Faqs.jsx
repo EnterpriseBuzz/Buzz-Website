@@ -116,7 +116,7 @@ function Faqs() {
     setOpenItem(openItem === id ? null : id);
   };
   return (
-    <div>
+    <div className="bg-white">
       <SEO
         title="FAQs"
         description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
@@ -184,7 +184,7 @@ function Faqs() {
               <img
                 src="../bg/heroPics.svg"
                 alt="AI Robot answering FAQ questions"
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover 2xl:max-h-[65rem] rounded-lg"
               />
             </div>
           </div>
@@ -195,7 +195,7 @@ function Faqs() {
       <AIChatInterface />
 
       {/* Graphics ++++++++++++++++++++++++++ */}
-      <section className="py-3 lg:my-4 max-w-3xl mx-auto md:px-2  rounded-2xl">
+      <section className="py-3 lg:my-4 max-w-3xl mx-auto md:px-2 bg-white rounded-2xl">
         <button>
           <img src="../graphics.svg" alt="" />
         </button>

@@ -74,7 +74,7 @@ const Privacy = () => {
   }, []);
 
   return (
-    <>
+    <div className="bg-white">
       <SEO
         title="Privacy Policies"
         description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
@@ -2296,7 +2296,7 @@ const Privacy = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

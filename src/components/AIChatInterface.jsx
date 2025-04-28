@@ -29,7 +29,7 @@ export default function AIChatInterface() {
   ];
 
   return (
-    <div className="max-w-4xl mx-auto px-2 sm:px-4 py-12">
+    <div className="max-w-4xl mx-auto px-2 sm:px-4 py-12 bg-white">
       <div className="rounded-3xl border border-gray-200 shadow-sm p-8 md:p-12 bg-gradient-to-br from-[#FFFFFF]/100 via-[#F2F6FF]/50 to-[#E5ECFA]/100">
         <div className="flex flex-col items-center justify-center my-10 sm:my-36">
           <div className="mb-3">
