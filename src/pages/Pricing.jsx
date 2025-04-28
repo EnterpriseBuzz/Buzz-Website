@@ -402,7 +402,7 @@ function Pricing() {
               <p className="font-bold text-black text-xl lg:mt-16 py-2 ">
                 Top features
               </p>
-              <div className="pt-3 space-y-5 lg:space-y-10 lg:w-full">
+              <div className="pt-3 space-y-5 lg:space-y-10 2xl:space-y-8 lg:w-full">
                 <p className="text-sm ">AI-Driven Campaigns</p>
                 <p className="text-sm ">Aggressive Marketing Techniques</p>
                 <p className="text-sm ">Creative and Bold Content</p>
@@ -424,7 +424,7 @@ function Pricing() {
               <p className="text-sm font-bold">
                 Channel Optimizations Services
               </p>
-              <div className="py-3 space-y-5 lg:space-y-10 lg:w-full">
+              <div className="py-3 space-y-5 lg:space-y-10 2xl:space-y-7 lg:w-full">
                 <p className="text-sm ">1. Web Optimization</p>
                 <p className="text-sm ">2. Mobile Marketing Enhancements</p>
                 <p className="text-sm ">3. E-commerce Optimization</p>
@@ -433,11 +433,11 @@ function Pricing() {
                   Digital Display and Native Advertising
                 </p>
                 <p className="text-sm ">Influencer Outreach</p>
-                <div className="lg:py-0"></div>
+                <div className="lg:py-0 2xl:py-5"></div>
               </div>
 
               <p className="text-sm font-bold">Email Marketing Services</p>
-              <div className="py-6 space-y-5 lg:space-y-9 lg:w-full">
+              <div className="py-6 2xl:py-2 space-y-5 lg:space-y-9 2xl:space-y-9  lg:w-full">
                 <p className="text-sm ">1. Email Marketing Campaigns</p>
                 <p className="text-sm ">2. Email Automation (Drip Series)</p>
                 <p className="text-sm ">Paid Search (SEM/PPC)</p>
@@ -651,7 +651,7 @@ function Pricing() {
                   </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-5 lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-5  lg:w-full">
                   <div className="flex items-start gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -760,7 +760,7 @@ function Pricing() {
                       per Quarter.
                     </p>
                   </div>
-                  <div className="lg:py-5"></div>
+                  <div className="lg:py-5 2xl:py-10"></div>
 
                   <div className="flex items-start gap-x-1">
                     <img src="../check.svg" alt="check" />
