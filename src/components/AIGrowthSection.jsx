@@ -73,8 +73,8 @@ function AIGrowthSection() {
               team will unleash an aggressive arsenal on your behalf—converting
               every pixel into quantifiable profit.
             </h2>
-            <button className="bg-red-500 hover:bg-red-600 text-white px-8 py-3 rounded-full  transition-colors duration-300 capitalize shadow-md">
-              Create Magic
+            <button className="w-[10rem]">
+              <img src="../buttons/magicButt.gif" alt="" />
             </button>
           </div>
         </motion.div>

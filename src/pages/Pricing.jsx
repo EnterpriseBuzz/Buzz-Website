@@ -402,22 +402,29 @@ function Pricing() {
               <p className="font-bold text-black text-xl lg:mt-16 py-2 ">
                 Top features
               </p>
-              <div className="py-3 space-y-5 lg:space-y-12  lg:w-full">
+              <div className="pt-3 space-y-5 lg:space-y-10 lg:w-full">
                 <p className="text-sm ">AI-Driven Campaigns</p>
                 <p className="text-sm ">Aggressive Marketing Techniques</p>
                 <p className="text-sm ">Creative and Bold Content</p>
                 <p className="text-sm ">Landing Page & CRO</p>
+                <p className="text-sm ">Landing Page & CRO</p>
                 <div className="lg:py-[0.0px]"></div>
-                <p className="text-sm font-bold">SEO and SEM Services</p>
+              </div>
+
+              <p className="text-sm font-bold">SEO and SEM Services</p>
+              <div className="py-3 space-y-5 lg:space-y-10 lg:w-full">
                 <p className="text-sm ">1. SEO Setup & On-Page Optimization</p>
                 <p className="text-sm ">2. Target Keyword Research</p>
                 <p className="text-sm ">3. Link Building</p>
                 <p className="text-sm ">Video Marketing</p>
                 <p className="text-sm ">Social Media Mgt. and Marketing</p>
-                <div className="lg:py-0.5"></div>
-                <p className="text-sm font-bold">
-                  Channel Optimizations Services
-                </p>
+                <div className="lg:py-[0px]"></div>
+              </div>
+
+              <p className="text-sm font-bold">
+                Channel Optimizations Services
+              </p>
+              <div className="py-3 space-y-5 lg:space-y-10 lg:w-full">
                 <p className="text-sm ">1. Web Optimization</p>
                 <p className="text-sm ">2. Mobile Marketing Enhancements</p>
                 <p className="text-sm ">3. E-commerce Optimization</p>
@@ -426,8 +433,11 @@ function Pricing() {
                   Digital Display and Native Advertising
                 </p>
                 <p className="text-sm ">Influencer Outreach</p>
-                <div className="lg:py-1"></div>
-                <p className="text-sm font-bold">Email Marketing Services</p>
+                <div className="lg:py-0"></div>
+              </div>
+
+              <p className="text-sm font-bold">Email Marketing Services</p>
+              <div className="py-6 space-y-5 lg:space-y-9 lg:w-full">
                 <p className="text-sm ">1. Email Marketing Campaigns</p>
                 <p className="text-sm ">2. Email Automation (Drip Series)</p>
                 <p className="text-sm ">Paid Search (SEM/PPC)</p>
@@ -456,14 +466,14 @@ function Pricing() {
                     Spark Buzz Plan
                   </h1>
                   <h1 className="text-xl font-semibold text-[#DA281C]  mb-5">
-                    $1,399/ <span className="text-black text-sm">mo</span>
+                    $2,399/ <span className="text-black text-sm">mo</span>
                   </h1>
                   <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
                     Buy Now
                   </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-11   lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-7   lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -481,6 +491,10 @@ function Pricing() {
                     <p className="text-[#36474F]  text-sm ">
                       Dynamic content strategies that push creative boundaries.
                     </p>
+                  </div>
+                  <div className="flex items-center gap-x-1">
+                    <img src="../check.svg" alt="check" />
+                    <p className="text-[#36474F]  text-sm ">Not included.</p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
@@ -550,7 +564,10 @@ function Pricing() {
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">Not included.</p>
                   </div>
-                  <div className="lg:py-9"></div>
+                  <div className="lg:py-7"></div>
+                </div>
+
+                <div className=" px-2 pb-4 rounded-b-xl space-y-4 lg:space-y-[1.8rem]   lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -611,10 +628,11 @@ function Pricing() {
                       Monthly performance insights with action plans
                     </p>
                   </div>
-                  <button className="">
+                  
+                </div>
+                <button className="px-2">
                     <img src="../buttons/butt1.png" alt="check" />
                   </button>
-                </div>
               </div>
             </div>
             {/* Plan 2 ************************************ */}
@@ -627,19 +645,19 @@ function Pricing() {
                     Boaster Buzz Plan
                   </h1>
                   <h1 className="text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
-                    $3,599/ <span className="text-black text-sm">mo</span>
+                    $5,599/ <span className="text-black text-sm">mo</span>
                   </h1>
                   <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
                     Buy Now
                   </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-6 lg:w-full">
+                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-5 lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Advanced AI integrations for real-time data processing,
-                      market predictions, and strategy adjustments.
+                      Advanced AI Integrations for Real-Time Data Processing &
+                      Market Predictions.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -651,8 +669,8 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Comprehensive content solutions that incorporate bold
-                      ideas and controversial topics to captivate audiences.
+                      Comprehensive Content That Incorporate Bold Ideas to
+                      Captivate Audiences.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -661,6 +679,10 @@ function Pricing() {
                       1 landing page creation/optimization for campaigns​ with
                       A/B testing.
                     </p>
+                  </div>
+                  <div className="flex items-center gap-x-1">
+                    <img src="../check.svg" alt="check" />
+                    <p className="text-[#36474F]  text-sm ">Not included.</p>
                   </div>
                   <div className="lg:py-2"></div>
                   <div className="flex items-center gap-x-1">
@@ -679,23 +701,22 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Ongoing outreach (~5 new backlinks/month) from relevant
-                      mid-tier sources, guest blogging.
+                      5 New Backlinks per Month from Relevant Mid-Tier Sources.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      We deploy 3 dynamic video blitz campaigns per month (e.g.,
-                      product demos or brand stories) designed to captivate.
+                      Deploy 3 Dynamic Video Blitz Campaigns per Month Designed
+                      to Captivate.
                     </p>
                   </div>
 
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      14 posts/month on 2 platforms (e.g. Facebook + LinkedIn)
-                      with strategic scheduling and brand consistency.
+                      14 Posts per Month on 2 Platforms with Strategic
+                      Scheduling & Brand Consistency
                     </p>
                   </div>
                   <div className="lg:py-4"></div>
@@ -708,23 +729,22 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Mobile-first strategies including app development, SMS
-                      marketing, and location-based services.
+                      App Development, SMS Marketing, and Location-Based
+                      Services.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Streamlining online shopping experiences to improve user
-                      interface, functionality, and checkout processes.
+                      Streamlining Online Shopping Experiences to Improve UI and
+                      Functionality.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      We produce 4 posts per month (700–800 words each)
-                      featuring enhanced SEO keyword integration and topic
-                      variety.
+                      4 Posts per Month with Enhanced SEO Keyword Integration &
+                      Topic Variety.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -737,38 +757,37 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Limited influencer outreach by identifying and partnering
-                      with one micro-influencer per quarter.
+                      Influencer Outreach: Partnering with One Micro-Influencer
+                      per Quarter.
                     </p>
                   </div>
-                  <div className="lg:py-8"></div>
+                  <div className="lg:py-4"></div>
 
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      3 email campaigns/month (newsletter + promo/announcement),
-                      segmentation by basic user groups.
+                      3 Email Campaigns per Month with Segmentation by Basic
+                      User Groups.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      2. Single drip series (e.g., welcome or product
-                      onboarding) triggered by user actions.
+                      2 Single Drip Series Triggered by User Actions.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Google Ads management (2 campaigns maximum) with a
-                      moderate budget and monthly optimization.
+                      Google Ads Management (2 Campaigns) with Moderate Budget &
+                      Optimization.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Occasional user-generated content push (e.g., short
-                      contest or hashtag campaign) once every year.
+                      Occasional User-Generated Content Push (e.g., Short
+                      Contest) Once per Year.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -784,22 +803,22 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      More frequent, in-depth bi-monthly analytics to fine-tune
-                      and escalate marketing efforts.
+                      In-Depth Bi-Monthly Analytics to Fine-Tune and Escalate
+                      Marketing Efforts.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Dedicated account manager with bi-weekly strategy calls
-                      and priority email support.
+                      Dedicated Account Manager with Bi-Weekly Strategy Calls &
+                      Email Support.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Commitment to reducing digital campaign carbon footprints,
-                      with regular sustainability audits.
+                      Commitment to Reducing Campaign Carbon Footprints with
+                      Sustainability Audits.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -837,27 +856,26 @@ function Pricing() {
                     Inferno Buzz Plan
                   </h1>
                   <h1 className="text-xl md:text-xl font-semibold text-[#DA281C]  mb-5">
-                    $7,999/ <span className="text-black text-sm">mo</span>
+                    $12,999/ <span className="text-black text-sm">mo</span>
                   </h1>
                   <button className="lg:hidden w-full border-2 border-[#DA281C] rounded-lg  px-6 py-2 text-center font-semibold text-[#DA281C] text-base transition duration-200 hover:bg-[#757E7E] hover:border-[#757E7E] hover:text-white ">
                     Buy Now
                   </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-2 lg:w-full">
+                <div className=" px-2 pt-5 pb-1 rounded-b-xl space-y-5 lg:w-full">
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Ultra-advanced AI solutions for predictive market
-                      movements, deep learning enhancements, and competitive
-                      dominance.
+                      Ultra-Advanced AI Solutions for Predictive Market
+                      Movements and Deep Learning.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Global, aggressive-domination marketing campaigns with
-                      real-time, aggressive adjustments.
+                      Global Domination Marketing Campaigns with Real-Time
+                      Adjustments.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -870,52 +888,55 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Up to 3 new or revised landing pages/month + multi-variant
-                      testing, advanced funnel optimization, robust CRO
-                      strategies.
-                    </p>
-                  </div>
-                  <div className="lg:py-3"></div>
-                  <div className="flex items-center gap-x-1">
-                    <img src="../check.svg" alt="check" />
-                    <p className="text-[#36474F]  text-sm ">
-                      Full-scale technical SEO for 30+ pages, along with
-                      continuous site audits, improvements, and architecture
-                      overhauls to achieve maximum search dominance.
+                      Up to 3 New or Revised Landing Pages per/Month +
+                      Multi-Variant Testing.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      40+ dynamic keywords with AI-driven expansion and ongoing
-                      competitor analysis.
+                      Advanced Funnel Optimization and Robust CRO Strategies.
+                    </p>
+                  </div>
+                  <div className="lg:py-2"></div>
+                </div>
+                <div className=" px-2 pb-6 rounded-b-xl space-y-5 lg:w-full">
+                  <div className="flex items-center gap-x-1">
+                    <img src="../check.svg" alt="check" />
+                    <p className="text-[#36474F]  text-sm ">
+                      Full-Scale Technical SEO for 30+ Pages, Along with
+                      Continuous Site Audits.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Aggressive backlink strategy (averaging 10+ backlinks per
-                      month), PR-driven partnerships, and high-authority
-                      placements to secure sustained ranking power.
+                      40+ Dynamic Keywords with AI-Driven Ongoing Competitor
+                      Analysis.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      4 advanced cinematic productions per month—promotional,
-                      educational, and behind-the-scenes exclusives—with
-                      multi-format distribution for maximum reach.
+                      Aggressive Backlink Strategy and PR-Driven Partnerships to
+                      Sustain Rankings.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      22+ posts/month across 3+ platforms; platform-specific
-                      strategies (e.g. TikTok campaigns, LinkedIn thought
-                      leadership) and advanced scheduling/engagement.
+                      4 Cinematic Videos per Month with Multi-Format
+                      Distribution for Maximum Reach.
                     </p>
                   </div>
-                  <div className="lg:py-3"></div>
+                  <div className="flex items-center gap-x-1">
+                    <img src="../check.svg" alt="check" />
+                    <p className="text-[#36474F]  text-sm ">
+                      22+ Posts per Month Across 3+ Platforms with Advanced
+                      Engagement.
+                    </p>
+                  </div>
+                  <div className="lg:py-4"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
@@ -925,26 +946,22 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Dominate the mobile landscape with a full-scale,
-                      mobile-first strategy that includes custom mobile app
-                      development, intuitive UX design, and holistic campaign
-                      orchestration.
+                      Full-Scale, Mobile-First Strategy and Holistic Campaign
+                      Orchestration.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Full e-commerce funnel optimization, advanced product feed
-                      management, frictionless checkout improvements,
-                      multi-currency & multi-region support if needed.
+                      Full E-Commerce Funnel Optimization and Advanced Product
+                      Feed Management.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      8+ blog posts per month (1000+ words each), data-driven,
-                      advanced SEO focusing on thought leadership and deep
-                      industry insights.
+                      8+ Data-Driven, SEO-Optimized, Deep Industry Insight Blog
+                      Posts per Month.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -957,53 +974,44 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Ongoing collaborations with mid- to top-tier influencers,
-                      manage brand ambassador programs, and implement
-                      multi-campaign influencer strategies on a quarterly
-                      basis—all with comprehensive management.
+                      High-Impact Native Campaigns Woven into Your Overall
+                      Marketing Strategy.
                     </p>
                   </div>
-                  <div className="lg:py-3"></div>
+                  <div className="lg:py-4"></div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      4+ monthly emails (newsletters, promos, re-engagement)
-                      with advanced personalization, multi-step automation
-                      sequences, and dynamic content.
+                      4+ Monthly Email Newsletters with Personalization and
+                      Dynamic Content.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Multiple complex automations (welcome, nurture,
-                      post-purchase, and upsell) with AI-driven timing and
-                      content triggers.
+                      AI-Driven Multiple Automations (Welcome, Nurture,
+                      Post-Purchase, and Upsell).
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Comprehensive multi-channel SEM including Google, Bing,
-                      etc., large-scale budgets with real-time bid optimization
-                      and advanced A/B testing and advanced competitor
-                      targeting.
+                      Multi-Channel SEM with Real-Time Bid Optimization Across
+                      Google, Bing, & More.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Interactive, immersive brand experiences throughAR/VR
-                      technologies. From virtual showrooms to product demos,
-                      this lab creates unforgettable, buzz-worthyexperiences
-                      that capture global attention and set your brand apart.
+                      Interactive, Immersive Brand Experiences Through AR/VR
+                      Technologies.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      quarterly UGC campaigns with a robust plan to crowdsource
-                      user content and drive viral community engagement, brand
-                      advocacy, and social proof.
+                      Quarterly UGC Campaigns with a Robust Plan to Crowdsource
+                      User Content.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -1015,24 +1023,21 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Real-time, comprehensive analytics with a custom dashboard
-                      to continuously monitor and adapt market strategies.
+                      Real-Time Analytics with a Custom Dashboard to Monitor &
+                      Adapt Strategies.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      weekly strategy meetings with a senior strategist,
-                      near-real-time support, and a dedicated Slack channel (or
-                      equivalent) for immediate collaboration.
+                      Weekly Strategy Meetings with a Senior Strategist for
+                      Progress Assessment.
                     </p>
-                  </div>{" "}
+                  </div>
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Leadership in eco-friendly marketing, with tangible
-                      outcomes in sustainability and detailed environmental
-                      impact reports.
+                      Market Leadership Guaranteed After Quarter 3.
                     </p>
                   </div>
                   <div className="flex items-center gap-x-1">
@@ -1044,8 +1049,8 @@ function Pricing() {
                   <div className="flex items-center gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm ">
-                      Weekly comprehensive reports, including performance
-                      analytics, adjustment rationales, and strategic forecasts.
+                      Weekly Comprehensive Reports, Including Performance
+                      Analytics and Forecasts.
                     </p>
                   </div>
                   <button className="my-4">
