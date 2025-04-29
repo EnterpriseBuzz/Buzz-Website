@@ -32,7 +32,10 @@ const Privacy = () => {
 
   const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
-    sectionRefs[sectionId]?.current?.scrollIntoView({ behavior: "smooth" });
+    sectionRefs[sectionId]?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
   };
 
   const scrollToBottom = () => {
@@ -258,7 +261,7 @@ const Privacy = () => {
           {/* Introduction Section */}
           <section
             ref={sectionRefs.introduction}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Introduction</h2>
             <p className="text-gray-700 mb-4">
@@ -284,7 +287,7 @@ const Privacy = () => {
           {/* Scope of Coverage Section */}
           <section
             ref={sectionRefs.scope}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Scope Of Coverage</h2>
             <p className="text-gray-700 mb-4">
@@ -350,7 +353,7 @@ const Privacy = () => {
           {/* our role */}
           <section
             ref={sectionRefs.role}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Our Role</h2>
             <p className="text-gray-700 mb-4">
@@ -411,7 +414,7 @@ const Privacy = () => {
           {/* Information We Collect */}
           <section
             ref={sectionRefs.collect}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Information We Collect</h2>
             <p className="text-gray-700 mb-4">
@@ -606,7 +609,7 @@ const Privacy = () => {
           {/* Third-Party Services */}
           <section
             ref={sectionRefs.services}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Third-Party Services and Integrations
@@ -833,7 +836,7 @@ const Privacy = () => {
           {/* Data Sharing And Disclosure */}
           <section
             ref={sectionRefs.sharing}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Data Sharing And Disclosure
@@ -1017,7 +1020,7 @@ const Privacy = () => {
           {/* Legal Bases for Processing (GDPR Compliance) */}
           <section
             ref={sectionRefs.legal}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Legal Bases for Processing (GDPR Compliance)
@@ -1148,7 +1151,7 @@ const Privacy = () => {
           {/* Your Rights and Choices */}
           <section
             ref={sectionRefs.rights}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Your Rights And Choices</h2>
             <p className="text-gray-700">
@@ -1570,7 +1573,7 @@ const Privacy = () => {
           {/* Marketing Preferences and Consent Management */}
           <section
             ref={sectionRefs.preferences}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Marketing Preferences and Consent Management
@@ -1655,7 +1658,7 @@ const Privacy = () => {
           {/* cookies and tracking technologies */}
           <section
             ref={sectionRefs.cookies}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Cookies And Tracking Technologies
@@ -1838,7 +1841,7 @@ const Privacy = () => {
           {/* data security */}
           <section
             ref={sectionRefs.security}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Data Security</h2>
             <p className="text-gray-700">
@@ -1978,7 +1981,7 @@ const Privacy = () => {
           {/* data retention */}
           <section
             ref={sectionRefs.retention}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Data Retention</h2>
             <p className="text-gray-700">
@@ -2101,7 +2104,7 @@ const Privacy = () => {
           {/* international data transfer */}
           <section
             ref={sectionRefs.transfers}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               International Data Transfers
@@ -2207,7 +2210,7 @@ const Privacy = () => {
           {/* Updates to this Privacy Policy */}
           <section
             ref={sectionRefs.updates}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">
               Updates To This Privacy Policy
@@ -2237,7 +2240,7 @@ const Privacy = () => {
           {/* contact us */}
           <section
             ref={sectionRefs.contact}
-            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl"
+            className="mb-10 bg-[#F9FAFA] p-3 md:p-6 rounded-xl scroll-mt-20"
           >
             <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
             <p className="text-gray-700">
