@@ -48,7 +48,7 @@ function AIGrowthSection() {
               excellence.
             </h2>
             <button className="text-red-500 hover:bg-red-100 bg-white px-8 py-3 rounded-full  transition-colors duration-300 capitalize shadow-md">
-              browse portfolio
+              browse our portfolio
             </button>
           </div>
 

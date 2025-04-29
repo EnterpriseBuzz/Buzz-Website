@@ -499,7 +499,7 @@ function Pricing() {
                   </button>
                 </div>
 
-                <div className=" px-2 py-6 rounded-b-xl space-y-4 lg:space-y-7  2xl:space-y-8  lg:w-full">
+                <div className=" px-2 pt-6 lg:py-6 rounded-b-xl space-y-4 lg:space-y-7  2xl:space-y-8  lg:w-full">
                   <div className="flex items-start gap-x-1">
                     <img src="../check.svg" alt="check" />
                     <p className="text-[#36474F]  text-sm 2xl:text-base 3xl:text-lg ">
@@ -687,7 +687,7 @@ function Pricing() {
               <div className="absolute inset-y-0 left-0 w-0.5 lg:bg-gradient-to-b from-[#FFCC00] to-[#DA281C]"></div>
 
               <div>
-                <div className="px-8 py-1 text-center">
+                <div className="px-8 pt-10 lg:py-1 text-center">
                   <h1 className="text-xl font-bold text-gray-800 pb-2">
                     Boaster Buzz Plan
                   </h1>

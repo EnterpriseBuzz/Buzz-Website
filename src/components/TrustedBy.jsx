@@ -93,7 +93,7 @@ function TrustedBy() {
             className="hidden lg:block lg:w-[56rem] mx-auto"
           />
           <img
-            src="../mcharlie.svg"
+            src="../mCharlie.svg"
             alt="quote"
             className="lg:hidden lg:w-[56rem] mx-auto"
           />
