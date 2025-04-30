@@ -9,7 +9,7 @@ const Privacy = () => {
       behavior: "smooth",
     });
   }, []);
-  const [openTab, setOpenTab] = useState(1);
+
   const [activeSection, setActiveSection] = useState("introduction");
   const sectionRefs = {
     introduction: useRef(null),
@@ -34,22 +34,10 @@ const Privacy = () => {
     setActiveSection(sectionId);
     sectionRefs[sectionId]?.current?.scrollIntoView({
       behavior: "smooth",
-      block: "start"
+      block: "start",
     });
   };
 
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: "smooth",
-    });
-  };
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   // Handle scroll events to update active section
   useEffect(() => {
@@ -248,12 +236,12 @@ const Privacy = () => {
         </div>
 
         {/* Content Area */}
-        <div className="md:w-3/4 h-screen overflow-y-auto">
+        <div className="md:w-3/4 h-screen overflow-y-auto scrollbar-hide">
           <div className="flex justify-between items-center mb-6">
             <p className="text-gray-600 text-sm lg:text-base">
               Last Updated: April 14, 2025
             </p>
-            <button onClick={scrollToBottom}>
+            <button onClick={() => scrollToSection("contact")}>
               <img src="../buttons/Button.svg" className="w-[8rem]" alt="" />
             </button>
           </div>
@@ -2294,7 +2282,7 @@ const Privacy = () => {
               investigate the matter.
             </p>
           </section>
-          <button onClick={scrollToTop}>
+          <button onClick={() => scrollToSection("introduction")}>
             <img src="../buttons/ButtonT.svg" alt="" />
           </button>
         </div>
