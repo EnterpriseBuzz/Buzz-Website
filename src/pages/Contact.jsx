@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import CTA from "../components/CTA";
+import TestimonySlide from "../components/TestimonySlide";
 
 function Contact() {
   useEffect(() => {
@@ -197,6 +199,29 @@ function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <div className=" bg-[#fff] py-10  ">
+        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
+          What our clients say about us
+        </h2>
+        <h2 className="mx-auto text-[#36474F] text-center font-semibold text-sm xl:text-xl md:w-[44rem] xl:w-[48rem] flex items-center justify-center gap-x-2">
+          <img
+            className="object-cover object-center w-auto h-5 md:w-auto md:h-9 xl:h-10"
+            src="../Frame 41.png"
+            alt=""
+          />
+          over 1k clients trust us
+        </h2>
+        <section className="mx-auto  justify-center  my-5 lg:mt-10 ">
+          <div className="w-full ">
+            <TestimonySlide />
+          </div>
+        </section>
+      </div>
+
+      {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <CTA />
     </div>
   );
 }
