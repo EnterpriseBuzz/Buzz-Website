@@ -14,7 +14,7 @@ function Graphics() {
           <img
             src="./bg/graphicsTop.svg"
             alt="pics"
-            className="hidden md:block py-2"
+            className="w-full hidden md:block py-2"
           />
           {/* Mobile view */}
           <img  src="./bg/mGraphicsTop.svg" alt="pics" className=" md:hidden py-2" />

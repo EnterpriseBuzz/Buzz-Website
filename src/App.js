@@ -12,6 +12,7 @@ import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Why from "./pages/Why";
+import SMMarketing from "./pages/services/SMMarketing";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Route path="pricing" element={<Pricing />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path="terms" element={<Terms />} />
+            <Route path="social-media-marketing" element={<SMMarketing />} />
           </Route>
         </Routes>
       </Router>
