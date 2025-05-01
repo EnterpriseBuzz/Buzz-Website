@@ -10,6 +10,7 @@ import Technology from "../components/Technology";
 import LatestUpdates from "../components/Lastest";
 import HowWeWork from "../components/HowWeWork";
 import CTA from "../components/CTA";
+import Graphics from "../components/Graphics";
 
 function Home() {
   useEffect(() => {
@@ -320,6 +321,9 @@ function Home() {
           </motion.div>
         </AnimatePresence>
       </div>
+
+      {/* Graphics +++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <Graphics />
 
       {/* How Does EnterpriseBuzz AI Work? Section +++++++++++++++++++++++++++++++++++++++++++ */}
       <HowWeWork />

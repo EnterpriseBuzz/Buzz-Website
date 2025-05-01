@@ -13,7 +13,7 @@ function CTA() {
     >
       <div className=" lg:px-16 2xl:px-24 mx-auto 2xl:w-full">
         <div
-          className="w-full bg-center bg-cover hidden md:block h-[18rem] lg:h-[21rem] 2xl:h-[33rem] rounded-2xl p-5 lg:p-20"
+          className="w-full bg-center bg-cover hidden md:block h-[18rem] lg:h-[21rem] xl:h-[18rem] 2xl:h-[33rem] rounded-2xl p-5 lg:p-20"
           style={{
             "background-image": "url('./bg/CTABanner.svg')",
           }}

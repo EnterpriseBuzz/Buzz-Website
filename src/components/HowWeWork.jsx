@@ -8,7 +8,7 @@ function HowWeWork() {
 
   return (
     <div
-      className="bg-[#0C0C1B] py-10 lg:p-24 px-2   flex flex-col  items-center  justify-center lg:bg-no-repeat  bg-center md:bg-top md:bg-contain"
+      className="bg-[#0C0C1B] py-10 lg:p-24 px-2   flex flex-col  items-center  justify-center bg-no-repeat  bg-top md:bg-contain"
       style={{
         "background-image": "url('./bg/bgHDEAW.svg')",
       }}
