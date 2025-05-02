@@ -57,7 +57,7 @@ const LatestUpdates = () => {
 
   return (
     <section className="py-10 px-2 lg:p-24 bg-white flex flex-col  items-center  justify-center ">
-      <h2 className="text-2xl text-[#000] font-bold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] capitalize ">
+      <h2 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-500 font-bold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] uppercase ">
         latest updates
       </h2>
       <h2 className="text-[12px] text-[#000] text-center md:text-sm xl:text-base md:w-[44rem] lg:w-[50rem] py-2">

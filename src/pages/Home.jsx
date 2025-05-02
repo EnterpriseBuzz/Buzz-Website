@@ -11,6 +11,7 @@ import LatestUpdates from "../components/Lastest";
 import HowWeWork from "../components/HowWeWork";
 import CTA from "../components/CTA";
 import Graphics from "../components/Graphics";
+import PaymentOptions from "../components/PaymentOptions";
 
 function Home() {
   useEffect(() => {
@@ -225,6 +226,27 @@ function Home() {
             >
               <img src="./services/service2.png" alt="pics" />
             </button>
+            <button
+              id="promoDesign"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service20.png" alt="pics" />
+            </button>
+            <button
+              id="promoDesign"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service19.png" alt="pics" />
+            </button>
+            <button
+              id="promoDesign"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service2.png" alt="pics" />
+            </button>
           </motion.div>
         </AnimatePresence>
         <AnimatePresence>
@@ -317,6 +339,34 @@ function Home() {
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service14.svg" alt="pics" />
+            </button>
+            <button
+              id="podcast"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service15.png" alt="pics" />
+            </button>
+            <button
+              id="podcast"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service16.png" alt="pics" />
+            </button>
+            <button
+              id="podcast"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service17.png" alt="pics" />
+            </button>
+            <button
+              id="podcast"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service18.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
@@ -557,6 +607,9 @@ function Home() {
 
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <CTA />
+
+      {/* Payment Options +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      <PaymentOptions />
     </div>
   );
 }

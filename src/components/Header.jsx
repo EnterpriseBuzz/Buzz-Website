@@ -387,7 +387,7 @@ function Header() {
                       </div>
                     </div>
 
-                    <img src="./droppics.svg" alt="" />
+                    <img src="./droppics.png" alt="" />
                   </motion.div>
                 </AnimatePresence>
               </div>

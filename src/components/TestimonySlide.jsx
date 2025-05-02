@@ -336,24 +336,23 @@ function TestimonySlide() {
         <SwiperSlide>
           <div className="bg-[#F4F4F4] p-5 rounded-xl ">
             <p className="text-gray-500 text-sm">
-              EnterpriseBuzz has truly been a game-changer for our business.
-              Their innovative digital marketing strategies have helped us reach
-              new audiences and increase our online visibility. We've seen a
-              significant boost in traffic and conversions since partnering with
-              them. Highly recommended.
+              Enterprise Buzz AI created our brand logo and several different
+              pieces of media graphics that represented our brand. <br /> Their
+              work on everything was phenomenal!! <br /> They created an
+              incredible logo that was even better than I could have imagined!
             </p>
             <div className="flex items-center gap-x-2 mt-3">
               <img
                 className="object-cover object-center w-5 h-5 md:w-9 md:h-9 rounded-full "
-                src="../avatars/testi2.png"
+                src="../avatars/testi12.png"
                 alt=""
               />
               <div>
                 <h1 className="text-xs sm:text-sm font-semibold text-gray-800">
-                  Sarah Thompson
+                  Lisa Senis
                 </h1>
                 <p className="text-[8px] sm:text-xs text-gray-500 font-light">
-                  CEO, Thompson & Co.
+                  Independent Enagic Distributor
                 </p>
               </div>
             </div>
@@ -394,7 +393,7 @@ function TestimonySlide() {
               before. Their attention to detail and commitment to excellence are
               unmatched. <br /> We're thrilled with the outcome!
             </p>
- 
+
             <div className="flex items-center gap-x-2 mt-3">
               <img
                 className="object-cover object-center w-5 h-5 md:w-9 md:h-9 rounded-full "
@@ -573,24 +572,24 @@ function TestimonySlide() {
         <SwiperSlide>
           <div className="bg-[#F4F4F4] p-5 rounded-xl ">
             <p className="text-gray-500 text-sm">
-              EnterpriseBuzz has truly been a game-changer for our business.
-              Their innovative digital marketing strategies have helped us reach
-              new audiences and increase our online visibility. We've seen a
-              significant boost in traffic and conversions since partnering with
-              them. Highly recommended.
+              Every element of our website is meticulously crafted to ensure
+              that our message is clear, captivating, and immediately
+              actionable. We are immensely proud of this collaborative
+              accomplishment and are confident that our newly engineered funnel
+              will continue to drive exceptional results and sustainable growth.
             </p>
             <div className="flex items-center gap-x-2 mt-3">
               <img
                 className="object-cover object-center w-5 h-5 md:w-9 md:h-9 rounded-full "
-                src="../avatars/testi2.png"
+                src="../avatars/testi10.png"
                 alt=""
               />
               <div>
                 <h1 className="text-xs sm:text-sm font-semibold text-gray-800">
-                  Sarah Thompson
+                  Water Divas
                 </h1>
                 <p className="text-[8px] sm:text-xs text-gray-500 font-light">
-                  CEO, Thompson & Co.
+                  Enagic Distributor, Canada
                 </p>
               </div>
             </div>
