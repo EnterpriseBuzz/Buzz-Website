@@ -245,7 +245,7 @@ function Home() {
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service2.png" alt="pics" />
+              <img src="./services/service21.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
@@ -348,21 +348,21 @@ function Home() {
               <img src="./services/service15.png" alt="pics" />
             </button>
             <button
-              id="podcast"
+              id="business-card"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service16.png" alt="pics" />
             </button>
             <button
-              id="podcast"
+              id="marketing-animation"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service17.png" alt="pics" />
             </button>
             <button
-              id="podcast"
+              id="ai-enhanced"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
