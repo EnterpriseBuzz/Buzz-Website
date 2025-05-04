@@ -231,21 +231,21 @@ function Home() {
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service20.png" alt="pics" />
+              <img src="./services/service3.png" alt="pics" />
             </button>
             <button
               id="promoDesign"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service19.png" alt="pics" />
+              <img src="./services/service4.png" alt="pics" />
             </button>
             <button
               id="promoDesign"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service21.png" alt="pics" />
+              <img src="./services/service5.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
@@ -261,112 +261,112 @@ function Home() {
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service3.svg" alt="pics" />
+              <img src="./services/service6.png" alt="pics" />
             </button>
             <button
               id="seoMarketing"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service4.svg" alt="pics" />
+              <img src="./services/service7.png" alt="pics" />
             </button>
             <button
               id="socialMarketing"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service5.svg" alt="pics" />
+              <img src="./services/service8.png" alt="pics" />
             </button>
             <button
               id="nativeAds"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service6.svg" alt="pics" />
+              <img src="./services/service9.png" alt="pics" />
             </button>
             <button
               id="logoDesign"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service7.svg" alt="pics" />
+              <img src="./services/service10.png" alt="pics" />
             </button>
             <button
               id="leadGen"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service8.svg" alt="pics" />
+              <img src="./services/service11.png" alt="pics" />
             </button>
             <button
               id="videography"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service9.svg" alt="pics" />
+              <img src="./services/service12.png" alt="pics" />
             </button>
             <button
               id="photography"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service10.svg" alt="pics" />
+              <img src="./services/service13.png" alt="pics" />
             </button>
             <button
               id="UGC"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service11.svg" alt="pics" />
+              <img src="./services/service14.png" alt="pics" />
             </button>
             <button
               id="chatbot"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service12.svg" alt="pics" />
+              <img src="./services/service15.png" alt="pics" />
             </button>
             <button
               id="emailAutomation"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
-              <img src="./services/service13.svg" alt="pics" />
-            </button>
-            <button
-              id="podcast"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service14.svg" alt="pics" />
-            </button>
-            <button
-              id="podcast"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service15.png" alt="pics" />
-            </button>
-            <button
-              id="business-card"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
               <img src="./services/service16.png" alt="pics" />
             </button>
             <button
-              id="marketing-animation"
+              id="podcast"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service17.png" alt="pics" />
             </button>
             <button
-              id="ai-enhanced"
+              id="podcast"
               onClick={openCalendly}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service18.png" alt="pics" />
+            </button>
+            <button
+              id="business-card"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service19.png" alt="pics" />
+            </button>
+            <button
+              id="marketing-animation"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service20.png" alt="pics" />
+            </button>
+            <button
+              id="ai-enhanced"
+              onClick={openCalendly}
+              className="w-full cursor-pointer transition transform hover:scale-105"
+            >
+              <img src="./services/service21.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
