@@ -1,10 +1,9 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function HowWeWork() {
-  const openCalendly = () => {
-    window.open("https://calendly.com/enterprisebuzzai", "_blank");
-  };
+  const navigate = useNavigate();
 
   return (
     <div
@@ -38,11 +37,23 @@ function HowWeWork() {
             transition={{ duration: 0.5 }}
             className="w-full justify-between hidden md:flex px-[12rem] -mt-10"
           >
-            <button className="-mt-10 h-[3rem] w-[11rem] px-12 py-3 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition">
+            <button
+              onClick={() => navigate("/pricing")}
+              className="-mt-10 h-[3rem] w-[11rem] px-12 py-3 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition"
+            >
               Explore
             </button>
 
-            <button className="mt-10 w-[11rem] px-12 py-3 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+                document
+                  .getElementById("web")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="mt-10 w-[11rem] px-12 py-3 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition"
+            >
               Explore
             </button>
           </motion.div>
@@ -61,7 +72,7 @@ function HowWeWork() {
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              onClick={openCalendly}
+              onClick={() => navigate("/pricing")}
               className="mx-auto w-[11rem] cursor-pointer hover:scale-105 px-12 py-2 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition"
             >
               Explore
@@ -73,13 +84,20 @@ function HowWeWork() {
               transition={{ duration: 0.5 }}
               className="  transition transform pt-20"
             >
-              <img src="./butt.svg" alt="pics" className="w-full"  />
+              <img src="./butt.svg" alt="pics" className="w-full" />
             </motion.div>
             <motion.button
               initial={{ x: 20, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
-              onClick={openCalendly}
+              onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+
+                document
+                  .getElementById("web")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="mx-auto w-[11rem] my-10 cursor-pointer hover:scale-105 px-12 py-2 text-white text-lg font-semibold rounded-xl bg-gradient-to-r from-red-600 via-orange-500 to-yellow-400 shadow-lg hover:opacity-90 transition"
             >
               Explore
