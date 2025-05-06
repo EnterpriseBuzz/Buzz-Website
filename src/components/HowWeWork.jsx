@@ -47,7 +47,7 @@ function HowWeWork() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                setIsOpen(false);
+               
                 document
                   .getElementById("web")
                   ?.scrollIntoView({ behavior: "smooth" });
@@ -92,7 +92,7 @@ function HowWeWork() {
               transition={{ duration: 0.5 }}
               onClick={(e) => {
                 e.preventDefault();
-                setIsOpen(false);
+               
 
                 document
                   .getElementById("web")
