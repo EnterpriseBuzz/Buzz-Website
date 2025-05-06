@@ -254,7 +254,7 @@ function Home() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-4"
+            className="grid grid-cols-1 justify-center  sm:grid-cols-2 md:grid-cols-4 px-auto"
           >
             <button
               id="emailMarketing"

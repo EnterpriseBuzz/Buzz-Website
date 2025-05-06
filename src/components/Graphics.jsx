@@ -17,7 +17,7 @@ function Graphics() {
             className="w-full hidden md:block py-2"
           />
           {/* Mobile view */}
-          <img  src="./bg/mGraphicsTop.svg" alt="pics" className=" md:hidden py-2" />
+          <img  src="./bg/mGraphicsTop.svg" alt="pics" className="w-full md:hidden py-2" />
         </motion.div>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
