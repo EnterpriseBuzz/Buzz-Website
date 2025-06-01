@@ -13,6 +13,11 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Why from "./pages/Why";
 import SMMarketing from "./pages/services/SMMarketing";
+import SEOMarketing from "./pages/services/SEOMarketing";
+import Web from "./pages/services/Web";
+import Branding from "./pages/services/Branding";
+import EmailMarketing from "./pages/services/EmailMarketing";
+import LogoDesign from "./pages/services/LogoDesign";
 
 function App() {
   return (
@@ -35,7 +40,23 @@ function App() {
             <Route path="pricing" element={<Pricing />} />
             <Route path="privacy" element={<Privacy />} />
             <Route path="terms" element={<Terms />} />
+            {/* SERVICES +++++++++++++++++++++++++++++++++ */}
             <Route path="social-media-marketing" element={<SMMarketing />} />
+            <Route path="seo-marketing" element={<SEOMarketing />} />
+            <Route path="web" element={<Web />} />
+            <Route path="branding" element={<Branding />} />
+            <Route path="email-marketing" element={<EmailMarketing />} />
+            <Route path="logo-design" element={<LogoDesign />} />
+          </Route>
+
+          {/* SERVICES +++++++++++++++++++++++++++++++++ */}
+          <Route path="services" element={<MainLayout />}>
+            <Route path="social-media-marketing" element={<SMMarketing />} />
+            <Route path="seo-marketing" element={<SEOMarketing />} />
+            <Route path="web" element={<Web />} />
+            <Route path="branding" element={<Branding />} />
+            <Route path="email-marketing" element={<EmailMarketing />} />
+            <Route path="logo-design" element={<LogoDesign />} />
           </Route>
         </Routes>
       </Router>

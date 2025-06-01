@@ -11,7 +11,8 @@ import LatestUpdates from "../components/Lastest";
 import HowWeWork from "../components/HowWeWork";
 import CTA from "../components/CTA";
 import Graphics from "../components/Graphics";
-import PaymentOptions from "../components/PaymentOptions";
+import PaymentOptions from "../components/layouts/PaymentOptions";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -24,6 +25,7 @@ function Home() {
   const [more2, setMore2] = useState(false);
   const [more3, setMore3] = useState(false);
 
+  const navigate = useNavigate();
   const openCalendly = () => {
     window.open("https://calendly.com/enterprisebuzzai", "_blank");
   };
@@ -207,14 +209,14 @@ function Home() {
           >
             <button
               id="web"
-              onClick={openCalendly}
+              onClick={() => navigate("services/web")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="../services/service.png" alt="pics" />
             </button>
             <button
               id="branding"
-              onClick={openCalendly}
+              onClick={() => navigate("services/branding")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service1.svg" alt="pics" />
@@ -258,21 +260,21 @@ function Home() {
           >
             <button
               id="emailMarketing"
-              onClick={openCalendly}
+              onClick={() => navigate("services/email-marketing")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service6.png" alt="pics" />
             </button>
             <button
               id="seoMarketing"
-              onClick={openCalendly}
+              onClick={() => navigate("services/seo-marketing")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service7.png" alt="pics" />
             </button>
             <button
               id="socialMarketing"
-              onClick={openCalendly}
+              onClick={() => navigate("services/social-media-marketing")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service8.png" alt="pics" />
@@ -286,7 +288,7 @@ function Home() {
             </button>
             <button
               id="logoDesign"
-              onClick={openCalendly}
+              onClick={() => navigate("services/logo-design")}
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service10.png" alt="pics" />

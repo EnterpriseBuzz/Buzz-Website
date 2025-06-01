@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
 import TrustedBy from "../components/TrustedBy";
-import PaymentOptions from "../components/PaymentOptions";
+import PaymentOptions from "../components/layouts/PaymentOptions";
 import AIGrowthSection from "../components/AIGrowthSection";
 
 function Pricing() {
@@ -403,15 +403,21 @@ function Pricing() {
                 Top features
               </p>
               <div className="pt-3 2xl:pt-0 space-y-5 lg:space-y-10 2xl:space-y-11 3xl:space-y-12 lg:w-full">
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">AI-Driven Campaigns</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  AI-Driven Campaigns
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Aggressive Marketing Techniques
                 </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Creative and Bold Content
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Landing Page & CRO</p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Landing Page & CRO</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Landing Page & CRO
+                </p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Landing Page & CRO
+                </p>
                 <div className="lg:py-[0.0px]"></div>
               </div>
 
@@ -425,8 +431,12 @@ function Pricing() {
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   2. Target Keyword Research
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">3. Link Building</p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Video Marketing</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  3. Link Building
+                </p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Video Marketing
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Social Media Mgt. and Marketing
                 </p>
@@ -437,18 +447,24 @@ function Pricing() {
                 Channel Optimizations Services
               </p>
               <div className="py-3 space-y-5 lg:space-y-10  lg:w-full">
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">1. Web Optimization</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  1. Web Optimization
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   2. Mobile Marketing Enhancements
                 </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   3. E-commerce Optimization
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Blog Content Production</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Blog Content Production
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Digital Display and Native Advertising
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Influencer Outreach</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Influencer Outreach
+                </p>
                 <div className="lg:py-0 2xl:py-5 3xl:py-7"></div>
               </div>
 
@@ -462,20 +478,30 @@ function Pricing() {
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   2. Email Automation (Drip Series)
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Paid Search (SEM/PPC)</p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">UGC Campaigns</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Paid Search (SEM/PPC)
+                </p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  UGC Campaigns
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Immersive AR/VR Brand Experience Lab
                 </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Exclusive AI-Driven Automation & Dynamic Creative Engine
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Performance Analytics</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Performance Analytics
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Dedicated Account Management & Consulting
                 </p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Sustainability Reporting</p>
-                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">Performance Guarantees</p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Sustainability Reporting
+                </p>
+                <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
+                  Performance Guarantees
+                </p>
                 <p className="text-sm lg:text-[13px] 2xl:text-base 3xl:text-lg ">
                   Transparency and Reporting
                 </p>

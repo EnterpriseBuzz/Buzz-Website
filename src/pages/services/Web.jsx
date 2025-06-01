@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 
-function SMMarketing() {
+function Web() {
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
-  return <div>SMMarketing</div>;
+  return <div>Web</div>;
 }
 
-export default SMMarketing;
+export default Web;

@@ -29,7 +29,9 @@ const Footer = () => {
               <div className="items-start  mb-2 ">
                 <p className=" text-lg font-bold mb-3">Newsletter</p>
                 <p className=" text-sm  w-full lg:w-[21rem]">
-                Sign up for our newsletter and stay informed about the latest marketing breakthroughs, expertly curated from our Toronto front.
+                  Sign up for our newsletter and stay informed about the latest
+                  marketing breakthroughs, expertly curated from
+                  our Toronto front.
                 </p>
                 <div className="my-2 flex items-center bg-white rounded-lg  w-full max-w-md overflow-hidden">
                   <input
@@ -77,7 +79,8 @@ const Footer = () => {
               </div>
               <div className="">
                 <p>
-                Stay updated on the latest marketing technology happenings on our social media platforms.
+                  Stay updated on the latest marketing technology happenings on
+                  our social media platforms.
                 </p>
                 <div className="mt-2 flex  gap-x-3 items-center ">
                   <a
@@ -128,7 +131,7 @@ const Footer = () => {
                     className="font-normal  items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
                     <img src="../icons/youtube.svg" alt="" />
-                       </a>
+                  </a>
                   <a
                     href="https://twitter.com/enterprisebuzzai"
                     className="font-normal  items-center justify-center align-center rounded-full outline-none focus:outline-none "
@@ -176,7 +179,6 @@ const Footer = () => {
                     href="https://www.linkedin.com/enterprisebuzz"
                     className=" font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
-                    
                     <svg
                       width="56"
                       height="48"
@@ -206,9 +208,7 @@ const Footer = () => {
                       </defs>
                     </svg>
                   </a>
-                  
-                 
-                 
+
                   <a
                     href="https://dribbble.com/Enterprisebuzzai "
                     className="text-blueGray-800  font-normal px-0.5 items-center justify-center align-center rounded-full outline-none focus:outline-none "
@@ -321,7 +321,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("marketing")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("marketing")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -333,7 +335,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("comVideo")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("comVideo")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -344,21 +348,18 @@ const Footer = () => {
                     to=""
                     onClick={(e) => {
                       e.preventDefault();
-                  
+
                       // navigate("/");
-                      document.getElementById("callAgent")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("callAgent")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     AI-Driven Call Agent
                   </Link>
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document.getElementById("web")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/web"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Website/ Mobile App Design
@@ -367,34 +368,25 @@ const Footer = () => {
                     to=""
                     onClick={(e) => {
                       e.preventDefault();
-                     
+
                       // navigate("/");
-                      document.getElementById("emailAutomation")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("emailAutomation")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     email automation
                   </Link>
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                    
-                      // navigate("/");
-                      document.getElementById("branding")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/branding"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Branding Identity Designs
                   </Link>
 
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document.getElementById("logoDesign")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/logo-design"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Logo Design
@@ -405,7 +397,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("videography")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("videography")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -416,7 +410,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("photography")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("photography")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -431,9 +427,11 @@ const Footer = () => {
                     to=""
                     onClick={(e) => {
                       e.preventDefault();
-                     
+
                       // navigate("/");
-                      document.getElementById("promoDesign")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("promoDesign")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -441,25 +439,14 @@ const Footer = () => {
                   </Link>
 
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document.getElementById("emailMarketing")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/email-marketing"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Email Marketing
                   </Link>
 
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      
-                      // navigate("/");
-                      document.getElementById("seoMarketing")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/seo-marketing"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     SEO Marketing
@@ -469,20 +456,16 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("podcast")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("podcast")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Podcast for marketing
                   </Link>
                   <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      
-                      // navigate("/");
-                      document.getElementById("socialMarketing")?.scrollIntoView({ behavior: "smooth" });
-                    }}
+                    to="/services/social-media-marketing"
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
                     Social Media marketing
@@ -492,7 +475,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("chatbot")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("chatbot")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -503,7 +488,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("UGC")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("UGC")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -514,7 +501,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("nativeAds")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("nativeAds")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >
@@ -525,7 +514,9 @@ const Footer = () => {
                     onClick={(e) => {
                       e.preventDefault();
                       // navigate("/");
-                      document.getElementById("leadGen")?.scrollIntoView({ behavior: "smooth" });
+                      document
+                        .getElementById("leadGen")
+                        ?.scrollIntoView({ behavior: "smooth" });
                     }}
                     className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
                   >

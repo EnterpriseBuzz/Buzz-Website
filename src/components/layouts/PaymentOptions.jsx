@@ -17,40 +17,40 @@ function PaymentOptions() {
           className="grid grid-cols-3 gap-4  sm:grid-cols-3 md:grid-cols-10 mt-6"
         >
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container.png" alt="pics" />
+            <img src="../payment/Container.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container1.png" alt="pics" />
+            <img src="../payment/Container1.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container2.png" alt="pics" />
+            <img src="../payment/Container2.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container3.png" alt="pics" />
+            <img src="../payment/Container3.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container4.png" alt="pics" />
+            <img src="../payment/Container4.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container5.png" alt="pics" />
+            <img src="../payment/Container5.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container6.png" alt="pics" />
+            <img src="../payment/Container6.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container7.png" alt="pics" />
+            <img src="../payment/Container7.png" alt="pics" />
           </button>
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/Container8.png" alt="pics" />
+            <img src="../payment/Container8.png" alt="pics" />
           </button>
 
           <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./payment/more.png" alt="pics" />
+            <img src="../payment/more.png" alt="pics" />
           </button>
         </motion.div>
       </AnimatePresence>
 
-      <img src="./payment/ssl.svg" alt="pics" className="mx-auto pt-10" />
+      <img src="../payment/ssl.svg" alt="pics" className="mx-auto pt-10" />
     </div>
   );
 }

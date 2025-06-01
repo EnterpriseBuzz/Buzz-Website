@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
-import PaymentOptions from "../components/PaymentOptions";
+import PaymentOptions from "../components/layouts/PaymentOptions";
 import LatestUpdates from "../components/Lastest";
 import { Plus, Minus } from "lucide-react";
 import AIChatInterface from "../components/AIChatInterface";
