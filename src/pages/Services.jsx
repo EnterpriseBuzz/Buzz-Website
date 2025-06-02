@@ -22,8 +22,8 @@ function Services() {
     <div>
       <SEO
         title="Service"
-        description="Enterprise Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzzer"
+        description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriseBuzz AI"
         type="description"
       />
       <div className=" text-gray-600">
@@ -91,10 +91,10 @@ function Services() {
               Website Designs & Optimizations
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At Enterprise Buzzer, execution is not just a part of our strategy;
-              it is the heart of our battle plan. In the relentless arena of
-              digital marketing, we deploy an arsenal that covers the entire
-              spectrum: search engine mastery, precision-targeted email
+              At Enterprise Buzzer, execution is not just a part of our
+              strategy; it is the heart of our battle plan. In the relentless
+              arena of digital marketing, we deploy an arsenal that covers the
+              entire spectrum: search engine mastery, precision-targeted email
               marketing, compelling video marketing, authoritative influencer
               engagements, commanding social media campaigns, unmissable digital
               display ads, explosive viral initiatives, and revolutionary
@@ -189,10 +189,10 @@ function Services() {
               Email Marketing
             </h2>
             <p className="mt-6 font-light text-[#62747d]">
-              At Enterprise Buzzer, execution is not just a part of our strategy;
-              it is the heart of our battle plan. In the relentless arena of
-              digital marketing, we deploy an arsenal that covers the entire
-              spectrum: search engine mastery, precision-targeted email
+              At Enterprise Buzzer, execution is not just a part of our
+              strategy; it is the heart of our battle plan. In the relentless
+              arena of digital marketing, we deploy an arsenal that covers the
+              entire spectrum: search engine mastery, precision-targeted email
               marketing, compelling video marketing, authoritative influencer
               engagements, commanding social media campaigns, unmissable digital
               display ads, explosive viral initiatives, and revolutionary

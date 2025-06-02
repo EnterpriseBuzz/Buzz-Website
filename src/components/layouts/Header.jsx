@@ -12,7 +12,7 @@ function Header() {
       <header
         className="bg-white w-full bg-center bg-cover "
         style={{
-          "background-image": "url('./bg//headerbg.svg')",
+          "background-image": "url('../bg/headerbg.svg')",
         }}
       >
         <motion.nav
@@ -62,7 +62,7 @@ function Header() {
               <div
                 className="absolute z-[100] left-1/2 transform -translate-x-1/2 w-screen max-w-screen-xl hidden group-hover:block transition-opacity duration-300 bg-white rounded-md shadow-xl bg-center bg-cover"
                 style={{
-                  "background-image": "url('./bg/menubg.svg')",
+                  "background-image": "url('../bg/menubg.svg')",
                 }}
               >
                 <AnimatePresence>
@@ -74,7 +74,7 @@ function Header() {
                   >
                     <div className="flex flex-col items-start  space-y-4">
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon.svg" alt="" />
+                        <img src="../icons/icon.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -91,7 +91,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon1.svg" alt="" />
+                        <img src="../icons/icon1.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -108,7 +108,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon2.svg" alt="" />
+                        <img src="../icons/icon2.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -125,7 +125,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon3.svg" alt="" />
+                        <img src="../icons/icon3.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -142,7 +142,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon4.svg" alt="" />
+                        <img src="../icons/icon4.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -161,7 +161,7 @@ function Header() {
                     </div>
                     <div className="flex flex-col items-start  space-y-4">
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon5.svg" alt="" />
+                        <img src="../icons/icon5.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -178,7 +178,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon6.svg" alt="" />
+                        <img src="../icons/icon6.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -195,7 +195,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon7.svg" alt="" />
+                        <img src="../icons/icon7.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -212,7 +212,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon8.svg" alt="" />
+                        <img src="../icons/icon8.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -229,7 +229,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon9.svg" alt="" />
+                        <img src="../icons/icon9.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -248,7 +248,7 @@ function Header() {
                     </div>
                     <div className="flex flex-col items-start  space-y-4">
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon10.svg" alt="" />
+                        <img src="../icons/icon10.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -265,7 +265,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon11.svg" alt="" />
+                        <img src="../icons/icon11.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -282,7 +282,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon12.svg" alt="" />
+                        <img src="../icons/icon12.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -299,7 +299,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon13.svg" alt="" />
+                        <img src="../icons/icon13.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -318,7 +318,7 @@ function Header() {
                     </div>
                     <div className="flex flex-col items-start  space-y-4">
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon14.svg" alt="" />
+                        <img src="../icons/icon14.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -335,7 +335,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon15.svg" alt="" />
+                        <img src="../icons/icon15.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -352,7 +352,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon16.svg" alt="" />
+                        <img src="../icons/icon16.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -369,7 +369,7 @@ function Header() {
                         </Link>
                       </div>
                       <div className="flex items-center gap-x-3">
-                        <img src="./icons/icon17.svg" alt="" />
+                        <img src="../icons/icon17.svg" alt="" />
                         <Link
                           to="/"
                           onClick={(e) => {
@@ -387,7 +387,7 @@ function Header() {
                       </div>
                     </div>
 
-                    <img src="./droppics.png" alt="" />
+                    <img src="../droppics.png" alt="" />
                   </motion.div>
                 </AnimatePresence>
               </div>
@@ -520,7 +520,7 @@ function Header() {
                 className="text-[#576B74]  hover:text-gray-600  focus:outline-none focus:text-gray-600 "
                 aria-label="toggle menu"
               >
-                <img src="./icons/menu.svg" alt="" />
+                <img src="../icons/menu.svg" alt="" />
               </button>
             )}
           </div>
@@ -581,7 +581,7 @@ function Header() {
                 >
                   <div className="flex flex-col items-start  space-y-4">
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon.svg" alt="" />
+                      <img src="../icons/icon.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -597,7 +597,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon1.svg" alt="" />
+                      <img src="../icons/icon1.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -613,7 +613,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon2.svg" alt="" />
+                      <img src="../icons/icon2.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -629,7 +629,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon3.svg" alt="" />
+                      <img src="../icons/icon3.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -645,7 +645,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon4.svg" alt="" />
+                      <img src="../icons/icon4.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -662,7 +662,7 @@ function Header() {
                   </div>
                   <div className="flex flex-col items-start  space-y-4">
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon5.svg" alt="" />
+                      <img src="../icons/icon5.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -678,7 +678,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon6.svg" alt="" />
+                      <img src="../icons/icon6.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -693,7 +693,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon7.svg" alt="" />
+                      <img src="../icons/icon7.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -708,7 +708,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon8.svg" alt="" />
+                      <img src="../icons/icon8.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -723,7 +723,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon9.svg" alt="" />
+                      <img src="../icons/icon9.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -741,7 +741,7 @@ function Header() {
                   </div>
                   <div className="flex flex-col items-start  space-y-4">
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon10.svg" alt="" />
+                      <img src="../icons/icon10.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -757,7 +757,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon11.svg" alt="" />
+                      <img src="../icons/icon11.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -773,7 +773,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon12.svg" alt="" />
+                      <img src="../icons/icon12.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -789,7 +789,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon13.svg" alt="" />
+                      <img src="../icons/icon13.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -807,7 +807,7 @@ function Header() {
                   </div>
                   <div className="flex flex-col items-start  space-y-4">
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon14.svg" alt="" />
+                      <img src="../icons/icon14.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -823,7 +823,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon15.svg" alt="" />
+                      <img src="../icons/icon15.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -839,7 +839,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon16.svg" alt="" />
+                      <img src="../icons/icon16.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();
@@ -855,7 +855,7 @@ function Header() {
                       </Link>
                     </div>
                     <div className="flex items-center gap-x-3">
-                      <img src="./icons/icon17.svg" alt="" />
+                      <img src="../icons/icon17.svg" alt="" />
                       <Link
                         onClick={(e) => {
                           e.preventDefault();

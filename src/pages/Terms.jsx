@@ -14,8 +14,8 @@ const Terms = () => {
     <>
       <SEO
         title="Terms of Use"
-        description="Enterprise  Buzzer is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
-        name="EnterpriceBuzzer"
+        description="EnterpriseBuzz AI is a pioneering media and technology company, dedicated to propelling businesses forward through innovative advertising, branding, CRM, and marketing tools."
+        name="EnterpriseBuzz AI"
         type="description"
       />
       <div className="">

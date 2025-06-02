@@ -1,11 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import SEO from "../components/SEO";
 import TrustedBy from "../components/TrustedBy";
-import PaymentOptions from "../components/layouts/PaymentOptions";
 import AIGrowthSection from "../components/AIGrowthSection";
 
 function Pricing() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="bg-white">
       <SEO
@@ -1517,8 +1521,6 @@ function Pricing() {
 
         {/* Unlock Section */}
         <AIGrowthSection />
-        {/* Payment Options */}
-        <PaymentOptions />
       </div>
     </div>
   );

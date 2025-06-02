@@ -11,7 +11,6 @@ import LatestUpdates from "../components/Lastest";
 import HowWeWork from "../components/HowWeWork";
 import CTA from "../components/CTA";
 import Graphics from "../components/Graphics";
-import PaymentOptions from "../components/layouts/PaymentOptions";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -610,8 +609,6 @@ function Home() {
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <CTA />
 
-      {/* Payment Options +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <PaymentOptions />
     </div>
   );
 }
