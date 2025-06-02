@@ -4,7 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import classNames from "classnames";
 
 const slides = [
-  { id: 1, image: "/images/seo1.png", alt: "SEO Slide 1" },
+  { id: 1, image: "../seo/slide.png", alt: "SEO Slide 1" },
   { id: 2, image: "/images/seo2.png", alt: "SEO Slide 2" },
   { id: 3, image: "/images/seo3.png", alt: "SEO Slide 3" },
 ];
@@ -48,9 +48,9 @@ const WhyInvestInSEO = () => {
 
       <div className="mt-12 flex flex-col lg:flex-row items-center justify-center gap-8">
         {/* Carousel with vertical indicators */}
-        <div className="relative w-full max-w-xl group flex items-center">
+        <div className="relative w-full max-w-2xl group flex items-center">
           {/* Vertical Indicators */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-10 ml-[-2.5rem]">
+          <div className="absolute right-2 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-10 ml-[-2.5rem]">
             {slides.map((_, index) => (
               <button
                 key={index}
@@ -95,14 +95,10 @@ const WhyInvestInSEO = () => {
         </div>
 
         {/* Quote Box */}
-        <div className="bg-gray-100 p-6 rounded-xl text-left max-w-xs">
-          <p className="text-3xl text-gray-800 leading-tight mb-4">
-            <span className="text-5xl leading-none font-serif">“</span>
-            The best place to hide a dead body is page two of Google.
-            <span className="text-5xl leading-none font-serif">”</span>
-          </p>
-          <p className="font-semibold text-gray-700">Unknown</p>
-          <p className="text-gray-500 text-sm mt-1">
+        <div className="bg-gray-100 p-6 lg:p-8 rounded-xl text-left max-w-sm">
+          <img src="../seo/seoQuote.svg" alt="" />
+          <p className="font-semibold text-gray-700 pt-6">Unknown</p>
+          <p className="text-gray-500  ">
             Emphasizing the importance of high ranking
           </p>
           <button className="mt-6 bg-gradient-to-r from-red-500 to-orange-400 text-white font-semibold py-2 px-4 rounded-full shadow-md hover:opacity-90 transition">
