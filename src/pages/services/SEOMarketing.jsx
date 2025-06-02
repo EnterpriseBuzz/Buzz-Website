@@ -5,6 +5,7 @@ import TestimonialSection from "../../components/services/TestimonialSection";
 import WhySEOServices from "../../components/services/WhySEOServices";
 import SeoScore from "../../components/services/SeoScore";
 import WhyInvestInSEO from "../../components/services/WhyInvestInSEO";
+import CustomerReviewsWall from "../../components/services/CustomerReviewsWall";
 
 function SEOMarketing() {
   useEffect(() => {
@@ -85,6 +86,9 @@ function SEOMarketing() {
 
       {/* TestimonialSection */}
       <TestimonialSection />
+
+      {/* CustomerReviewsWall */}
+      <CustomerReviewsWall />
 
       {/* WhySEOServices */}
       <WhySEOServices />
