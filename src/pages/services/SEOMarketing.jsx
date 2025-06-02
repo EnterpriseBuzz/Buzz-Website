@@ -7,6 +7,8 @@ import SeoScore from "../../components/services/SeoScore";
 import WhyInvestInSEO from "../../components/services/WhyInvestInSEO";
 import CustomerReviewsWall from "../../components/services/CustomerReviewsWall";
 import SeoSuites from "../../components/services/SeoSuites";
+import SeoPricing from "../../components/services/SeoPricing";
+import SeoPlans from "../../components/services/SeoPlans";
 
 function SEOMarketing() {
   useEffect(() => {
@@ -99,6 +101,12 @@ function SEOMarketing() {
 
       {/* WhySEOServices */}
       <WhySEOServices />
+
+      {/* SeoPlans */}
+      <SeoPlans />
+      
+      {/* SeoPricing */}
+      <SeoPricing />
     </div>
   );
 }
