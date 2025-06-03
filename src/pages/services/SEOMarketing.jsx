@@ -11,6 +11,7 @@ import SeoPricing from "../../components/services/SeoPricing";
 import SeoPlans from "../../components/services/SeoPlans";
 import SeoAudit from "../../components/services/SeoAudit";
 import SEOFAQ from "../../components/services/SEOFAQ";
+import TrackRecord from "../../components/services/TrackRecord";
 
 function SEOMarketing() {
   useEffect(() => {
@@ -94,6 +95,28 @@ function SEOMarketing() {
 
       {/* SeoSuites */}
       <SeoSuites />
+
+      {/* TrackRecord */}
+      <TrackRecord />
+
+      {/* WorkflowInterface */}
+      <div className=" flex items-center justify-center lg:py-20 lg:px-28">
+        <div className=" bg-[#fdf7ed] p-20 rounded-xl w-full">
+          {/* Header */}
+          <div className="text-center py-10">
+            <h1 className="text-xl md:text-3xl font-bold text-[#2d3e30] mb-4">
+              How Can We Help You?
+            </h1>
+            <p className="text-lg text-gray-500">
+              Let's do great work together
+            </p>
+          </div>
+
+          {/* Workflow Steps */}
+          <img src="../seo/steps.svg" alt="" className="hidden md:block"/>
+          <img src="../seo/mSteps.svg" alt="" className="md:hidden" />
+        </div>
+      </div>
 
       {/* TestimonialSection */}
       <TestimonialSection />
