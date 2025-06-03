@@ -13,7 +13,7 @@ function SeoScore() {
           transition={{ duration: 0.5 }}
           src="../drive.png"
           alt=""
-          className="mx-auto px-4 py-10 lg:py-20"
+          className="h-[8rem] sm:h-auto mx-auto  pt-10 mb-5 lg:py-20"
         />
 
         <motion.div

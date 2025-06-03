@@ -123,7 +123,7 @@ const CustomerReviewsWall = () => {
     <div className="max-w-6xl mx-auto p-6 min-h-screen">
       {/* Header */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-2">
+        <h1 className="text-4xl font-bold text-gray-800 mb-4 flex flex-col md:flex-row items-center justify-center gap-2">
           Customer Reviews Wall of Love
           <Heart className="w-8 h-8 text-red-500 fill-current" />
         </h1>

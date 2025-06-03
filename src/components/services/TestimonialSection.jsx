@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 export default function TestimonialSection() {
   const testimonials = [
@@ -8,7 +8,7 @@ export default function TestimonialSection() {
       initials: "LS",
       rating: 4,
       image:
-        "https://images.unsplash.com/photo-1494790108755-2616b332c1ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1589729132389-8f0e0b55b91e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=687&q=80",
       testimonial:
         "The team took time to understand our vision and delivered a sleek, professional site that not only looks great but also improved our conversion rates. Their design process was smooth, communication was clear, and they met all deadlines. We've received numerous compliments on the new site, and it's easier for customers to navigate. I can confidently say we'll be working with them again in the future.",
     },
@@ -28,7 +28,7 @@ export default function TestimonialSection() {
       initials: "SK",
       rating: 5,
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+        "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&w=1170&q=80",
       testimonial:
         "Professional, responsive, and incredibly talented. They delivered exactly what we needed on time and within budget. The results speak for themselves - our engagement has increased significantly since the launch. Working with them was a pleasure from beginning to end.",
     },
@@ -37,43 +37,63 @@ export default function TestimonialSection() {
   const [currentSlide, setCurrentSlide] = React.useState(0);
   const [touchStart, setTouchStart] = React.useState(null);
   const [touchEnd, setTouchEnd] = React.useState(null);
+  const [swipeOffset, setSwipeOffset] = React.useState(0);
+  const sliderRef = useRef(null);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
+    setSwipeOffset(0);
   };
 
   const prevSlide = () => {
     setCurrentSlide(
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
+    setSwipeOffset(0);
   };
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
+    setSwipeOffset(0);
   };
 
-  // Handle touch events for mobile swiping
+  // Enhanced touch handling with visual feedback
   const handleTouchStart = (e) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0].clientX);
   };
 
   const handleTouchMove = (e) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    if (!touchStart) return;
+    const currentTouch = e.targetTouches[0].clientX;
+    setTouchEnd(currentTouch);
+
+    // Calculate swipe offset for visual feedback
+    const diff = touchStart - currentTouch;
+    setSwipeOffset(diff);
   };
 
   const handleTouchEnd = () => {
-    if (!touchStart || !touchEnd) return;
+    if (!touchStart || !touchEnd) {
+      setSwipeOffset(0);
+      return;
+    }
+
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > 50;
     const isRightSwipe = distance < -50;
 
     if (isLeftSwipe) {
       nextSlide();
-    }
-    if (isRightSwipe) {
+    } else if (isRightSwipe) {
       prevSlide();
+    } else {
+      // If swipe wasn't significant enough, return to current slide
+      setSwipeOffset(0);
     }
+
+    setTouchStart(null);
+    setTouchEnd(null);
   };
 
   const renderStars = (rating) => {
@@ -92,29 +112,35 @@ export default function TestimonialSection() {
   const current = testimonials[currentSlide];
 
   return (
-    <div className=" bg-white flex items-center justify-center p-8">
+    <div className="bg-white flex items-center justify-center p-4 md:p-8">
       <div className="max-w-5xl w-full relative">
-        {/* Swiper container */}
+        {/* Swiper container with enhanced touch feedback */}
         <div
           className="relative overflow-hidden"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
+          ref={sliderRef}
         >
           <div
-            className="flex transition-transform duration-500 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            className="flex transition-transform duration-300 ease-out"
+            style={{
+              transform: `translateX(calc(-${
+                currentSlide * 100
+              }% + ${-swipeOffset}px))`,
+              transition: swipeOffset ? "none" : "transform 300ms ease-out",
+            }}
           >
             {testimonials.map((testimonial, index) => (
               <div
                 key={testimonial.id}
-                className="h-[30rem] w-full flex-shrink-0 relative"
+                className="w-full flex-shrink-0 relative md:h-[30rem] h-[40rem] touch-none"
               >
-                {/* Main red background block */}
-                <div className="bg-red-500 w-80  h-full absolute top-0 left-52 z-0"></div>
+                {/* Main red background block - hidden on mobile */}
+                <div className="hidden md:block bg-red-500 w-80 h-full absolute top-0 left-52 z-0"></div>
 
-                {/* Quote icon in red block */}
-                <div className="absolute top-8 left-[22rem] z-10">
+                {/* Quote icon in red block - hidden on mobile */}
+                <div className="hidden md:block absolute top-8 left-[22rem] z-10">
                   <svg
                     className="w-12 h-12 text-white"
                     fill="currentColor"
@@ -124,19 +150,19 @@ export default function TestimonialSection() {
                   </svg>
                 </div>
 
-                {/* Profile image */}
-                <div className="relative top-12 z-20">
-                  <div className="w-72 h-80 rounded-2xl overflow-hidden shadow-lg">
+                {/* Profile image - adjusted for mobile */}
+                <div className="relative md:top-12 top-8 z-20 flex justify-center md:justify-start">
+                  <div className="w-64 h-72 md:w-72 md:h-80 rounded-2xl overflow-hidden shadow-lg">
                     <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover touch-none"
                     />
                   </div>
                 </div>
 
-                {/* Testimonial card */}
-                <div className="absolute top-24 left-80 z-30 bg-white rounded-2xl shadow-xl p-6 w-[62%]">
+                {/* Testimonial card - adjusted for mobile */}
+                <div className="absolute md:top-24 top-80 md:left-80 left-0 z-30 bg-white rounded-2xl shadow-xl p-6 w-full md:w-[62%] touch-none">
                   <div className="border-l-2 border-red-500 px-3">
                     {/* Stars and rating */}
                     <div className="flex items-center space-x-2 mb-4">
@@ -170,10 +196,11 @@ export default function TestimonialSection() {
           </div>
         </div>
 
-        {/* Navigation arrows */}
+        {/* Navigation arrows - hidden on mobile */}
         <button
           onClick={prevSlide}
-          className="absolute left-4 top-1/2 transform -translate-y-1/2 z-40 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+          className="hidden md:flex absolute left-4 top-1/2 transform -translate-y-1/2 z-40 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-gray-50 transition-colors focus:outline-none"
+          aria-label="Previous testimonial"
         >
           <svg
             className="w-6 h-6 text-gray-600"
@@ -192,7 +219,8 @@ export default function TestimonialSection() {
 
         <button
           onClick={nextSlide}
-          className="absolute right-4 top-1/2 transform -translate-y-1/2 z-40 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+          className="hidden md:flex absolute right-4 top-1/2 transform -translate-y-1/2 z-40 w-12 h-12 bg-white rounded-full shadow-lg items-center justify-center hover:bg-gray-50 transition-colors focus:outline-none"
+          aria-label="Next testimonial"
         >
           <svg
             className="w-6 h-6 text-gray-600"
@@ -209,17 +237,18 @@ export default function TestimonialSection() {
           </svg>
         </button>
 
-        {/* Pagination dots */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex space-x-2">
+        {/* Pagination dots - centered on mobile */}
+        <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-40 flex space-x-2">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => goToSlide(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? "bg-white w-6"
+                  ? "bg-red-500 md:bg-white w-6"
                   : "bg-red-300 hover:bg-gray-100"
               }`}
+              aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}
         </div>

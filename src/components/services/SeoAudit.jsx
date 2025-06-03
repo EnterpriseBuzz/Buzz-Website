@@ -16,7 +16,7 @@ const errorDistributionData = [
 const SeoAudit = () => {
   return (
     <div className="p-6 lg:px-36  min-h-screen text-gray-800">
-      <div className="flex justify-between items-center mb-6">
+      <div className="sm:flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold flex items-center gap-2">
           Overview
           <span className="text-sm text-gray-400 bg-gray-200 rounded-full w-4 h-4 flex items-center justify-center ">
@@ -24,10 +24,12 @@ const SeoAudit = () => {
           </span>
           <span className="text-sm text-gray-400 font-normal">How to use</span>
         </h1>
+        <div className="flex justify-end">
         <button className="border border-gray-300 px-4 py-2 rounded-lg text-sm flex items-center gap-2 bg-white hover:bg-gray-50">
           <span className="text-lg">📄</span>
           Print to PDF
         </button>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

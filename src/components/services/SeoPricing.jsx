@@ -230,57 +230,119 @@ const FeatureRow = ({ feature, planIds }) => {
   );
 };
 
+// --- Feature Row Component (Mobile) ---
+const MobileFeatureRow = ({ feature, planIds }) => {
+    const renderSupport = (value) => {
+      if (value === true) {
+        return <Check className="h-5 w-5 text-green-500" />;
+      } else if (value === false || value === "-") {
+        return <span className="text-gray-300">—</span>;
+      } else {
+        return <span className="text-sm font-medium text-gray-700">{value}</span>;
+      }
+    };
+  
+    return (
+      <div className="border-b border-gray-200 py-4">
+        <div className="font-medium text-gray-700 mb-3">{feature.name}</div>
+        <div className="grid grid-cols-3 gap-4">
+          {planIds.map((planId) => (
+            <div key={planId} className="text-center">
+              <div className="text-xs text-gray-500 mb-1">
+                {pricingPlans.find(p => p.id === planId).name}
+              </div>
+              <div className="flex justify-center">
+                {renderSupport(feature[planId])}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
 // --- Feature Section Component ---
 const FeatureSection = ({ category, planIds, isExpanded, toggleExpand }) => {
-  return (
-    <div className="mt-4 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
-      <button
-        onClick={toggleExpand}
-        className="w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition-colors"
-      >
-        <h4 className="text-lg font-bold text-gray-900">{category.category}</h4>
-        {isExpanded ? (
-          <ChevronUp className="w-5 h-5 text-gray-500" />
-        ) : (
-          <ChevronDown className="w-5 h-5 text-gray-500" />
-        )}
-      </button>
-
-      {isExpanded && (
-        <div className="bg-white">
-          <table className="w-full">
-            <tbody>
-              {category.items.map((feature, index) => (
-                <FeatureRow key={index} feature={feature} planIds={planIds} />
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-    </div>
-  );
-};
-
-// --- Plan Header Component ---
-const PlanHeader = ({ planIds }) => {
-  return (
-    <div className="sticky top-0 z-10 bg-white pt-8 px-4 pb-4 border-b border-gray-200">
-      <div className="grid grid-cols-6 gap-4">
-        <div className="col-span-3 font-semibold text-gray-500">Features</div>
-        {pricingPlans.map((plan) => (
-          <div key={plan.id} className="text-center">
-            <div
-              className={`inline-flex items-center justify-center rounded-lg p-2 mb-2 bg-gradient-to-r ${plan.accentColor} text-white`}
-            >
-              {plan.icon}
+    return (
+      <div className="mt-4 overflow-hidden rounded-xl border border-gray-200 shadow-sm">
+        <button
+          onClick={toggleExpand}
+          className="w-full flex justify-between items-center p-4 bg-white hover:bg-gray-50 transition-colors"
+        >
+          <h4 className="text-lg font-bold text-gray-900">{category.category}</h4>
+          {isExpanded ? (
+            <ChevronUp className="w-5 h-5 text-gray-500" />
+          ) : (
+            <ChevronDown className="w-5 h-5 text-gray-500" />
+          )}
+        </button>
+  
+        {isExpanded && (
+          <div className="bg-white">
+            {/* Desktop Table */}
+            <div className="hidden md:block">
+              <table className="w-full">
+                <tbody>
+                  {category.items.map((feature, index) => (
+                    <FeatureRow key={index} feature={feature} planIds={planIds} />
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <h4 className="font-bold text-gray-900">{plan.name}</h4>
+            
+            {/* Mobile View */}
+            <div className="md:hidden p-4">
+              {category.items.map((feature, index) => (
+                <MobileFeatureRow key={index} feature={feature} planIds={planIds} />
+              ))}
+            </div>
           </div>
-        ))}
+        )}
       </div>
-    </div>
-  );
-};
+    );
+  };
+  
+  // --- Plan Header Component ---
+  const PlanHeader = ({ planIds }) => {
+    return (
+      <>
+        {/* Desktop Header */}
+        <div className="hidden md:block sticky top-0 z-10 bg-white pt-8 px-4 pb-4 border-b border-gray-200">
+          <div className="grid grid-cols-6 gap-4">
+            <div className="col-span-3 font-semibold text-gray-500">Features</div>
+            {pricingPlans.map((plan) => (
+              <div key={plan.id} className="text-center">
+                <div
+                  className={`inline-flex items-center justify-center rounded-lg p-2 mb-2 bg-gradient-to-r ${plan.accentColor} text-white`}
+                >
+                  {plan.icon}
+                </div>
+                <h4 className="font-bold text-gray-900">{plan.name}</h4>
+              </div>
+            ))}
+          </div>
+        </div>
+        
+        {/* Mobile Header */}
+        <div className="md:hidden sticky top-3 z-10 bg-white pt-6 px-4 pb-2 border-b border-gray-200">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">Feature Comparison</h3>
+          <div className="flex justify-between items-center">
+            {pricingPlans.map((plan) => (
+              <div key={plan.id} className="text-center flex-1">
+                <div
+                  className={`inline-flex items-center justify-center rounded-lg p-1 mb-1 bg-gradient-to-r ${plan.accentColor} text-white`}
+                >
+                  {plan.icon}
+                </div>
+                <h4 className="text-xs font-bold text-gray-900">{plan.name}</h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  };
+  
 
 // --- Main SeoPricing Component ---
 function SeoPricing() {

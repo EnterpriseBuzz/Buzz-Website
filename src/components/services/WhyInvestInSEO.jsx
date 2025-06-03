@@ -5,8 +5,9 @@ import classNames from "classnames";
 
 const slides = [
   { id: 1, image: "../seo/slide.png", alt: "SEO Slide 1" },
-  { id: 2, image: "/images/seo2.png", alt: "SEO Slide 2" },
-  { id: 3, image: "/images/seo3.png", alt: "SEO Slide 3" },
+  { id: 2, image: "https://images.unsplash.com/photo-1562788869-4ed32648eb72?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&h=545&q=80", alt: "SEO Slide 2" },
+  { id: 3, image: "https://images.unsplash.com/photo-1699899657680-421c2c2d5064?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDl8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&h=545&q=80", alt: "SEO Slide 2" },
+  { id: 4, image: "https://images.unsplash.com/photo-1576558656222-ba66febe3dec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fGhlYWRzaG90fGVufDB8fDB8fHww&auto=format&fit=crop&h=545&q=80", alt: "SEO Slide 3" },
 ];
 
 const WhyInvestInSEO = () => {
@@ -57,7 +58,7 @@ const WhyInvestInSEO = () => {
                 onClick={() => scrollTo(index)}
                 className={classNames(
                   "w-3 h-3 rounded-full",
-                  selectedIndex === index ? "bg-red-500" : "bg-gray-300"
+                  selectedIndex === index ? "bg-red-500" : "bg-red-100"
                 )}
               />
             ))}
