@@ -67,7 +67,7 @@ export default function SeoPlans() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(120,119,198,0.05),transparent_50%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(255,165,0,0.05),transparent_50%)]"></div>
       
-      <div className="relative px-4 py-16 mx-auto lg:px-28">
+      <div className="relative px-4 py-16 mx-auto lg:px-36">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-6 bg-gradient-to-r from-red-800 via-orange-400 to-red-800 bg-clip-text text-transparent">
@@ -113,7 +113,7 @@ export default function SeoPlans() {
         </div>
 
         {/* Pricing Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-3 gap-8 mx-auto">
           {plans.map((plan, index) => (
             <div
               key={plan.name}
@@ -201,7 +201,7 @@ export default function SeoPlans() {
         </div>
 
         {/* Special Discount Programs */}
-        <div className="mt-20 max-w-5xl mx-auto">
+        <div className="mt-20  mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Special Discount Programs</h2>
             <p className="text-lg text-gray-600">We support diverse businesses with exclusive pricing opportunities</p>

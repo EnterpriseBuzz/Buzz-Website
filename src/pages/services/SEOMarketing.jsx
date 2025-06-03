@@ -9,6 +9,7 @@ import CustomerReviewsWall from "../../components/services/CustomerReviewsWall";
 import SeoSuites from "../../components/services/SeoSuites";
 import SeoPricing from "../../components/services/SeoPricing";
 import SeoPlans from "../../components/services/SeoPlans";
+import SeoAudit from "../../components/services/SeoAudit";
 
 function SEOMarketing() {
   useEffect(() => {
@@ -104,7 +105,10 @@ function SEOMarketing() {
 
       {/* SeoPlans */}
       <SeoPlans />
-      
+
+      {/* SeoAudit */}
+      <SeoAudit />
+
       {/* SeoPricing */}
       <SeoPricing />
     </div>
