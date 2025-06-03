@@ -18,6 +18,7 @@ import Web from "./pages/services/Web";
 import Branding from "./pages/services/Branding";
 import EmailMarketing from "./pages/services/EmailMarketing";
 import LogoDesign from "./pages/services/LogoDesign";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
       /> */}
       <Router>
         <Routes>
+          {/* Not Found */}
+          <Route path="*" element={<NotFoundPage />} />
+          
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
