@@ -122,7 +122,7 @@ function SEOMarketing() {
       <TestimonialSection />
 
       {/* CustomerReviewsWall */}
-      <CustomerReviewsWall />
+      {/* <CustomerReviewsWall /> */}
 
       {/* WhySEOServices */}
       <WhySEOServices />
@@ -131,7 +131,7 @@ function SEOMarketing() {
       <SeoPlans />
 
       {/* SeoAudit */}
-      <SeoAudit />
+      {/* <SeoAudit /> */}
 
       {/* SeoPricing */}
       <SeoPricing />

@@ -138,69 +138,7 @@ const Header = () => {
   );
 };
 
-// --- Pricing Card Component ---
-const PricingCard = ({ plan }) => {
-  return (
-    <div
-      className={`relative flex flex-col h-full rounded-xl overflow-hidden border border-gray-200 
-      ${
-        plan.featured
-          ? "ring-2 ring-offset-4 ring-orange-400 transform scale-[1.02]"
-          : ""
-      }
-      transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group`}
-    >
-      {plan.featured && (
-        <div className="absolute top-0 right-0 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-          MOST POPULAR
-        </div>
-      )}
 
-      <div className={`p-0.5  bg-gradient-to-r ${plan.accentColor}`}>
-        <div className="bg-white p-5 rounded-lg flex-grow">
-          <div className="flex items-center mb-3">
-            <div
-              className={`p-2 rounded-lg bg-gradient-to-r ${plan.accentColor} text-white`}
-            >
-              {plan.icon}
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 ml-3">
-              {plan.name}
-            </h3>
-          </div>
-
-          <div className="mb-4">
-            <span className="text-4xl font-extrabold text-gray-900">
-              {plan.price}
-            </span>
-            <span className="text-lg font-medium text-gray-500">
-              {plan.period}
-            </span>
-          </div>
-
-          <p className="text-sm text-gray-500 mb-5">{plan.contract}</p>
-          <p className="text-gray-600 mb-6">{plan.description}</p>
-        </div>
-      </div>
-
-      <div className="p-5 bg-gray-50 border-t border-gray-200">
-        <button
-          className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 
-          ${
-            plan.featured
-              ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg hover:shadow-orange-500/30 hover:brightness-110"
-              : "bg-gray-900 text-white hover:bg-gray-800"
-          }`}
-        >
-          {plan.buttonText}
-        </button>
-        <p className="text-xs text-gray-500 text-center mt-3">
-          {plan.cancelText}
-        </p>
-      </div>
-    </div>
-  );
-};
 
 // --- Feature Row Component ---
 const FeatureRow = ({ feature, planIds }) => {
@@ -365,20 +303,9 @@ function SeoPricing() {
   return (
     <div className="min-h-screen bg-white text-gray-800">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20">
-        {/* Top section */}
-        <div className="flex flex-col lg:flex-row lg:items-start justify-between mb-16">
-          <Header />
-
-          {/* Pricing cards section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6  mt-10 lg:mt-0">
-            {pricingPlans.map((plan) => (
-              <PricingCard key={plan.id} plan={plan} />
-            ))}
-          </div>
-        </div>
 
         {/* Feature comparison sections */}
-        <div className="mt-20">
+        <div className="">
           <PlanHeader planIds={planIds} />
 
           <div className="space-y-4">
