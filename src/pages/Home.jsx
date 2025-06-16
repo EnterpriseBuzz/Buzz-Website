@@ -81,41 +81,6 @@ function Home() {
       {/* Free Marketing overview Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <MarketingOverview />
 
-      {/* Ai Marketing  Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div
-        id="marketing"
-        className="w-full py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover "
-        style={{
-          "background-image": "url('./bg/callbg.png')",
-        }}
-      >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
-          <div className="w-10/12 lg:w-6/12">
-            <h2 className="w-[10rem] 2xl:w-[14rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
-              AI-Driven MARKETING
-            </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
-              AI-Driven MARKETING
-            </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Amplify brand impact with EnterpriseBuzz AI’s unstoppable
-              AI-Driven Digital Marketing—boost ROI, outrank rivals, and
-              dominate online engagements worldwide, faster than ever.
-            </p>
-
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                openCalendly();
-              }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
-            >
-              <img src="./buttons/Get Started.svg" alt="" />
-            </button>
-          </div>
-        </div>
-      </div>
-
       {/*   AI-Driven Video Commercial ++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <div
         id="comVideo"
@@ -126,7 +91,22 @@ function Home() {
       >
         <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
-            <img src="./CommerceScreen.svg" alt="" />
+            <div
+              className="wrap-video pt-14 pb-16 pl-9 pr-7 bg-no-repeat bg-center"
+              style={{
+                "background-image": "url('./CommerceScreen.svg')",
+              }}
+            >
+              <video
+                className="object-cover h-full rounded-xl xl:h-full w-full bg-black cursor-pointer"
+                autoPlay
+                loop
+                muted
+                playsInline
+              >
+                <source src="./AiVid.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
           <div className="w-full lg:w-6/12">
             <h2 className="w-[12rem] 2xl:w-[17rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
@@ -141,7 +121,22 @@ function Home() {
               creativity for unmatched market impact.
             </p>
             <div className="mt-3 lg:hidden w-full lg:w-6/12">
-              <img src="./CommerceScreen.svg" alt="" />
+              <div
+                className="wrap-video bg-no-repeat bg-center"
+                style={{
+                  "background-image": "url('./CommerceScreen.svg')",
+                }}
+              >
+                <video
+                  className="object-cover rounded-xl  w-full bg-black cursor-pointer"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src="./AiVid.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
             <button
               onClick={(e) => {
@@ -278,13 +273,7 @@ function Home() {
             >
               <img src="./services/service8.png" alt="pics" />
             </button>
-            <button
-              id="nativeAds"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service9.png" alt="pics" />
-            </button>
+
             <button
               id="logoDesign"
               onClick={() => navigate("services/logo-design")}
@@ -327,20 +316,7 @@ function Home() {
             >
               <img src="./services/service15.png" alt="pics" />
             </button>
-            <button
-              id="emailAutomation"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service16.png" alt="pics" />
-            </button>
-            <button
-              id="podcast"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service17.png" alt="pics" />
-            </button>
+
             <button
               id="podcast"
               onClick={openCalendly}
@@ -361,13 +337,6 @@ function Home() {
               className="w-full cursor-pointer transition transform hover:scale-105"
             >
               <img src="./services/service20.png" alt="pics" />
-            </button>
-            <button
-              id="ai-enhanced"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service21.png" alt="pics" />
             </button>
           </motion.div>
         </AnimatePresence>
@@ -608,7 +577,6 @@ function Home() {
 
       {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
       <CTA />
-
     </div>
   );
 }
