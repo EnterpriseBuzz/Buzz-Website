@@ -8,10 +8,8 @@ import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
 import Pricing from "./pages/Pricing";
 import MainLayout from "./components/layouts/MainLayout";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
-import Why from "./pages/Why";
 import SMMarketing from "./pages/services/SMMarketing";
 import SEOMarketing from "./pages/services/SEOMarketing";
 import Web from "./pages/services/Web";
@@ -23,10 +21,6 @@ import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
     <div className="font-inter">
-      {/* <TawkMessengerReact
-        propertyId="653384a2f2439e1631e6acd6"
-        widgetId="1hd8js7fu"
-      /> */}
       <Router>
         <Routes>
           {/* Not Found */}
@@ -35,7 +29,6 @@ function App() {
           <Route path="/" element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="why-us" element={<Why />} />
             <Route path="contact" element={<Contact />} />
             <Route path="faqs" element={<Faqs />} />
             <Route path="services" element={<Services />} />

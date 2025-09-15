@@ -1,7 +1,93 @@
-import React, { useEffect } from "react";
+import React, { lazy, Suspense, useEffect, useMemo } from "react";
 import SEO from "../components/SEO";
-import TrustedBy from "../components/TrustedBy";
-import AIGrowthSection from "../components/AIGrowthSection";
+// Lazy load heavy components
+const TrustedBy = lazy(() => import("../components/TrustedBy"));
+const AIGrowthSection = lazy(() => import("../components/AIGrowthSection"));
+
+const FAQ_DATA = [
+  {
+    question: "Do you offer a free trial or demo?",
+    answer:
+      "We offer a one-time, 7-day free trial exclusively for monthly subscriptions. Experience EnterpriseBuzz AI aggressive AI-driven strategies risk-free before committing.",
+  },
+  {
+    question: "What payment methods do you accept?",
+    answer:
+      "EnterpriseBuzz AI accepts major credit cards—including Mastercards and Visa—as well as debit cards. Our payment process is powered by Stripe, QuickBooks, and PayPal, utilizing high-tech encrypted infrastructure to ensure a seamless and secure transaction experience.",
+  },
+  {
+    question: "How do you handle content creation and management?",
+    answer:
+      "At EnterpriseBuzz AI, we handle content creation and management through a comprehensive, data-driven process that delivers aggressive, measurable results. We begin by researching your target audience and analyzing market trends to develop a content strategy that aligns with your brand voice and goals. Our team of experts, supported by cutting-edge AI technologies, creates high-quality content that not only captivates but also drives engagement. We continuously update and optimize this content using advanced analytics to track performance in real time, ensuring your digital presence remains at the forefront. This relentless, innovative approach to content management fuels your enterprise's long-term growth and delivers unrivaled ROI, positioning you as a market leader in the digital space.",
+  },
+  {
+    question: "What kind of ROI can I expect from your services?",
+    answer:
+      "Our aggressive, AI-powered strategies consistently deliver an average ROI of 300%. This means every dollar invested is engineered to generate three dollars in revenue, rapidly accelerating your business growth. EnterpriseBuzz AI bold, data-driven approach is designed to disrupt the status quo and set new benchmarks in digital marketing performance.",
+  },
+  {
+    question: "What is your refund policy?",
+    answer:
+      "What is your refund policy? Our refund policy allows you to request a full refund within the first 30 days if you are not satisfied with our services. We are committed to delivering high-quality results and ensuring your satisfaction. If you have any concerns, our team is available to address them and work towards a solution that meets your needs.",
+  },
+  {
+    question: "What is the pricing currency?",
+    answer:
+      "Our pricing is set in United States Dollars (USD), ensuring global clarity and straightforward transaction processing.",
+  },
+  {
+    question: "Can I upgrade or downgrade my plan at any time?",
+    answer:
+      "Yes, we offer the flexibility to upgrade or downgrade your plan at any time. Our agile subscription model is designed to evolve with your enterprise's needs, allowing you to seamlessly scale your engagement with our aggressive, AI-powered strategies. This dynamic approach ensures you always have the precise tools to drive exceptional ROI and secure a dominant market position.",
+  },
+  {
+    question: "Is there a minimum contract length?",
+    answer:
+      "At EnterpriseBuzz AI, there is no minimum contract length—you can subscribe for any duration that suits your business needs. However, for optimal performance and to fully leverage our aggressive, AI-powered strategies, we typically recommend a quarterly commitment to deliver maximum impact and robust ROI.",
+  },
+  {
+    question: "Can I pay annually instead of monthly for a discount?",
+    answer:
+      "Yes, we offer an annual payment option that includes a 25% discount. This approach maximizes your savings compared to our monthly subscription model and reinforces our commitment to aggressive, data-driven digital amplification—fueling your enterprise's long-term growth and delivering unrivaled ROI.",
+  },
+  {
+    question: "Do you offer any pay-as-you-go options?",
+    answer:
+      "We offer a one-time, 7-day free trial exclusively for monthly subscriptions. Experience EnterpriseBuzz AI aggressive AI-driven strategies risk-free before committing.",
+  },
+];
+
+const FAQItem = React.memo(({ faq, index }) => (
+  <li className="my- px-3 border-t">
+    <div className="py-3">
+      <details className="group">
+        <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
+          <span className="text-[13px] md:text-base font-semibold">
+            {faq.question}
+          </span>
+          <span className="transition group-open:rotate-180">
+            <svg
+              fill="none"
+              height="24"
+              shapeRendering="geometricPrecision"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="1.5"
+              viewBox="0 0 24 24"
+              width="24"
+            >
+              <path d="M6 9l6 6 6-6"></path>
+            </svg>
+          </span>
+        </summary>
+        <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
+          {faq.answer}
+        </p>
+      </details>
+    </div>
+  </li>
+));
 
 function Pricing() {
   useEffect(() => {
@@ -10,6 +96,8 @@ function Pricing() {
       behavior: "smooth",
     });
   }, []);
+
+  const memoizedFAQs = useMemo(() => FAQ_DATA, []);
   return (
     <div className="bg-white">
       <SEO
@@ -18,19 +106,14 @@ function Pricing() {
         name="EnterpriseBuzz AI"
         type="description"
       />
-      {/* Hero ++++++++++++++++++++++++++ */}
-      {/* <div className="wrap-video ">
-        <video
-          className="object-cover h-full lg:h-[36rem] xl:h-full w-full bg-black cursor-pointer"
-          autoPlay
-          loop
-          muted
-          playsInline
-        >
-          <source src="./HeroVid.mp4" type="video/mp4" />
-        </video>
-      </div> */}
-      <img src="../bg/cover.svg" alt="check" />
+      {/* Hero Section */}
+      <picture>
+        <img
+          src="../bg/cover.svg"
+          alt="EnterpriseBuzz AI Cover"
+          loading="eager"
+        />
+      </picture>
 
       <div className=" text-gray-600">
         <div className="w-full py-10 sm:py-20 bg-gradient-to-r from-[#FF8C00] via-[#8B008B] to-[#191853] flex justify-center items-center">
@@ -362,31 +445,33 @@ function Pricing() {
           </div>
         </div>
 
-        {/* CTA ************************* */}
-        <div className=" bg-[#fff] py-10 px-2 lg:px-24  flex flex-col  items-center  justify-center gap-x-1 ">
-          <div className="container  mx-auto my-6 lg:my-16">
+        {/* CTA Section  ************************* * */}
+        <div className="bg-[#fff] py-10 px-2 lg:px-24 flex flex-col items-center justify-center gap-x-1">
+          <div className="container mx-auto my-6 lg:my-16">
             <div
               className="w-full bg-center bg-cover sm:h-[35rem] md:h-[40rem] lg:h-[18rem] xl:h-[22rem] 2xl:h-[24rem] 3xl:h-[33rem] rounded-2xl p-5 lg:p-20"
-              style={{
-                "background-image": "url('./bg/pCTABanner.svg')",
-              }}
+              style={{ backgroundImage: "url('./bg/pCTABanner.svg')" }}
             >
               <div className="flex items-center justify-between w-full h-full lg:py-5 lg:gap-x-10">
-                <div className=" w-[37rem]">
-                  <h1 className=" font-semibold text-white py-3 text-3xl lg:min-[350px]:text-[58px] lg:max-[350px]:text-[58px]  lg:leading-[3.5rem]">
+                <div className="w-[37rem]">
+                  <h1 className="font-semibold text-white py-3 text-3xl lg:min-[350px]:text-[58px] lg:max-[350px]:text-[58px] lg:leading-[3.5rem]">
                     Need a custom plan? Get in touch.
                   </h1>
-                  <p className="hidden lg:block font-normal  text-[#fff]">
+                  <p className="hidden lg:block font-normal text-[#fff]">
                     At EnterpriseBuzz AI, we understand that every enterprise
                     has unique goals. Our expert team is ready to craft a
                     tailored, aggressive strategy to fuel your growth—contact us
                     today!
                   </p>
                 </div>
-                <div className=" pt-0">
-                  <div className=" flex gap-x-4 lg:mt-5 items-center">
-                    <button className="">
-                      <img src="../buttons/button.png" alt="i" />
+                <div className="pt-0">
+                  <div className="flex gap-x-4 lg:mt-5 items-center">
+                    <button>
+                      <img
+                        src="../buttons/button.png"
+                        alt="Contact button"
+                        loading="lazy"
+                      />
                     </button>
                   </div>
                 </div>
@@ -1150,377 +1235,43 @@ function Pricing() {
           </div>
         </div>
 
-        {/* Trusted By */}
-        <TrustedBy />
+        {/* Lazy load heavy components */}
+        <Suspense
+          fallback={<div className="h-32 bg-gray-100 animate-pulse"></div>}
+        >
+          <TrustedBy />
+        </Suspense>
 
-        {/*  Pricing FAQs */}
+        {/* Pricing FAQs */}
         <div
-          className="bg-[#F3F4F5] bg-no-repeat  bg-cover "
-          style={{
-            "background-image": "url('./bg/NoiseBG.svg')",
-          }}
+          className="bg-[#F3F4F5] bg-no-repeat bg-cover"
+          style={{ backgroundImage: "url('./bg/NoiseBG.svg')" }}
         >
           <div className="container lg:px-16 mx-auto py-20">
-            <h2 className="text-gray-900 px-2 lg:mt-3 mb-5 lg:mb-10 text-xl md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full ">
+            <h2 className="text-gray-900 px-2 lg:mt-3 mb-5 lg:mb-10 text-xl md:text-3xl font-bold text-left rounded-2xl focus:outline-none block w-full">
               Pricing FAQs
             </h2>
-            <div className="md:flex gap-x-12 ">
+            <div className="md:flex gap-x-12">
               <ul className="flex flex-col w-full">
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          Do you offer a free trial or demo?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        We offer a one-time, 7-day free trial exclusively for
-                        monthly subscriptions. Experience EnterpriseBuzz AI
-                        aggressive AI-driven strategies risk-free before
-                        committing.
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          What payment methods do you accept?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        EnterpriseBuzz AI accepts major credit cards—including
-                        Mastercards and Visa—as well as debit cards. Our payment
-                        process is powered by Stripe, QuickBooks, and PayPal,
-                        utilizing high-tech encrypted infrastructure to ensure a
-                        seamless and secure transaction experience.
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          How do you handle content creation and management?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        At EnterpriseBuzz AI, we handle content creation and
-                        management through a comprehensive, data-driven process
-                        that delivers aggressive, measurable results. We begin
-                        by researching your target audience and analyzing market
-                        trends to develop a content strategy that aligns with
-                        your brand voice and goals. Our team of experts,
-                        supported by cutting-edge AI technologies, creates
-                        high-quality content that not only captivates but also
-                        drives engagement. <br /> We continuously update and
-                        optimize this content using advanced analytics to track
-                        performance in real time, ensuring your digital presence
-                        remains at the forefront. This relentless, innovative
-                        approach to content management fuels your enterprise's
-                        long-term growth and delivers unrivaled ROI, positioning
-                        you as a market leader in the digital space..
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          What kind of ROI can I expect from your services?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        our aggressive, AI-powered strategies consistently
-                        deliver an average ROI of 300%. This means every dollar
-                        invested is engineered to generate three dollars in
-                        revenue, rapidly accelerating your business growth.
-                        EnterpriseBuzz AI bold, data-driven approach is designed
-                        to disrupt the status quo and set new benchmarks in
-                        digital marketing performance.
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          What is your refund policy?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        What is your refund policy? Our refund policy allows you
-                        to request a full refund within the first 30 days if you
-                        are not satisfied with our services. We are committed to
-                        delivering high-quality results and ensuring your
-                        satisfaction. If you have any concerns, our team is
-                        available to address them and work towards a solution
-                        that meets your needs.
-                      </p>
-                    </details>
-                  </div>
-                </li>
-              </ul>{" "}
+                {memoizedFAQs.slice(0, 5).map((faq, index) => (
+                  <FAQItem key={index} faq={faq} index={index} />
+                ))}
+              </ul>
               <ul className="flex flex-col w-full">
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          What is the pricing currency?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        Our pricing is set in United States Dollars (USD),
-                        ensuring global clarity and straightforward transaction
-                        processing..
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          Can I upgrade or downgrade my plan at any time?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        Yes, we offer the flexibility to upgrade or downgrade
-                        your plan at any time. Our agile subscription model is
-                        designed to evolve with your enterprise’s needs,
-                        allowing you to seamlessly scale your engagement with
-                        our aggressive, AI-powered strategies. This dynamic
-                        approach ensures you always have the precise tools to
-                        drive exceptional ROI and secure a dominant market
-                        position..
-                      </p>
-                    </details>
-                  </div>
-                </li>
-
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          Is there a minimum contract length?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        At EnterpriseBuzz AI, there is no minimum contract
-                        length—you can subscribe for any duration that suits
-                        your business needs. However, for optimal performance
-                        and to fully leverage our aggressive, AI-powered
-                        strategies, we typically recommend a quarterly
-                        commitment to deliver maximum impact and robust ROI..
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          Can I pay annually instead of monthly for a discount?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        Yes, we offer an annual payment option that includes a
-                        25% discount. This approach maximizes your savings
-                        compared to our monthly subscription model and
-                        reinforces our commitment to aggressive, data-driven
-                        digital amplification—fueling your enterprise's
-                        long-term growth and delivering unrivaled ROI.
-                      </p>
-                    </details>
-                  </div>
-                </li>
-                <li className="my- px-3 border-t">
-                  <div className="py-3">
-                    <details className="group">
-                      <summary className="flex justify-between items-center font-medium cursor-pointer list-none">
-                        <span className="text-[13px] md:text-base font-semibold">
-                          Do you offer any pay-as-you-go options?
-                        </span>
-                        <span className="transition group-open:rotate-180">
-                          <svg
-                            fill="none"
-                            height="24"
-                            shape-rendering="geometricPrecision"
-                            stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                            width="24"
-                          >
-                            <path d="M6 9l6 6 6-6"></path>
-                          </svg>
-                        </span>
-                      </summary>
-                      <p className="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                        We offer a one-time, 7-day free trial exclusively for
-                        monthly subscriptions. Experience EnterpriseBuzz AI
-                        aggressive AI-driven strategies risk-free before
-                        committing.
-                      </p>
-                    </details>
-                  </div>
-                </li>
+                {memoizedFAQs.slice(5).map((faq, index) => (
+                  <FAQItem key={index + 5} faq={faq} index={index + 5} />
+                ))}
               </ul>
             </div>
           </div>
         </div>
 
         {/* Unlock Section */}
-        <AIGrowthSection />
+        <Suspense
+          fallback={<div className="h-64 bg-gray-100 animate-pulse"></div>}
+        >
+          <AIGrowthSection />
+        </Suspense>
       </div>
     </div>
   );
