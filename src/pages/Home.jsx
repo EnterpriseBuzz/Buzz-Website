@@ -1,39 +1,87 @@
-import React, { useEffect, useState } from "react";
-import SEO from "../components/SEO";
-import TestimonySlide from "../components/TestimonySlide";
-import Portfolio from "../components/Portfolio";
-import CompanySlide from "../components/CompanySlide";
-import MarketingOverview from "../components/MarketingOverview";
+import React, { useEffect, useState, lazy, Suspense, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LogoGrid from "../components/LogoGrid";
-import Technology from "../components/Technology";
-import LatestUpdates from "../components/Lastest";
-import HowWeWork from "../components/HowWeWork";
-import CTA from "../components/CTA";
-import Graphics from "../components/Graphics";
 import { useNavigate } from "react-router-dom";
 
+// Critical components loaded immediately
+import SEO from "../components/SEO";
+
+// Lazy load non-critical components
+const TestimonySlide = lazy(() => import("../components/TestimonySlide"));
+const Portfolio = lazy(() => import("../components/Portfolio"));
+const CompanySlide = lazy(() => import("../components/CompanySlide"));
+const MarketingOverview = lazy(() => import("../components/MarketingOverview"));
+const LogoGrid = lazy(() => import("../components/LogoGrid"));
+const Technology = lazy(() => import("../components/Technology"));
+const LatestUpdates = lazy(() => import("../components/Lastest"));
+const HowWeWork = lazy(() => import("../components/HowWeWork"));
+const CTA = lazy(() => import("../components/CTA"));
+const Graphics = lazy(() => import("../components/Graphics"));
+
+// Loading component
+const LoadingSpinner = () => (
+  <div className="flex justify-center items-center py-8">
+    <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
+  </div>
+);
+
 function Home() {
+  const [more1, setMore1] = useState(false);
+  const [more2, setMore2] = useState(false);
+  const [more3, setMore3] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
+  const navigate = useNavigate();
+
+  // Memoized scroll to top effect
   useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   }, []);
-  const [more1, setMore1] = useState(false);
-  const [more2, setMore2] = useState(false);
-  const [more3, setMore3] = useState(false);
 
-  const navigate = useNavigate();
-  const openCalendly = () => {
+  // Memoized callback for Calendly
+  const openCalendly = useCallback(() => {
     window.open("https://calendly.com/enterprisebuzzai", "_blank");
-  };
+  }, []);
+
+  // Memoized navigation handlers
+  const navigationHandlers = useMemo(() => ({
+    web: () => navigate("services/web"),
+    branding: () => navigate("services/branding"),
+    emailMarketing: () => navigate("services/email-marketing"),
+    seoMarketing: () => navigate("services/seo-marketing"),
+    socialMarketing: () => navigate("services/social-media-marketing"),
+    logoDesign: () => navigate("services/logo-design"),
+  }), [navigate]);
+
+  // Memoized toggle handlers
+  const toggleHandlers = useMemo(() => ({
+    more1: () => setMore1(prev => !prev),
+    more2: () => setMore2(prev => !prev),
+    more3: () => setMore3(prev => !prev),
+  }), []);
+
+  // Preload critical images
+  useEffect(() => {
+    const criticalImages = [
+      './bg/redbg.svg',
+      '../bg/commercebg.png',
+      './bg/marketingbg.png',
+      './bg/Servicesbg.svg'
+    ];
+    
+    criticalImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <div
-      className="w-full  text-gray-600 bg-[center_top_20rem] bg-no-repeat"
+      className="w-full text-gray-600 bg-[center_top_20rem] bg-no-repeat"
       style={{
-        "background-image": "url('./bg/redbg.svg')",
+        backgroundImage: "url('./bg/redbg.svg')",
       }}
     >
       <SEO
@@ -42,59 +90,70 @@ function Home() {
         name="EnterpriseBuzz AI"
         type="description"
       />
-      {/* Hero ++++++++++++++++++++++++++ */}
-      <div className="wrap-video ">
+      
+      {/* Hero Section with optimized video loading */}
+      <div className="wrap-video">
+        {!isVideoLoaded && (
+          <div className="h-full lg:h-[36rem] xl:h-full w-full bg-gray-900 flex items-center justify-center">
+            <LoadingSpinner />
+          </div>
+        )}
         <video
-          className="object-cover h-full lg:h-[36rem] xl:h-full w-full bg-black cursor-pointer"
+          className={`object-cover h-full lg:h-[36rem] xl:h-full w-full bg-black cursor-pointer ${
+            isVideoLoaded ? 'block' : 'hidden'
+          }`}
           autoPlay
           loop
           muted
           playsInline
+          onLoadedData={() => setIsVideoLoaded(true)}
+          preload="metadata"
         >
           <source src="./HeroVid.mp4" type="video/mp4" />
         </video>
       </div>
 
-      {/* CTA +++++++++++++++++++++++++++++ */}
-
-      <section className="mx-auto  justify-center  py-10">
-        <h2 className="md:text-base lg:text-lg text-[#414141] px-2 text-center font-semibold  mx-auto w-full  md:leading-[4.5rem]">
+      {/* CTA Section */}
+      <section className="mx-auto justify-center py-10">
+        <h2 className="md:text-base lg:text-lg text-[#414141] px-2 text-center font-semibold mx-auto w-full md:leading-[4.5rem]">
           Over 100,000,000 businesses start every year. <br /> The question of
           standing out is not just crucial—it is the difference between your
           business dominating or dying.
         </h2>
         <div className="w-full py-7">
-          <CompanySlide />
+          <Suspense fallback={<LoadingSpinner />}>
+            <CompanySlide />
+          </Suspense>
         </div>
       </section>
 
-      {/* Quote Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className=" px-5 lg:px-24   mx-auto mb-5">
-        <img
-          src="../quote.svg"
-          alt=""
-          className="hidden sm:block w-full h-full"
-        />
-        <img src="../Mquote.svg" alt="" className="sm:hidden w-full" />
+      {/* Quote Section with lazy loading */}
+      <div className="px-5 lg:px-24 mx-auto mb-5">
+        <picture>
+          <source media="(max-width: 640px)" srcSet="../Mquote.svg" />
+          <img
+            src="../quote.svg"
+            alt="Quote section"
+            className="w-full h-full"
+            loading="lazy"
+          />
+        </picture>
       </div>
 
-      {/* Free Marketing overview Section ++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <MarketingOverview />
-
-      {/*   AI-Driven Video Commercial ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* AI-Driven Video Commercial */}
       <div
         id="comVideo"
-        className="w-full py-10 px-2 lg:px-24  bg-no-repeat bg-center 2xl:bg-cover"
+        className="w-full py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
         style={{
-          "background-image": "url('../bg/commercebg.png')",
+          backgroundImage: "url('../bg/commercebg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
+        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
           <div className="hidden lg:block w-full lg:w-6/12">
             <div
               className="wrap-video pt-14 pb-16 pl-9 pr-7 bg-no-repeat bg-center"
               style={{
-                "background-image": "url('./CommerceScreen.svg')",
+                backgroundImage: "url('./CommerceScreen.svg')",
               }}
             >
               <video
@@ -103,6 +162,8 @@ function Home() {
                 loop
                 muted
                 playsInline
+                loading="lazy"
+                preload="none"
               >
                 <source src="./AiVid.mp4" type="video/mp4" />
               </video>
@@ -116,7 +177,7 @@ function Home() {
               AI-Driven Video Commercial
             </h2>
             <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Elevate your brand with EnterpriseBuzz AI’s unstoppable, AI-driven
+              Elevate your brand with EnterpriseBuzz AI's unstoppable, AI-driven
               video commercial—seamlessly merging advanced visuals and fearless
               creativity for unmatched market impact.
             </p>
@@ -124,42 +185,42 @@ function Home() {
               <div
                 className="wrap-video bg-no-repeat bg-center"
                 style={{
-                  "background-image": "url('./CommerceScreen.svg')",
+                  backgroundImage: "url('./CommerceScreen.svg')",
                 }}
               >
                 <video
-                  className="object-cover rounded-xl  w-full bg-black cursor-pointer"
+                  className="object-cover rounded-xl w-full bg-black cursor-pointer"
                   autoPlay
                   loop
                   muted
                   playsInline
+                  loading="lazy"
+                  preload="none"
                 >
                   <source src="./AiVid.mp4" type="video/mp4" />
                 </video>
               </div>
             </div>
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                openCalendly();
-              }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
+              onClick={openCalendly}
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem] hover:scale-105"
+              aria-label="Get Started with AI-Driven Video Commercial"
             >
-              <img src="./buttons/Get Started.svg" alt="" />
+              <img src="./buttons/Get Started.svg" alt="Get Started" loading="lazy" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* AI-Driven Call Agent ++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* AI-Driven Call Agent */}
       <div
         id="callAgent"
         className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover"
         style={{
-          "background-image": "url('./bg/marketingbg.png')",
+          backgroundImage: "url('./bg/marketingbg.png')",
         }}
       >
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
+        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
           <div className="w-10/12 lg:w-6/12">
             <h2 className="w-[10rem] 2xl:w-[13rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
               AI-Driven Call Agent
@@ -168,30 +229,27 @@ function Home() {
               AI-Driven Call Agent
             </h2>
             <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Provide your Customers 24/7 receptionist with EnterpriseBuzz AI’s
+              Provide your Customers 24/7 receptionist with EnterpriseBuzz AI's
               Virtual Call Agent, powered by advanced data. Serve customers
               around the clock at a fraction of the cost—ensuring zero missed
               opportunities and 100% conversion retention.
             </p>
-
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                openCalendly();
-              }}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem]"
+              onClick={openCalendly}
+              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem] hover:scale-105"
+              aria-label="Get Started with AI-Driven Call Agent"
             >
-              <img src="./buttons/Get Started.svg" alt="" />
+              <img src="./buttons/Get Started.svg" alt="Get Started" loading="lazy" />
             </button>
           </div>
         </div>
       </div>
 
-      {/* Services +++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* Services Section - Optimized with Intersection Observer */}
       <div
         className="py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
         style={{
-          "background-image": "url('./bg/Servicesbg.svg')",
+          backgroundImage: "url('./bg/Servicesbg.svg')",
         }}
       >
         <AnimatePresence>
@@ -201,161 +259,75 @@ function Home() {
             transition={{ duration: 0.5 }}
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           >
-            <button
-              id="web"
-              onClick={() => navigate("services/web")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="../services/service.png" alt="pics" />
-            </button>
-            <button
-              id="branding"
-              onClick={() => navigate("services/branding")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service1.svg" alt="pics" />
-            </button>
-            <button
-              id="promoDesign"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service2.png" alt="pics" />
-            </button>
-            <button
-              id="promoDesign"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service3.png" alt="pics" />
-            </button>
-            <button
-              id="promoDesign"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service4.png" alt="pics" />
-            </button>
-            <button
-              id="promoDesign"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service5.png" alt="pics" />
-            </button>
+            {[
+              { id: "web", handler: navigationHandlers.web, src: "../services/service.png" },
+              { id: "branding", handler: navigationHandlers.branding, src: "./services/service1.svg" },
+              { id: "promoDesign", handler: openCalendly, src: "./services/service2.png" },
+              { id: "promoDesign2", handler: openCalendly, src: "./services/service3.png" },
+              { id: "promoDesign3", handler: openCalendly, src: "./services/service4.png" },
+              { id: "promoDesign4", handler: openCalendly, src: "./services/service5.png" },
+            ].map((service, index) => (
+              <button
+                key={`service-${index}`}
+                id={service.id}
+                onClick={service.handler}
+                className="w-full cursor-pointer transition transform hover:scale-105"
+                aria-label={`Service ${index + 1}`}
+              >
+                <img src={service.src} alt={`Service ${index + 1}`} loading="lazy" />
+              </button>
+            ))}
           </motion.div>
         </AnimatePresence>
+
         <AnimatePresence>
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 justify-center  sm:grid-cols-2 md:grid-cols-4 px-auto"
+            className="grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-4 px-auto"
           >
-            <button
-              id="emailMarketing"
-              onClick={() => navigate("services/email-marketing")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service6.png" alt="pics" />
-            </button>
-            <button
-              id="seoMarketing"
-              onClick={() => navigate("services/seo-marketing")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service7.png" alt="pics" />
-            </button>
-            <button
-              id="socialMarketing"
-              onClick={() => navigate("services/social-media-marketing")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service8.png" alt="pics" />
-            </button>
-
-            <button
-              id="logoDesign"
-              onClick={() => navigate("services/logo-design")}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service10.png" alt="pics" />
-            </button>
-            <button
-              id="leadGen"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service11.png" alt="pics" />
-            </button>
-            <button
-              id="videography"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service12.png" alt="pics" />
-            </button>
-            <button
-              id="photography"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service13.png" alt="pics" />
-            </button>
-            <button
-              id="UGC"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service14.png" alt="pics" />
-            </button>
-            <button
-              id="chatbot"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service15.png" alt="pics" />
-            </button>
-
-            <button
-              id="podcast"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service18.png" alt="pics" />
-            </button>
-            <button
-              id="business-card"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service19.png" alt="pics" />
-            </button>
-            <button
-              id="marketing-animation"
-              onClick={openCalendly}
-              className="w-full cursor-pointer transition transform hover:scale-105"
-            >
-              <img src="./services/service20.png" alt="pics" />
-            </button>
+            {[
+              { id: "emailMarketing", handler: navigationHandlers.emailMarketing, src: "./services/service6.png" },
+              { id: "seoMarketing", handler: navigationHandlers.seoMarketing, src: "./services/service7.png" },
+              { id: "socialMarketing", handler: navigationHandlers.socialMarketing, src: "./services/service8.png" },
+              { id: "logoDesign", handler: navigationHandlers.logoDesign, src: "./services/service10.png" },
+              { id: "leadGen", handler: openCalendly, src: "./services/service11.png" },
+              { id: "videography", handler: openCalendly, src: "./services/service12.png" },
+              { id: "photography", handler: openCalendly, src: "./services/service13.png" },
+              { id: "chatbot", handler: openCalendly, src: "./services/service15.png" },
+            ].map((service, index) => (
+              <button
+                key={`service2-${index}`}
+                id={service.id}
+                onClick={service.handler}
+                className="w-full cursor-pointer transition transform hover:scale-105"
+                aria-label={service.id.replace(/([A-Z])/g, ' $1').toLowerCase()}
+              >
+                <img src={service.src} alt={service.id} loading="lazy" />
+              </button>
+            ))}
           </motion.div>
         </AnimatePresence>
       </div>
 
-      {/* Graphics +++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <Graphics />
+      {/* Lazy loaded components with Suspense */}
+      <Suspense fallback={<LoadingSpinner />}>
+        <Graphics />
+      </Suspense>
 
-      {/* How Does EnterpriseBuzz AI Work? Section +++++++++++++++++++++++++++++++++++++++++++ */}
-      <HowWeWork />
+      <Suspense fallback={<LoadingSpinner />}>
+        <HowWeWork />
+      </Suspense>
 
-      {/* social ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+      {/* Social Section */}
       <div
-        className="py-10 lg:py-20 px-2 lg:px-24  flex flex-col  items-center  justify-center bg-no-repeat bg-center 2xl:bg-cover"
+        className="py-10 lg:py-20 px-2 lg:px-24 flex flex-col items-center justify-center bg-no-repeat bg-center 2xl:bg-cover"
         style={{
-          "background-image": "url('./bg/bobbg.svg')",
+          backgroundImage: "url('./bg/bobbg.svg')",
         }}
       >
-        <h2 className="text-sm text-[#000] font-bold  text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[55rem]  ">
+        <h2 className="text-sm text-[#000] font-bold text-center md:text-2xl xl:text-4xl lg:w-[35rem] xl:w-[55rem]">
           EnterpriseBuzz AI is your partner in deploying sophisticated marketing
           strategies & tools
         </h2>
@@ -366,12 +338,14 @@ function Home() {
           revenue.
         </h2>
 
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        {/* Generate Section */}
+        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="w-full lg:w-[35rem]">
             <img
               src="../Generate-1.png"
-              alt="i"
+              alt="Generate illustration"
               className="rounded-2xl w-full"
+              loading="lazy"
             />
           </div>
           <div className="md:7/12 lg:w-6/12">
@@ -394,36 +368,26 @@ function Home() {
                 catalyzing effective results.
               </span>
             </p>
-
-            <div className=" flex gap-x-4 mt-5 items-center">
-              {more1 ? (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore1(false);
-                  }}
-                  className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
-                >
-                  Read Less
-                </button>
-              ) : (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore1(true);
-                  }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
-                >
-                  Read More
-                </button>
-              )}
+            <div className="flex gap-x-4 mt-5 items-center">
+              <button
+                onClick={toggleHandlers.more1}
+                className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
+                  more1 
+                    ? "bg-[#757E7E]" 
+                    : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
+                }`}
+                aria-label={more1 ? "Read Less" : "Read More"}
+              >
+                {more1 ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
 
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        {/* Execute Section */}
+        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="lg:hidden">
-            <img src="../Hero image.png" alt="i" />
+            <img src="../Hero image.png" alt="Execute illustration" loading="lazy" />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
@@ -445,39 +409,29 @@ function Home() {
                 fiercest, most passionate digital warriors in the industry.
               </span>
             </p>
-
-            <div className=" flex gap-x-4 mt-5 items-center">
-              {more2 ? (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore2(false);
-                  }}
-                  className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
-                >
-                  Read Less
-                </button>
-              ) : (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore2(true);
-                  }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
-                >
-                  Read More
-                </button>
-              )}
+            <div className="flex gap-x-4 mt-5 items-center">
+              <button
+                onClick={toggleHandlers.more2}
+                className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
+                  more2 
+                    ? "bg-[#757E7E]" 
+                    : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
+                }`}
+                aria-label={more2 ? "Read Less" : "Read More"}
+              >
+                {more2 ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
           <div className="hidden lg:block sm:w-[35rem]">
-            <img src="../Hero image.png" alt="i" />
+            <img src="../Hero image.png" alt="Execute illustration" loading="lazy" />
           </div>
         </div>
 
-        <div className=" m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
+        {/* Measure Section */}
+        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="w-full lg:w-[35rem]">
-            <img src="../Measure.png" alt="i" className="rounded-xl" />
+            <img src="../Measure.png" alt="Measure illustration" className="rounded-xl" loading="lazy" />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
@@ -495,67 +449,63 @@ function Home() {
                 campaign under our stewardship.
               </span>
             </p>
-
-            <div className=" flex gap-x-4 mt-5 items-center">
-              {more3 ? (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore3(false);
-                  }}
-                  className="w-[7rem] bg-[#757E7E]  rounded-lg text-sm  py-3 text-center text-white  transition duration-200"
-                >
-                  Read Less
-                </button>
-              ) : (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setMore3(true);
-                  }}
-                  className="w-[7rem] rounded-lg text-sm  py-3 text-center text-white  transition duration-200 bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
-                >
-                  Read More
-                </button>
-              )}
+            <div className="flex gap-x-4 mt-5 items-center">
+              <button
+                onClick={toggleHandlers.more3}
+                className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
+                  more3 
+                    ? "bg-[#757E7E]" 
+                    : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
+                }`}
+                aria-label={more3 ? "Read Less" : "Read More"}
+              >
+                {more3 ? "Read Less" : "Read More"}
+              </button>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Portfolio Section +++++++++++++++++++++++++++++++++++++++++++ */}
-      <Technology />
+      {/* Lazy loaded sections */}
+      <Suspense fallback={<LoadingSpinner />}>
+        <Technology />
+      </Suspense>
 
-      {/* Portfolio Section +++++++++++++++++++++++++++++++++++++++++++ */}
-      <Portfolio />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Portfolio />
+      </Suspense>
 
-      {/* Logo Grid Section +++++++++++++++++++++++++++++++++++++++++++ */}
-      <LogoGrid />
+      <Suspense fallback={<LoadingSpinner />}>
+        <LogoGrid />
+      </Suspense>
 
-      {/* Testimonies Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className=" bg-[#fff] py-10  ">
-        <h2 className="text-sm text-[#000] font-semibold  text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
+      {/* Testimonies Section */}
+      <div className="bg-[#fff] py-10">
+        <h2 className="text-sm text-[#000] font-semibold text-center md:text-3xl xl:text-4xl pb-3 mx-auto">
           What our clients say about us
         </h2>
         <h2 className="mx-auto text-[#36474F] text-center font-semibold text-sm xl:text-xl md:w-[44rem] xl:w-[48rem] flex items-center justify-center gap-x-2">
           <img
             className="object-cover object-center w-auto h-5 md:w-auto md:h-9 xl:h-10"
             src="../Frame 41.png"
-            alt=""
+            alt="Trust indicator"
+            loading="lazy"
           />
           over 1k clients trust us
         </h2>
-        <section className="mx-auto  justify-center  my-5 lg:mt-10 ">
-          <div className="w-full ">
-            <TestimonySlide />
+        <section className="mx-auto justify-center my-5 lg:mt-10">
+          <div className="w-full">
+            <Suspense fallback={<LoadingSpinner />}>
+              <TestimonySlide />
+            </Suspense>
           </div>
         </section>
       </div>
 
-      {/* Quote Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <div className="p-2 lg:p-28 bg-[#F4F4F4]  mx-auto">
-        <div className=" m-auto  bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16 ">
-          <h2 className="text-sm text-[#000]  text-center md:text-xl xl:text-2xl 2xl:text-3xl leading-[1.5rem] lg:leading-[3rem] 2xl:leading-[4.5rem]">
+      {/* Quote Section */}
+      <div className="p-2 lg:p-28 bg-[#F4F4F4] mx-auto">
+        <div className="m-auto bg-gradient-to-r from-pink-100 to-blue-100 rounded-lg shadow-md text-gray-800 leading-relaxed py-10 px-5 lg:px-16">
+          <h2 className="text-sm text-[#000] text-center md:text-xl xl:text-2xl 2xl:text-3xl leading-[1.5rem] lg:leading-[3rem] 2xl:leading-[4.5rem]">
             To conquer today's fiercely competitive marketplace, we adopt the
             unwavering resolve of Winston Churchill's strategic vision. We do
             not merely engage, but relentlessly attack from every conceivable
@@ -572,11 +522,17 @@ function Home() {
         </div>
       </div>
 
-      {/* latest updates +++++++++++++++++++++++++++++++++++++++++++++ */}
-      <LatestUpdates />
+      <Suspense fallback={<LoadingSpinner />}>
+        <MarketingOverview />
+      </Suspense>
 
-      {/* CTA Section +++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-      <CTA />
+      <Suspense fallback={<LoadingSpinner />}>
+        <LatestUpdates />
+      </Suspense>
+
+      <Suspense fallback={<LoadingSpinner />}>
+        <CTA />
+      </Suspense>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const portfolioItems = [
@@ -7,7 +7,6 @@ const portfolioItems = [
     category: "Fashion",
     // img: "./portfolio/port.png",
     img: "./vport.mp4",
-
   },
   {
     id: 2,
@@ -189,6 +188,11 @@ const portfolioItems = [
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
+  // ✅ Dynamically generate categories
+  const categories = useMemo(
+    () => ["All", ...new Set(portfolioItems.map((item) => item.category))],
+    []
+  );
   const filteredItems =
     selectedCategory === "All"
       ? portfolioItems
@@ -198,7 +202,7 @@ export default function Portfolio() {
     <div className="w-full px-2 lg:px-24">
       <div className="pt-16 pb-5 px-2 lg:px-24  flex flex-col  items-center  justify-center space-y-2 ">
         <h2 className="text-3xl xl:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-orange-500 uppercase">
-         Our Portfolio
+          Our Portfolio
         </h2>
         <h2 className="text-xs text-[#000] text-center md:text-sm lg:text-lg 2xl:text-xl">
           Arming businesses for marketplace dominance with high-level AI
@@ -206,8 +210,9 @@ export default function Portfolio() {
         </h2>
       </div>
 
+      {/* Category filters */}
       <div className="flex justify-start gap-3 my-5 flex-wrap">
-        {["All", "Fashion", "Beauty", "Finance"].map((category) => (
+        {categories.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
@@ -222,37 +227,38 @@ export default function Portfolio() {
         ))}
       </div>
 
-      <AnimatePresence>
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-8"
-        >
-          {filteredItems.map((item) => (
-            <div
-              key={item.id}
-              className="bg-white cursor-pointer transform scale-95 animate-zoom-in transition-transform duration-1000 ease-in-out hover:scale-105 rounded-lg shadow-lg overflow-hidden"
-            >
-              {item.img.endsWith(".mp4") ? (
-                <video
-                  src={item.img}
-                  className="w-full h-auto rounded-lg"
-                  autoPlay
-                  loop
-                  muted
-                />
-              ) : (
-                <img
-                  src={item.img}
-                  alt={item.category}
-                  className="w-full h-auto rounded-lg"
-                />
-              )}
-            </div>
-          ))}
-        </motion.div>
-      </AnimatePresence>
+      <motion.div
+        initial={{ x: 20, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="grid grid-cols-2 md:grid-cols-3 gap-2 mb-8"
+      >
+        {filteredItems.map((item) => (
+          <div
+            key={item.id}
+            className="bg-white cursor-pointer transform scale-95 animate-zoom-in transition-transform duration-1000 ease-in-out hover:scale-105 rounded-lg shadow-lg overflow-hidden"
+          >
+            {item.img.endsWith(".mp4") ? (
+              <video
+                src={item.img}
+                className="w-full h-auto rounded-lg"
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="none"
+              />
+            ) : (
+              <img
+                src={item.img}
+                alt={item.category}
+                loading="lazy"
+                className="w-full h-auto rounded-lg"
+              />
+            )}
+          </div>
+        ))}
+      </motion.div>
     </div>
   );
 }

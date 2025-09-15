@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Graphics() {
+  // Memoized callback for Calendly
+  const openCalendly = useCallback(() => {
+    window.open("https://calendly.com/enterprisebuzzai", "_blank");
+  }, []);
   return (
     <div className="mx-auto px-3 lg:px-48 py-10">
       <AnimatePresence>
@@ -17,7 +21,11 @@ function Graphics() {
             className="w-full hidden md:block py-2"
           />
           {/* Mobile view */}
-          <img  src="./bg/mGraphicsTop.svg" alt="pics" className="w-full md:hidden py-2" />
+          <img
+            src="./bg/mGraphicsTop.svg"
+            alt="pics"
+            className="w-full md:hidden py-2"
+          />
         </motion.div>
         <motion.div
           initial={{ y: 20, opacity: 0 }}
@@ -33,6 +41,7 @@ function Graphics() {
           <img
             src="/bg/graphicsRight.svg"
             alt="pics"
+            onClick={openCalendly}
             className="w-full cursor-pointer transition transform hover:scale-105 "
           />
         </motion.div>

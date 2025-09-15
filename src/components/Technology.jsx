@@ -1,90 +1,62 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
+
+const techImages = Array.from(
+  { length: 20 },
+  (_, i) => `./technology/tech${i + 1}.png`
+);
+
+const containerVariants = {
+  hidden: { opacity: 0, x: 20 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 1, staggerChildren: 0.05 },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, scale: 0.95 },
+  visible: { opacity: 1, scale: 1 },
+};
 
 function Technology() {
   return (
     <div className="bg-[#0C0C1B] py-10 px-2 lg:p-24">
-      <div className=" flex flex-col  items-center  justify-center  ">
-        <h2 className="text-xl text-[#fff] font-semibold  text-center md:text-3xl xl:text-4xl lg:w-[35rem] ">
+      <div className="flex flex-col items-center justify-center">
+        <h2 className="text-xl text-white font-semibold text-center md:text-3xl xl:text-4xl lg:w-[35rem]">
           THE TECHNOLOGY
         </h2>
-        <h2 className="text-[12px] text-[#fff] text-center md:text-sm xl:text-base lg:w-[75%] py-2 capitalize">
+        <h2 className="text-[12px] text-white text-center md:text-sm xl:text-base lg:w-[75%] py-2 capitalize">
           Unlike other marketing software companies that leave their users to
           navigate complex systems on their own, EnterpriseBuzz AI Toronto does
           the heavy lifting by helping businesses deploy sophisticated
-          advertising, branding, and marketing tools that generates bold
+          advertising, branding, and marketing tools that generate bold
           attention, drive engagement, acquire customers, and boost revenue.
         </h2>
       </div>
-      <AnimatePresence>
-        <motion.div
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="grid grid-cols-2 gap-4  sm:grid-cols-3 md:grid-cols-5 mt-6"
-        >
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech1.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech2.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech3.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech4.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech5.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech6.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech7.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech8.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech9.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech10.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech11.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech12.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech13.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech14.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech15.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech16.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech17.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech18.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech19.png" alt="pics" />
-          </button>
-          <button className="w-full cursor-pointer transition transform hover:scale-105">
-            <img src="./technology/tech20.png" alt="pics" />
-          </button>
-        </motion.div>
-      </AnimatePresence>
+
+      <motion.div
+        className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 mt-6"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {techImages.map((src, index) => (
+          <motion.button
+            key={index}
+            className="w-full cursor-pointer"
+            variants={itemVariants}
+          >
+            <img
+              src={src}
+              alt={`Tech ${index + 1}`}
+              loading="lazy"
+              className="w-full h-auto transition-transform duration-200 hover:scale-105"
+            />
+          </motion.button>
+        ))}
+      </motion.div>
     </div>
   );
 }

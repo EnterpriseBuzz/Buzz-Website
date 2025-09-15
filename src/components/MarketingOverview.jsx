@@ -1,6 +1,6 @@
 export default function MarketingOverview() {
   return (
-    <div className=" px-5 lg:px-24   mx-auto mb-5">
+    <div className=" px-5 lg:px-24   mx-auto my-5">
       <div className="bg-gradient-to-r from-orange-400 to-red-500 p-4  rounded-3xl shadow-lg w-full  relative">
         <div className="bg-[#fff]/10 rounded-2xl p-3 md:p-8 border border-[#fff]/30">
         <h2 className="text-white text-3xl font-bold mb-6">
