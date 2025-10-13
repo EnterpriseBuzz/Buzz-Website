@@ -19,7 +19,6 @@ export default function MainLayout() {
     <>
       <Header />
       <Outlet />
-      <PaymentOptions />
       <Footer />
     </>
   );

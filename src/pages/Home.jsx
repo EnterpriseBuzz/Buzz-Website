@@ -1,4 +1,11 @@
-import React, { useEffect, useState, lazy, Suspense, useMemo, useCallback } from "react";
+import React, {
+  useEffect,
+  useState,
+  lazy,
+  Suspense,
+  useMemo,
+  useCallback,
+} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +19,6 @@ const CompanySlide = lazy(() => import("../components/CompanySlide"));
 const MarketingOverview = lazy(() => import("../components/MarketingOverview"));
 const LogoGrid = lazy(() => import("../components/LogoGrid"));
 const Technology = lazy(() => import("../components/Technology"));
-const LatestUpdates = lazy(() => import("../components/Lastest"));
 const HowWeWork = lazy(() => import("../components/HowWeWork"));
 const CTA = lazy(() => import("../components/CTA"));
 const Graphics = lazy(() => import("../components/Graphics"));
@@ -46,32 +52,38 @@ function Home() {
   }, []);
 
   // Memoized navigation handlers
-  const navigationHandlers = useMemo(() => ({
-    web: () => navigate("services/web"),
-    branding: () => navigate("services/branding"),
-    emailMarketing: () => navigate("services/email-marketing"),
-    seoMarketing: () => navigate("services/seo-marketing"),
-    socialMarketing: () => navigate("services/social-media-marketing"),
-    logoDesign: () => navigate("services/logo-design"),
-  }), [navigate]);
+  const navigationHandlers = useMemo(
+    () => ({
+      web: () => navigate("services/web"),
+      branding: () => navigate("services/branding"),
+      emailMarketing: () => navigate("services/email-marketing"),
+      seoMarketing: () => navigate("services/seo-marketing"),
+      socialMarketing: () => navigate("services/social-media-marketing"),
+      logoDesign: () => navigate("services/logo-design"),
+    }),
+    [navigate]
+  );
 
   // Memoized toggle handlers
-  const toggleHandlers = useMemo(() => ({
-    more1: () => setMore1(prev => !prev),
-    more2: () => setMore2(prev => !prev),
-    more3: () => setMore3(prev => !prev),
-  }), []);
+  const toggleHandlers = useMemo(
+    () => ({
+      more1: () => setMore1((prev) => !prev),
+      more2: () => setMore2((prev) => !prev),
+      more3: () => setMore3((prev) => !prev),
+    }),
+    []
+  );
 
   // Preload critical images
   useEffect(() => {
     const criticalImages = [
-      './bg/redbg.svg',
-      '../bg/commercebg.png',
-      './bg/marketingbg.png',
-      './bg/Servicesbg.svg'
+      "./bg/redbg.svg",
+      "../bg/commercebg.png",
+      "./bg/marketingbg.png",
+      "./bg/Servicesbg.svg",
     ];
-    
-    criticalImages.forEach(src => {
+
+    criticalImages.forEach((src) => {
       const img = new Image();
       img.src = src;
     });
@@ -81,7 +93,7 @@ function Home() {
     <div
       className="w-full text-gray-600 bg-[center_top_20rem] bg-no-repeat"
       style={{
-        backgroundImage: "url('./bg/redbg.svg')",
+       
       }}
     >
       <SEO
@@ -90,7 +102,7 @@ function Home() {
         name="EnterpriseBuzz AI"
         type="description"
       />
-      
+
       {/* Hero Section with optimized video loading */}
       <div className="wrap-video">
         {!isVideoLoaded && (
@@ -100,7 +112,7 @@ function Home() {
         )}
         <video
           className={`object-cover h-full lg:h-[36rem] xl:h-full w-full bg-black cursor-pointer ${
-            isVideoLoaded ? 'block' : 'hidden'
+            isVideoLoaded ? "block" : "hidden"
           }`}
           autoPlay
           loop
@@ -141,115 +153,14 @@ function Home() {
       </div>
 
       {/* AI-Driven Video Commercial */}
-      <div
-        id="comVideo"
-        className="w-full py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
-        style={{
-          backgroundImage: "url('../bg/commercebg.png')",
-        }}
-      >
-        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-16 py-10 md:py-20 lg:py-28 2xl:py-32 px-2">
-          <div className="hidden lg:block w-full lg:w-6/12">
-            <div
-              className="wrap-video pt-14 pb-16 pl-9 pr-7 bg-no-repeat bg-center"
-              style={{
-                backgroundImage: "url('./CommerceScreen.svg')",
-              }}
-            >
-              <video
-                className="object-cover h-full rounded-xl xl:h-full w-full bg-black cursor-pointer"
-                autoPlay
-                loop
-                muted
-                playsInline
-                loading="lazy"
-                preload="none"
-              >
-                <source src="./AiVid.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-          <div className="w-full lg:w-6/12">
-            <h2 className="w-[12rem] 2xl:w-[17rem] text-center text-xs text-[#000] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
-              AI-Driven Video Commercial
-            </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
-              AI-Driven Video Commercial
-            </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Elevate your brand with EnterpriseBuzz AI's unstoppable, AI-driven
-              video commercial—seamlessly merging advanced visuals and fearless
-              creativity for unmatched market impact.
-            </p>
-            <div className="mt-3 lg:hidden w-full lg:w-6/12">
-              <div
-                className="wrap-video bg-no-repeat bg-center"
-                style={{
-                  backgroundImage: "url('./CommerceScreen.svg')",
-                }}
-              >
-                <video
-                  className="object-cover rounded-xl w-full bg-black cursor-pointer"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  loading="lazy"
-                  preload="none"
-                >
-                  <source src="./AiVid.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-            <button
-              onClick={openCalendly}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem] hover:scale-105"
-              aria-label="Get Started with AI-Driven Video Commercial"
-            >
-              <img src="./buttons/Get Started.svg" alt="Get Started" loading="lazy" />
-            </button>
-          </div>
-        </div>
-      </div>
 
       {/* AI-Driven Call Agent */}
-      <div
-        id="callAgent"
-        className="py-10 px-2 lg:px-24 bg-[center_left_-70rem] bg-no-repeat sm:bg-center 2xl:bg-cover"
-        style={{
-          backgroundImage: "url('./bg/marketingbg.png')",
-        }}
-      >
-        <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-20 lg:py-28 2xl:py-32 px-2">
-          <div className="w-10/12 lg:w-6/12">
-            <h2 className="w-[10rem] 2xl:w-[13rem] text-center text-xs text-[#fff] bg-[#fff]/40 p-2 rounded-full 2xl:text-lg">
-              AI-Driven Call Agent
-            </h2>
-            <h2 className="my-3 text-2xl text-[#fff] font-semibold md:text-4xl 2xl:text-6xl">
-              AI-Driven Call Agent
-            </h2>
-            <p className="text-[#fff] lg:text-lg 2xl:text-3xl">
-              Provide your Customers 24/7 receptionist with EnterpriseBuzz AI's
-              Virtual Call Agent, powered by advanced data. Serve customers
-              around the clock at a fraction of the cost—ensuring zero missed
-              opportunities and 100% conversion retention.
-            </p>
-            <button
-              onClick={openCalendly}
-              className="-ml-12 lg:-ml-12 -mt-4 transition duration-200 w-[16rem] xl:w-[18rem] 2xl:w-[20rem] hover:scale-105"
-              aria-label="Get Started with AI-Driven Call Agent"
-            >
-              <img src="./buttons/Get Started.svg" alt="Get Started" loading="lazy" />
-            </button>
-          </div>
-        </div>
-      </div>
 
       {/* Services Section - Optimized with Intersection Observer */}
       <div
         className="py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
         style={{
-          backgroundImage: "url('./bg/Servicesbg.svg')",
+
         }}
       >
         <AnimatePresence>
@@ -260,12 +171,36 @@ function Home() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
           >
             {[
-              { id: "web", handler: navigationHandlers.web, src: "../services/service.png" },
-              { id: "branding", handler: navigationHandlers.branding, src: "./services/service1.svg" },
-              { id: "promoDesign", handler: openCalendly, src: "./services/service2.png" },
-              { id: "promoDesign2", handler: openCalendly, src: "./services/service3.png" },
-              { id: "promoDesign3", handler: openCalendly, src: "./services/service4.png" },
-              { id: "promoDesign4", handler: openCalendly, src: "./services/service5.png" },
+              {
+                id: "web",
+                handler: navigationHandlers.web,
+                src: "../services/service.png",
+              },
+              {
+                id: "branding",
+                handler: navigationHandlers.branding,
+                src: "./services/service1.svg",
+              },
+              {
+                id: "promoDesign",
+                handler: openCalendly,
+                src: "./services/service2.png",
+              },
+              {
+                id: "promoDesign2",
+                handler: openCalendly,
+                src: "./services/service3.png",
+              },
+              {
+                id: "promoDesign3",
+                handler: openCalendly,
+                src: "./services/service4.png",
+              },
+              {
+                id: "promoDesign4",
+                handler: openCalendly,
+                src: "./services/service5.png",
+              },
             ].map((service, index) => (
               <button
                 key={`service-${index}`}
@@ -274,7 +209,11 @@ function Home() {
                 className="w-full cursor-pointer transition transform hover:scale-105"
                 aria-label={`Service ${index + 1}`}
               >
-                <img src={service.src} alt={`Service ${index + 1}`} loading="lazy" />
+                <img
+                  src={service.src}
+                  alt={`Service ${index + 1}`}
+                  loading="lazy"
+                />
               </button>
             ))}
           </motion.div>
@@ -285,24 +224,48 @@ function Home() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-4 px-auto"
+            className="grid grid-cols-1 justify-center sm:grid-cols-2 md:grid-cols-3 px-auto"
           >
             {[
-              { id: "emailMarketing", handler: navigationHandlers.emailMarketing, src: "./services/service6.png" },
-              { id: "seoMarketing", handler: navigationHandlers.seoMarketing, src: "./services/service7.png" },
-              { id: "socialMarketing", handler: navigationHandlers.socialMarketing, src: "./services/service8.png" },
-              { id: "logoDesign", handler: navigationHandlers.logoDesign, src: "./services/service10.png" },
-              { id: "leadGen", handler: openCalendly, src: "./services/service11.png" },
-              { id: "videography", handler: openCalendly, src: "./services/service12.png" },
-              { id: "photography", handler: openCalendly, src: "./services/service13.png" },
-              { id: "chatbot", handler: openCalendly, src: "./services/service15.png" },
+              {
+                id: "emailMarketing",
+                handler: navigationHandlers.emailMarketing,
+                src: "./services/service6.png",
+              },
+
+              {
+                id: "socialMarketing",
+                handler: navigationHandlers.socialMarketing,
+                src: "./services/service8.png",
+              },
+              {
+                id: "logoDesign",
+                handler: navigationHandlers.logoDesign,
+                src: "./services/service10.png",
+              },
+
+              {
+                id: "videography",
+                handler: openCalendly,
+                src: "./services/service12.png",
+              },
+              {
+                id: "photography",
+                handler: openCalendly,
+                src: "./services/service13.png",
+              },
+              {
+                id: "chatbot",
+                handler: openCalendly,
+                src: "./services/service15.png",
+              },
             ].map((service, index) => (
               <button
                 key={`service2-${index}`}
                 id={service.id}
                 onClick={service.handler}
                 className="w-full cursor-pointer transition transform hover:scale-105"
-                aria-label={service.id.replace(/([A-Z])/g, ' $1').toLowerCase()}
+                aria-label={service.id.replace(/([A-Z])/g, " $1").toLowerCase()}
               >
                 <img src={service.src} alt={service.id} loading="lazy" />
               </button>
@@ -372,8 +335,8 @@ function Home() {
               <button
                 onClick={toggleHandlers.more1}
                 className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
-                  more1 
-                    ? "bg-[#757E7E]" 
+                  more1
+                    ? "bg-[#757E7E]"
                     : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
                 }`}
                 aria-label={more1 ? "Read Less" : "Read More"}
@@ -387,7 +350,11 @@ function Home() {
         {/* Execute Section */}
         <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="lg:hidden">
-            <img src="../Hero image.png" alt="Execute illustration" loading="lazy" />
+            <img
+              src="../Hero image.png"
+              alt="Execute illustration"
+              loading="lazy"
+            />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
@@ -413,8 +380,8 @@ function Home() {
               <button
                 onClick={toggleHandlers.more2}
                 className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
-                  more2 
-                    ? "bg-[#757E7E]" 
+                  more2
+                    ? "bg-[#757E7E]"
                     : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
                 }`}
                 aria-label={more2 ? "Read Less" : "Read More"}
@@ -424,14 +391,23 @@ function Home() {
             </div>
           </div>
           <div className="hidden lg:block sm:w-[35rem]">
-            <img src="../Hero image.png" alt="Execute illustration" loading="lazy" />
+            <img
+              src="../Hero image.png"
+              alt="Execute illustration"
+              loading="lazy"
+            />
           </div>
         </div>
 
         {/* Measure Section */}
         <div className="m-auto space-y-6 md:space-y-0 lg:flex md:gap-6 lg:items-center lg:gap-12 py-5 md:py-10 px-2 lg:px-16">
           <div className="w-full lg:w-[35rem]">
-            <img src="../Measure.png" alt="Measure illustration" className="rounded-xl" loading="lazy" />
+            <img
+              src="../Measure.png"
+              alt="Measure illustration"
+              className="rounded-xl"
+              loading="lazy"
+            />
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#212529] font-bold md:text-4xl 2xl:text-6xl">
@@ -453,8 +429,8 @@ function Home() {
               <button
                 onClick={toggleHandlers.more3}
                 className={`w-[7rem] rounded-lg text-sm py-3 text-center text-white transition duration-200 ${
-                  more3 
-                    ? "bg-[#757E7E]" 
+                  more3
+                    ? "bg-[#757E7E]"
                     : "bg-gradient-to-r from-red-500 via-pink-400 to-orange-300 hover:bg-[#757E7E]"
                 }`}
                 aria-label={more3 ? "Read Less" : "Read More"}
@@ -526,9 +502,7 @@ function Home() {
         <MarketingOverview />
       </Suspense>
 
-      <Suspense fallback={<LoadingSpinner />}>
-        <LatestUpdates />
-      </Suspense>
+
 
       <Suspense fallback={<LoadingSpinner />}>
         <CTA />
