@@ -26,7 +26,7 @@ function LogoGrid() {
               <img src="./logogrid/Hero image.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
-              <img src="./logogrid/Hero image32.png" alt="pics" />
+              <img src="./logogrid/Hero image 1.png" alt="pics" />
             </button>
             <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./logogrid/Hero image1.png" alt="pics" />
@@ -86,7 +86,27 @@ function LogoGrid() {
             <button className="w-full cursor-pointer transition transform hover:scale-105">
               <img src="./logogrid/Hero image20.png" alt="pics" />
             </button>
-         
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image10.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image22.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image23.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image24.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image25.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image15.png" alt="pics" />
+            </button>
+            <button className="w-full cursor-pointer transition transform hover:scale-105">
+              <img src="./logogrid/Hero image27.png" alt="pics" />
+            </button>
           </motion.div>
         </AnimatePresence>
       </div>

@@ -267,7 +267,7 @@ function Home() {
                 className="w-full cursor-pointer transition transform hover:scale-105"
                 aria-label={service.id.replace(/([A-Z])/g, " $1").toLowerCase()}
               >
-                <img src={service.src} alt={service.id} loading="lazy" />
+                <img src={service.src} alt={service.id} className="w-full" loading="lazy" />
               </button>
             ))}
           </motion.div>

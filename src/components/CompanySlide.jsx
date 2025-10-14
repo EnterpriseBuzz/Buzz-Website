@@ -130,11 +130,9 @@ function CompanySlide() {
         alt: "Tefzon logo",
         className: "h-11 w-auto",
       },
-      {
-        src: "../brands/billTop.png",
-        alt: "BillTop logo",
-        className: "h-11 w-auto",
-      },
+      { src: "../brands/Company logo4.png", alt: "Partner company 7", className: "h-14 w-auto" },
+      { src: "../brands/Company logo7.png", alt: "Partner company 8", className: "h-14 w-auto" },
+      { src: "../brands/Company logo9.png", alt: "Partner company 9", className: "h-14 w-auto" },
       { src: "../brands/aku.png", alt: "AKU logo", className: "h-9 w-auto" },
       {
         src: "../brands/Atoovislogo.png",
