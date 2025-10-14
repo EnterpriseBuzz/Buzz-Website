@@ -84,7 +84,7 @@ const Footer = () => {
                 </p>
                 <div className="mt-2 flex  gap-x-3 items-center ">
                   <a
-                    href="h ttps://www.facebook.com/enterprisebuzzai"
+                    href="https://www.facebook.com/enterprisebuzzai"
                     className=" rounded-full outline-none focus:outline-none "
                   >
                     <svg

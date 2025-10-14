@@ -504,9 +504,6 @@ function Home() {
 
 
 
-      <Suspense fallback={<LoadingSpinner />}>
-        <CTA />
-      </Suspense>
     </div>
   );
 }

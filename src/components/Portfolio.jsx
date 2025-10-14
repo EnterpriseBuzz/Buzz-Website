@@ -38,11 +38,7 @@ const portfolioItems = [
     category: "Fashion",
     img: "./portfolio/port6.png",
   },
-  {
-    id: 8,
-    category: "Beauty",
-    img: "./portfolio/port7.png",
-  },
+
   {
     id: 9,
     category: "Finance",
@@ -53,11 +49,7 @@ const portfolioItems = [
     category: "Fashion",
     img: "./portfolio/port9.png",
   },
-  {
-    id: 11,
-    category: "Beauty",
-    img: "./portfolio/port10.png",
-  },
+
   {
     id: 12,
     category: "Finance",
@@ -73,21 +65,13 @@ const portfolioItems = [
     category: "Beauty",
     img: "./portfolio/port13.png",
   },
-  {
-    id: 15,
-    category: "Finance",
-    img: "./portfolio/port14.png",
-  },
+
   {
     id: 16,
     category: "Fashion",
     img: "./portfolio/port15.png",
   },
-  {
-    id: 17,
-    category: "Beauty",
-    img: "./portfolio/port16.png",
-  },
+
   {
     id: 18,
     category: "Finance",
@@ -103,11 +87,7 @@ const portfolioItems = [
     category: "Beauty",
     img: "./portfolio/port19.png",
   },
-  {
-    id: 21,
-    category: "Finance",
-    img: "./portfolio/port20.png",
-  },
+
   {
     id: 22,
     category: "Fashion",
@@ -178,11 +158,7 @@ const portfolioItems = [
     category: "Beauty",
     img: "./portfolio/port34.png",
   },
-  {
-    id: 36,
-    category: "Finance",
-    img: "./portfolio/port36.png",
-  },
+  
 ];
 
 export default function Portfolio() {
