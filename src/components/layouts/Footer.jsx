@@ -133,7 +133,7 @@ const Footer = () => {
                     <img src="../icons/youtube.svg" alt="" />
                   </a>
                   <a
-                    href="https://twitter.com/enterprisebuzzai"
+                    href="https://twitter.com/enterprisebuzz"
                     className="font-normal  items-center justify-center align-center rounded-full outline-none focus:outline-none "
                   >
                     <svg
@@ -422,106 +422,111 @@ const Footer = () => {
               </div>
 
               <div className="">
-                <div className="flex flex-col items-start mt-10 space-y-2">
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
+                {/* Heading for clarity */}
+                <h3 className=" text-white font-bold  text-lg lg:text-xl">
+                  Service Areas
+                </h3>
+                <div className="flex gap-x-3 justify-between">
+                  <div className="flex flex-col items-start mt-2 space-y-2">
+                    {/* List of service areas, grouped by Province/Territory where applicable */}
 
-                      // navigate("/");
-                      document
-                        .getElementById("promoDesign")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Marketing/Promotional Designs
-                  </Link>
+                    {/* --- Ontario --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Ontario
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Toronto
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Etobicoke
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Ottawa
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Hamilton
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      London
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Mississauga
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Barrie
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Brampton
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Oakville
+                    </div>
 
-                  <Link
-                    to="/services/email-marketing"
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Email Marketing
-                  </Link>
+                    {/* --- Alberta --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Alberta
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Edmonton
+                    </div>
+                    <div className="capitalize text-white font-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Calgary
+                    </div>
+                  </div>
 
-                  <Link
-                    to="/services/seo-marketing"
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    SEO Marketing
-                  </Link>
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document
-                        .getElementById("podcast")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Podcast for marketing
-                  </Link>
-                  <Link
-                    to="/services/social-media-marketing"
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Social Media marketing
-                  </Link>
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document
-                        .getElementById("chatbot")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    AI Chatbot Development
-                  </Link>
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document
-                        .getElementById("UGC")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    UGC marketing
-                  </Link>
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document
-                        .getElementById("nativeAds")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Native ADS marketing
-                  </Link>
-                  <Link
-                    to=""
-                    onClick={(e) => {
-                      e.preventDefault();
-                      // navigate("/");
-                      document
-                        .getElementById("leadGen")
-                        ?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                    className="capitalize text-white font-semibold transition-colors duration-300  hover:text-gray-300 text-xs lg:text-base"
-                  >
-                    Lead Generations
-                  </Link>
+                  {/* --- Column 2 --- */}
+                  <div className="flex flex-col items-start mt-2 space-y-2">
+                    {/* --- British Columbia --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      British Columbia
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Kelowna
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Vancouver
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Victoria
+                    </div>
+
+                    {/* --- Saskatchewan --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Saskatchewan
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Saskatoon
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Regina
+                    </div>
+
+                    {/* --- Manitoba --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Manitoba
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Winnipeg
+                    </div>
+
+                    {/* --- Maritimes/Atlantic Canada --- */}
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Nova Scotia
+                    </div>
+                    <div className="capitalize text-white font-semibold text-xs lg:text-base hover:text-gray-300 transition-colors duration-300">
+                      Halifax
+                    </div>
+
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      New Brunswick
+                    </div>
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Newfoundland
+                    </div>
+                    <div className="capitalize text-white font-bold text-xs lg:text-base pt-2">
+                      Prince Edward Island
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
