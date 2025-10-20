@@ -169,7 +169,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="web"
-              handler={navigationHandlers.web}
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, With Get Started Button).webp')",
@@ -191,6 +191,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="branding"
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame v2 (Gradient Glow, digital marketing  Get Started.webp')",
@@ -212,6 +213,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="designs"
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, Get Started).webp')",
@@ -234,7 +236,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="web"
-              handler={navigationHandlers.web}
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, With Get Started Button).webp')",
@@ -256,6 +258,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="branding"
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame v2 (Gradient Glow, digital marketing  Get Started.webp')",
@@ -277,6 +280,7 @@ function Home() {
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="designs"
+              onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, Get Started).webp')",
