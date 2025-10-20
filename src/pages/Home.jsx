@@ -164,7 +164,7 @@ function Home() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <div
               className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
@@ -309,7 +309,7 @@ function Home() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 gap-5 lg:gap-1 justify-center sm:grid-cols-2 md:grid-cols-3 px-auto"
+            className="grid grid-cols-1 gap-5 lg:gap-1 justify-center sm:grid-cols-2 lg:grid-cols-3 px-auto"
           >
             <button
               className="w-full bg-center bg-cover  text-white rounded-lg p-9 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
