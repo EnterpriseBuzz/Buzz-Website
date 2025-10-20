@@ -50,9 +50,9 @@ function About() {
       </div>
 
       {/* Hero Image */}
-      <div className="container relative z-[100] mx-auto px-4 lg:px-16 -mt-12 ">
+      <div className="container relative z-[10] mx-auto px-4 lg:px-16 -mt-12 ">
         <motion.img
-          src="../Artboard.png"
+          src="../Artboard.webp"
           alt="EnterpriseBuzz AI team illustration"
           className="w-full lg:h-[33rem] rounded-xl shadow-lg object-cover"
           initial={{ opacity: 0, scale: 0.95 }}
@@ -99,7 +99,7 @@ function About() {
             variants={fadeUp}
           >
             <img
-              src="../about.png"
+              src="../about.webp"
               alt="EnterpriseBuzz AI office"
               className="rounded-lg shadow-md"
             />
@@ -117,7 +117,7 @@ function About() {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <img src="../mission.png" alt="Mission" className="h-16" />
+            <img src="../mission.webp" alt="Mission" className="h-16" />
             <h2 className="text-xl font-semibold text-gray-800 mt-5">
               Our Mission
             </h2>
@@ -140,7 +140,7 @@ function About() {
             viewport={{ once: true }}
             variants={fadeUp}
           >
-            <img src="../vision.png" alt="Vision" className="h-16" />
+            <img src="../vision.webp" alt="Vision" className="h-16" />
             <h2 className="text-xl font-semibold text-gray-800 mt-5">
               Our Vision
             </h2>

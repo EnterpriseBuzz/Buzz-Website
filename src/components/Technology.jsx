@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const techImages = Array.from(
   { length: 20 },
-  (_, i) => `./technology/tech${i + 1}.png`
+  (_, i) => `./technology/tech${i + 1}.webp`
 );
 
 const containerVariants = {
