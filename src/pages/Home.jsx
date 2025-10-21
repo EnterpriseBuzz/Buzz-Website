@@ -155,146 +155,159 @@ function Home() {
       {/* AI-Driven Call Agent */}
 
       {/* Services Section */}
-      <div
-        className="py-10 px-2 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover"
-        style={{}}
-      >
+
+      <div className="py-10 px-2 sm:px-4 lg:px-24 bg-no-repeat bg-center 2xl:bg-cover">
         <AnimatePresence>
           <motion.div
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid gap-3 sm:gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="web"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, With Get Started Button).webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold leading-tight">
                 WEBSITE/ MOBILE APP DESIGN
               </h1>
               <img
-                className="py-3 lg:py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-website-mobile-app-design-Toronto-Ontario Canada.webp"
-                alt="AI website design, enterprise web design, conversion-focused web design, B2B web design agency, responsive web development, UX UI design, website redesign, high-performance websites, Core Web Vitals optimization, ADA WCAG compliance, SEO-friendly websites"
+                alt="AI website design, enterprise web design"
               />
-              <p className="text-sm text-[#414141] pb-16">
+              <p className="text-sm sm:text-base text-[#414141] pb-8 sm:pb-12 lg:pb-16">
                 Harness our precision-engineered website and mobile app design
                 to ignite digital landscape supremacy.
               </p>
             </div>
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="branding"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame v2 (Gradient Glow, digital marketing  Get Started.webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold uppercase">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold uppercase leading-tight">
                 Customization & Branding of Marketing Merch
               </h1>
               <img
-                className="py-3 lg:py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-marketing-merch-branding-Toronto-Ontario Canada.webp"
-                alt="AI website design, enterprise web design, conversion-focused web design, B2B web design agency, responsive web development, UX UI design, website redesign, high-performance websites, Core Web Vitals optimization, ADA WCAG compliance, SEO-friendly websites"
+                alt="Marketing merchandise branding"
               />
-              <p className="text-sm text-[#414141] pb-16">
+              <p className="text-sm sm:text-base text-[#414141] pb-8 sm:pb-12 lg:pb-16">
                 Stand out in a competitive market with disruptive, high-impact
                 branding identity designs that command attention.
               </p>
             </div>
+
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
               id="designs"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, Get Started).webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold uppercase">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold uppercase leading-tight">
                 MARKETING/PROMOTIONAL DESIGNS
               </h1>
               <img
-                className="py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-marketing-promotional-design-Toronto-Ontario Canada.webp"
-                alt="AI website design, enterprise web design, conversion-focused web design, B2B web design agency, responsive web development, UX UI design, website redesign, high-performance websites, Core Web Vitals optimization, ADA WCAG compliance, SEO-friendly websites"
+                alt="Marketing promotional design"
               />
-              <p className="text-sm text-[#414141] pb-16">
+              <p className="text-sm sm:text-base text-[#414141] pb-8 sm:pb-12 lg:pb-16">
                 Research proves that striking marketing design boosts
                 conversions by 80%.
               </p>
             </div>
 
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
-              id="web"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              id="digital-card"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, With Get Started Button).webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold leading-tight">
                 DIGITAL/SMART BUSINESS CARD
               </h1>
               <img
-                className="py-3 lg:py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-digital-smart-business-card-Toronto-Ontario Canada.webp"
-                alt="EnterpriseBuzz AI social media marketing service card — Toronto, Ontario. AI-driven paid and organic growth."
+                alt="Digital smart business card"
               />
-              <p className="text-sm text-[#414141] pb-16">
-                Don’t just tap to share contacts; tap into EnterpriseBuzz AI’s
+              <p className="text-sm sm:text-base text-[#414141] pb-8 sm:pb-12 lg:pb-16">
+                Don't just tap to share contacts; tap into EnterpriseBuzz AI's
                 Digital/Smart Business Card to capture leads and insights.
               </p>
             </div>
+
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
-              id="branding"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              id="animations"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame v2 (Gradient Glow, digital marketing  Get Started.webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold uppercase">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold uppercase leading-tight">
                 MARKETING ANIMATIONS
               </h1>
               <img
-                className="py-3 lg:py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-marketing-animations-Toronto-Ontario Canada.webp"
-                alt="AI website design, enterprise web design, conversion-focused web design, B2B web design agency, responsive web development, UX UI design, website redesign, high-performance websites, Core Web Vitals optimization, ADA WCAG compliance, SEO-friendly websites"
+                alt="Marketing animations"
               />
-              <p className="text-sm text-[#414141] pb-16">
+              <p className="text-sm sm:text-base text-[#414141] pb-8 sm:pb-12 lg:pb-16">
                 Dazzle your audience: EnterpriseBuzz AI Marketing Animations &
                 motion-graphics ads make difficult ideas feel simple.
               </p>
             </div>
+
             <div
-              className="w-full bg-center bg-cover  rounded-lg p-7 lg:p-10 cursor-pointer transition transform hover:scale-105"
-              id="designs"
+              className="w-full bg-center bg-cover rounded-lg p-6 sm:p-8 lg:p-10 cursor-pointer transition transform hover:scale-105"
+              id="call-agent"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzz AI — Service Card Frame (Gradient Border, Get Started).webp')",
+                backgroundSize: "cover",
+                minHeight: "430px",
               }}
             >
-              <h1 className="lg:text-xl font-bold uppercase">
+              <h1 className="text-base sm:text-lg lg:text-xl font-bold uppercase leading-tight">
                 AI-Driven Call Agent
               </h1>
               <img
-                className="py-3 lg:py-5"
+                className="py-3 lg:py-5 w-full h-auto"
                 src="../services/EnterpriseBuzz AI-ai-driven-call-agent-Toronto-Ontario Canada.webp"
-                alt="AI website design, enterprise web design, conversion-focused web design, B2B web design agency, responsive web development, UX UI design, website redesign, high-performance websites, Core Web Vitals optimization, ADA WCAG compliance, SEO-friendly websites"
+                alt="AI-driven call agent"
               />
-              <p className="text-xs sm:text-sm text-[#414141] pb-16">
+              <p className="text-xs sm:text-sm text-[#414141] pb-8 sm:pb-12 lg:pb-16">
                 Provide your Customers 24/7 receptionist with EnterpriseBuzz
                 AI's Virtual Call Agent, powered by advanced data. Serve
                 customers around the clock at a fraction of the cost—ensuring
@@ -309,21 +322,22 @@ function Home() {
             initial={{ x: 20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 gap-5 lg:gap-1 justify-center sm:grid-cols-2 lg:grid-cols-3 px-auto"
+            className="grid grid-cols-1 gap-5 mt-3 sm:mt-5 lg:gap-1 justify-center sm:grid-cols-2 lg:grid-cols-3"
           >
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-9 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[22rem] sm:h-[27rem] p-6 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="emailMarketing"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzzAI-email-marketing-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI email marketing service card — Toronto, Ontario. AI-driven campaigns to boost conversions.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">EMAIL MARKETING</h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-32 tracking-wider font-light">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
+                EMAIL MARKETING
+              </h1>
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-16 sm:pb-32 tracking-wide sm:tracking-wider font-light">
                 EnterpriseBuzz AI's email marketing service uses Advance AI to
                 deliver personalized Email campaigns that boost engagement,
                 conversions, and ROI efficiently.
@@ -331,39 +345,39 @@ function Home() {
             </button>
 
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-9 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[22rem] sm:h-[27rem] p-6 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="socialMarketing"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzzAI-social-media-marketing-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI social media marketing service card — Toronto, Ontario. AI-driven paid and organic growth.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
                 SOCIAL MEDIA MARKETING
               </h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-32 tracking-wider font-light">
-                Unleash unstoppable brand domination with EnterpriseBuzz AI’s
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-16 sm:pb-32 tracking-wide sm:tracking-wider font-light">
+                Unleash unstoppable brand domination with EnterpriseBuzz AI's
                 Bold Social media marketing—ignite engagement, drive
                 conversions, overshadow rivals.
               </p>
             </button>
 
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-12 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[22rem] sm:h-[26rem] p-6 sm:p-12 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="logoDesign"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzzAI-logo-design-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI social media marketing service card — Toronto, Ontario. AI-driven paid and organic growth.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">lOGO DESIGN</h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-20 lg:pb-32 tracking-wider font-light">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
+                lOGO DESIGN
+              </h1>
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-12 sm:pb-20 lg:pb-32 tracking-wide sm:tracking-wider font-light">
                 Do you know a powerful logo can set your brand apart?
                 EnterpriseBuzz AI crafts bold, memorable logos that capture
                 attention, define your identity and drive market success.
@@ -371,20 +385,19 @@ function Home() {
             </button>
 
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-12 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[22rem] sm:h-[27rem] p-6 sm:p-12 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="videography"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/enterprisebuzzai-videography-services-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI email marketing service card — Toronto, Ontario. AI-driven campaigns to boost conversions.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
                 VIDEOGRAPHY SERVICES
               </h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-28 lg:pb-32 tracking-wider font-light">
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-16 sm:pb-28 lg:pb-32 tracking-wide sm:tracking-wider font-light">
                 Our video production services at EnterpriseBuzz AI Toronto fuse
                 visionary creativity with bold strategy to craft stories that
                 dominate markets.
@@ -392,20 +405,19 @@ function Home() {
             </button>
 
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-9 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[24rem] sm:h-[28rem] p-6 sm:p-10 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="photography"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzzAI-photography-services-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI photography services card — Toronto, Ontario. Commercial product, portrait, lifestyle, and event coverage.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
                 PHOTOGRAPHY SERVICES
               </h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-20 lg:pb-32 tracking-wider font-light">
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-12 sm:pb-20 lg:pb-32 tracking-wide sm:tracking-wider font-light">
                 Need photography services? Our holistic visuals department
                 captures your photography needs through a lens that builds brand
                 love & captivates viewers by delivering engaging storytelling or
@@ -414,20 +426,19 @@ function Home() {
             </button>
 
             <button
-              className="w-full bg-center bg-cover  text-white rounded-lg p-9 sm:p-8 lg:p-16 cursor-pointer transition transform hover:scale-105 flex-col justify-items-start"
+              className="w-full bg-center bg-cover text-white rounded-lg min-h-[24rem] sm:h-[28rem] p-6 sm:p-8 lg:p-16 cursor-pointer transition transform hover:scale-105 flex flex-col justify-start"
               id="chatbot"
               onClick={openCalendly}
               style={{
                 backgroundImage:
                   "url('./services/EnterpriseBuzzAI-ai-chatbot-development-Toronto-Ontario Canada.webp')",
-                alt: "EnterpriseBuzz AI social media marketing service card — Toronto, Ontario. AI-driven paid and organic growth.",
-              }}
+                backgroundSize: "cover",
+              minHeight: "400px" }}
             >
-              <h1 className="text-xl font-bold uppercase ">
+              <h1 className="text-lg sm:text-xl font-bold uppercase">
                 AI Chat-bot Development
               </h1>
-
-              <p className="text-base text-[#fff] pt-2 pb-20 lg:pb-32 tracking-wider font-light">
+              <p className="text-sm sm:text-base text-[#fff] text-center pt-2 pb-12 sm:pb-20 lg:pb-32 tracking-wide sm:tracking-wider font-light">
                 Revolutionize brand engagement with EnterpriseBuzz AI's chatbot
                 development, where our innovative technology and deep
                 understanding of your company's data transform customer
